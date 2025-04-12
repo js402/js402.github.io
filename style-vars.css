@@ -17,7 +17,6 @@
   --icon-github: url("icons8-github-48.png");
   --icon-xing: url("iconsxing.png");
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark mode colors */
@@ -39,7 +38,6 @@
     --icon-xing: url("iconsxing-dark.png");
   }
 }
-
 @media print {
   :root {
     /* Print mode colors */

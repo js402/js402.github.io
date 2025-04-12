@@ -1,16 +1,13 @@
-/* Global Styles */
 body {
   font-family: "Open Sans";
   width: clamp(200px, 100%, 1000px);
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
 html {
   display: flex;
   justify-content: center;
 }
-
 h1,
 h2,
 h3 {
@@ -20,22 +17,41 @@ h3 {
   margin: 10px 0;
   text-transform: capitalize;
 }
-
 h1 {
   font-size: larger;
 }
-
 h2,
 h3 {
   font-size: medium;
 }
-
 p,
 li {
   font-size: small;
   margin: 2px 0;
 }
-
 #summary {
   text-align: center;
+}
+
+/* Document Container */
+.document {
+  background-color: var(--background-color);
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--header-background-color);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  text-align: center;
+  color: var(--header-text-color);
+  border-bottom: 1px solid var(--header-border-bottom-color);
+  padding: 10px;
+}
+header a,
+header button {
+  color: var(--accent-color);
 }
