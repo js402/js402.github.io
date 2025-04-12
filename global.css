@@ -1,0 +1,41 @@
+/* Global Styles */
+body {
+  font-family: "Open Sans";
+  width: clamp(200px, 100%, 1000px);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  text-align: center;
+  outline: invert;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: larger;
+}
+
+h2,
+h3 {
+  font-size: medium;
+}
+
+p,
+li {
+  font-size: small;
+  margin: 2px 0;
+}
+
+#summary {
+  text-align: center;
+}

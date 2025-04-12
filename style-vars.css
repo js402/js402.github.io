@@ -1,0 +1,60 @@
+:root {
+  /* Light mode colors */
+  --background-color: #ffffff;
+  --text-color: #2b1d2c;
+  --header-background-color: #ffffff;
+  --header-text-color: #2b1d2c;
+  --section-background-color: #f9f7f7;
+  --entry-background-color: #fcfcfc;
+  --border-color: #c4c3c3;
+  --shadow-color: rgba(43, 29, 44, 0.15);
+  --accent-color: #1ac3c9;
+  --header-border-bottom-color: #c4c3c3;
+  --footer-background-color: #ffffff;
+  --footer-text-color: #2b1d2c;
+  --footer-link-color: #1ac3c9;
+  /* Light mode icons */
+  --icon-github: url("icons8-github-48.png");
+  --icon-xing: url("iconsxing.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode colors */
+    --background-color: #1e1e1e;
+    --text-color: #c9c9c9;
+    --header-background-color: #1e1e1e;
+    --header-text-color: #f0f0f0;
+    --section-background-color: #2c2c2c;
+    --entry-background-color: #3a3a3a;
+    --border-color: #505050;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --accent-color: #1ac3c9;
+    --header-border-bottom-color: #252525;
+    --footer-background-color: #1e1e1e;
+    --footer-text-color: #c9c9c9;
+    --footer-link-color: #1ac3c9;
+    /* Dark mode icons */
+    --icon-github: url("icons8-github-48-dark.png");
+    --icon-xing: url("iconsxing-dark.png");
+  }
+}
+
+@media print {
+  :root {
+    /* Print mode colors */
+    --background-color: none;
+    --text-color: #2b1d2c;
+    --header-background-color: none;
+    --header-text-color: #2b1d2c;
+    --section-background-color: #fcfcfc;
+    --entry-background-color: none;
+    --border-color: #c4c3c3;
+    --shadow-color: rgba(43, 29, 44, 0.15);
+    --accent-color: #1ac3c9;
+    --header-border-bottom-color: #c4c3c3;
+    --footer-background-color: none;
+    --footer-text-color: #2b1d2c;
+    --footer-link-color: #1ac3c9;
+  }
+}
