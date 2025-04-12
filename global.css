@@ -40,18 +40,3 @@ li {
   border: 1px solid var(--border-color);
   overflow: hidden;
 }
-
-/* Header Styles */
-header {
-  background-color: var(--header-background-color);
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  text-align: center;
-  color: var(--header-text-color);
-  border-bottom: 1px solid var(--header-border-bottom-color);
-  padding: 10px;
-}
-header a,
-header button {
-  color: var(--accent-color);
-}
