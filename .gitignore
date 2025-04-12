@@ -51,13 +51,6 @@ bin/
 .env.test.local
 .env.production.local
 
-# Favicon and images (if generated during builds)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.ico
 
 # Operating System Files
 *.DS_Store
