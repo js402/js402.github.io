@@ -1,0 +1,547 @@
+/* Custom styles for about.html */
+
+.hero-about {
+    background-color: var(--section-background-color);
+    padding: 40px 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-photo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+}
+
+.profile-intro {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: none;
+    color: var(--accent-color);
+}
+
+.profile-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.profile-tagline {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+/* Timeline Styles */
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.timeline-date {
+    min-width: 120px;
+    font-weight: bold;
+    color: var(--accent-color);
+    padding-top: 5px;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.timeline-company {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.timeline-highlights h4 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    text-transform: none;
+}
+
+.timeline-highlights ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.timeline-highlights li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Expertise Grid */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.expertise-category {
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.expertise-category h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.expertise-category ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.expertise-category li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.expertise-category li:last-child {
+    border-bottom: none;
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.education-institution {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-date {
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* Open Source Section */
+.opensource-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.opensource-project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.opensource-project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--text-color);
+}
+
+/* CTA Section */
+.cta-content.centered {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .timeline-date {
+        min-width: auto;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-actions .btn-primary,
+    .cta-actions .btn-secondary {
+        width: 200px;
+    }
+}
+
+/* Custom styles for about.html */
+
+.hero-about {
+    background-color: var(--section-background-color);
+    padding: 40px 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-photo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+}
+
+.profile-intro {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: none;
+    color: var(--accent-color);
+}
+
+.profile-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.profile-tagline {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+/* Timeline Styles */
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.timeline-date {
+    min-width: 120px;
+    font-weight: bold;
+    color: var(--accent-color);
+    padding-top: 5px;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.timeline-company {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.timeline-highlights h4 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    text-transform: none;
+}
+
+.timeline-highlights ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.timeline-highlights li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Expertise Grid */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.expertise-category {
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.expertise-category h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.expertise-category ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.expertise-category li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.expertise-category li:last-child {
+    border-bottom: none;
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.education-institution {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-date {
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* Open Source Section */
+.opensource-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.opensource-project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--entry-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.opensource-project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    text-transform: none;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--text-color);
+}
+
+/* CTA Section */
+.cta-content.centered {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .timeline-date {
+        min-width: auto;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-actions .btn-primary,
+    .cta-actions .btn-secondary {
+        width: 200px;
+    }
+}

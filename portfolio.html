@@ -6,22 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
             name="description"
-            content="AI Software Consultancy Portfolio - Case studies, projects, and expertise in Strategic AI adoption, compliance, and custom solutions."
+            content="Portfolio of Ertli’s AI & Technology Solutions — selected case studies across custom AI builds, workflow automation, observability, and responsible AI for SMEs and startups."
         />
         <meta
             name="keywords"
-            content="AI Consultancy Portfolio, Generative AI Case Studies, EU AI Act Compliance Projects, SME Digital Transformation Portfolio, Custom AI Solutions Examples"
+            content="AI case studies, custom AI development, custom Software development, agentic AI, RAG, workflow orchestration, observability, EU AI Act, responsible AI"
         />
-        <meta name="author" content="Alexander Ertli" />
-        <title>Ertli's Technology Solutions | AI Consultancy Portfolio</title>
+        <meta name="author" content="Ertli’s AI & Technology Solutions" />
+        <title>Portfolio | Ertli’s AI & Technology Solutions</title>
         <link rel="icon" href="images/logo.png" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="style-vars.css" />
-        <link rel="stylesheet" type="text/css" href="global.css" />
-        <link rel="stylesheet" type="text/css" href="components.css" />
-        <link rel="stylesheet" type="text/css" href="portfolio.css" />
+        <link rel="stylesheet" href="style-vars.css" />
+        <link rel="stylesheet" href="global.css" />
+        <link rel="stylesheet" href="components.css" />
+        <link rel="stylesheet" href="portfolio.css" />
     </head>
     <body>
         <div class="document">
+            <!-- Header -->
             <header class="site-header">
                 <nav class="main-nav" aria-label="Main Navigation">
                     <div class="nav-brand">
@@ -32,125 +33,101 @@
                     <ul class="nav-links">
                         <li><a href="index.html#services">Services</a></li>
                         <li><a href="index.html#approach">Approach</a></li>
-                        <li><a href="index.html#about">About</a></li>
+                        <li>
+                            <a href="portfolio.html" aria-current="page"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li><a href="cv.html">CV</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                         <li>
-                            <a href="de.html" class="language-switch">DE</a>
+                            <a href="about-de.html" class="language-switch"
+                                >DE</a
+                            >
                         </li>
                     </ul>
                 </nav>
             </header>
-
             <main>
+                <!-- Hero -->
                 <section class="hero-section hero-portfolio">
                     <div class="hero-content">
-                        <h1>Our AI Transformation Portfolio</h1>
+                        <h1>Selected Work</h1>
                         <p class="hero-subtitle">
-                            Showcasing real-world impact across strategy,
-                            compliance, and custom development for European
-                            SMEs.
+                            Real deliveries across
+                            <strong>custom AI builds</strong>,
+                            <strong>workflow automation</strong>,
+                            <strong>observability</strong>, and
+                            <strong>responsible AI</strong>.
                         </p>
                         <div class="hero-actions">
                             <a href="#portfolio-cases" class="btn-primary"
                                 >View Case Studies</a
                             >
                             <a href="index.html#contact" class="btn-secondary"
-                                >Get in Touch</a
+                                >Start a Project</a
                             >
                         </div>
                     </div>
                 </section>
-
+                <!-- Cases: keep it to 5 -->
                 <section id="portfolio-cases" class="section">
-                    <h2>Selected Case Studies & Projects</h2>
+                    <h2>Case Studies</h2>
                     <div class="portfolio-grid">
-                        <!-- contenox Project -->
-                        <div class="case-study-card featured-case">
+                        <!-- 1. Build: Contenox Runtime -->
+                        <article class="case-study-card featured-case">
                             <div class="case-image-container">
                                 <img
                                     src="images/contenox-screenshot-1.png"
-                                    alt="contenox platform dashboard showing AI workflow orchestration"
+                                    alt="Contenox admin dashboard showing AI workflow orchestration"
                                     class="case-image"
+                                    loading="lazy"
                                 />
                                 <div class="case-image-overlay">
-                                    <span>Open Source AI Runtime</span>
+                                    <span>AI Runtime</span>
                                 </div>
                             </div>
                             <div class="case-content">
-                                <h3>
-                                    contenox: Open-Source AI Runtime Platform
-                                </h3>
+                                <h3>Contenox — Open-Source AI Runtime</h3>
                                 <p class="case-description">
-                                    Developed a sovereign, open-source runtime
-                                    for building reliable AI workflows as
-                                    deterministic state machines. Enables
-                                    businesses to orchestrate LLMs, external
-                                    tools, and business logic with full data
-                                    control and vendor independence.
+                                    Architected and built a
+                                    <em>vendor-agnostic</em> runtime to execute
+                                    LLM workflows as observable state machines.
+                                    Enables on-prem/cloud deployments with full
+                                    data control.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
-                                        <strong>Challenge:</strong> Proprietary
-                                        AI platforms lock users into vendor
-                                        ecosystems and hide critical logic
-                                        behind APIs
+                                        <strong>Challenge:</strong> Avoid
+                                        lock-in and make AI workflows auditable
+                                        & portable.
                                     </li>
                                     <li>
-                                        <strong>Solution:</strong>
-                                        Vendor-agnostic runtime executing AI
-                                        workflows as explicit, observable state
-                                        machines with hooks for extensibility
+                                        <strong>Solution:</strong> State-machine
+                                        engine, connectors, OpenAI-compatible
+                                        API, admin UI.
                                     </li>
                                     <li>
-                                        <strong>Result:</strong> Fully
-                                        open-source project under Apache 2.0,
-                                        enabling businesses to run AI workflows
-                                        anywhere (on-prem, cloud, air-gapped)
+                                        <strong>Outcome:</strong> Faster
+                                        shipping of AI use-cases;
+                                        production-ready on self-hosted infra.
                                     </li>
                                 </ul>
-                                <div class="case-links">
-                                    <a
-                                        href="https://contenox.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="case-link"
-                                    >
-                                        <img
-                                            src="images/contenox.png"
-                                            alt="contenox"
-                                            class="icon16"
-                                        />
-                                        Live Platform
-                                    </a>
-                                    <a
-                                        href="https://github.com/contenox/runtime"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="case-link"
-                                    >
-                                        <img
-                                            src="icons/github.png"
-                                            alt="GitHub"
-                                            class="icon16"
-                                        />
-                                        GitHub Repo
-                                    </a>
-                                </div>
                                 <div class="case-tags">
-                                    <span class="case-tag">Open Source</span>
+                                    <span class="case-tag">Custom Build</span>
                                     <span class="case-tag">AI Platform</span>
                                     <span class="case-tag">Self-Hosted</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- AI Telegram Bot Project -->
-                        <div class="case-study-card">
+                        </article>
+                        <!-- 2. Integrate: Agentic Support Bot -->
+                        <article class="case-study-card">
                             <div class="case-image-container">
                                 <img
                                     src="images/telegram-bot-screenshot-1.png"
-                                    alt="AI Telegram Bot interface showing conversation and tool execution"
+                                    alt="Telegram AI assistant conversing and triggering actions"
                                     class="case-image"
+                                    loading="lazy"
                                 />
                                 <div class="case-image-overlay">
                                     <span>AI Automation</span>
@@ -158,156 +135,121 @@
                             </div>
                             <div class="case-content">
                                 <h3>
-                                    AI-Powered Telegram Bot for Knowledge Base &
-                                    Automation
+                                    Agentic Assistant — Knowledge & Automation
                                 </h3>
                                 <p class="case-description">
-                                    Developed intelligent Telegram bots that
-                                    provide natural language access to knowledge
-                                    bases and execute automated actions in
-                                    response to user requests or system events.
+                                    Deployed multi-tenant Telegram assistants
+                                    with RAG search and tool execution for teams
+                                    that needed instant answers and one-tap
+                                    actions.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
-                                        <strong>Challenge:</strong> Teams needed
-                                        instant access to documentation and the
-                                        ability to trigger actions without
-                                        switching between multiple tools and
-                                        interfaces
+                                        <strong>Challenge:</strong> Reduce
+                                        context-switching across docs, tickets,
+                                        and dashboards.
                                     </li>
                                     <li>
-                                        <strong>Solution:</strong> AI-integrated
-                                        Telegram bots with RAG capabilities for
-                                        knowledge retrieval and tool execution
-                                        APIs for automated actions
+                                        <strong>Solution:</strong> Semantic
+                                        search, action APIs (create issues,
+                                        check status, deploy).
                                     </li>
                                     <li>
-                                        <strong>Result:</strong> 24/7 automated
-                                        support, instant knowledge retrieval,
-                                        and proactive event response (GitHub
-                                        actions, cloud monitoring, analytics
-                                        alerts)
+                                        <strong>Outcome:</strong> 24/7 support,
+                                        lower response times, automated routine
+                                        operations.
                                     </li>
                                 </ul>
-                                <div class="case-features">
-                                    <h4>Key Capabilities:</h4>
-                                    <div class="features-grid">
-                                        <div class="feature-item">
-                                            <strong>🔍 Knowledge Search</strong>
-                                            <p>
-                                                Semantic search across
-                                                documentation and internal
-                                                knowledge bases
-                                            </p>
-                                        </div>
-                                        <div class="feature-item">
-                                            <strong>⚡ Action Execution</strong>
-                                            <p>
-                                                Execute tools and APIs on user
-                                                behalf (create issues, check
-                                                status, trigger deployments)
-                                            </p>
-                                        </div>
-                                        <div class="feature-item">
-                                            <strong>🚨 Event Monitoring</strong>
-                                            <p>
-                                                Proactive alerts for GitHub
-                                                actions, cloud credits, system
-                                                failures
-                                            </p>
-                                        </div>
-                                        <div class="feature-item">
-                                            <strong>🔄 Multi-tenant</strong>
-                                            <p>
-                                                Support for multiple teams and
-                                                projects with separate knowledge
-                                                contexts
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="case-tags">
-                                    <span class="case-tag">Telegram Bot</span>
                                     <span class="case-tag">RAG</span>
+                                    <span class="case-tag">Agentic AI</span>
                                     <span class="case-tag">Automation</span>
-                                    <span class="case-tag">AI Integration</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="case-study-card">
+                        </article>
+                        <!-- 3. Platform Reliability: Direktiv -->
+                        <article class="case-study-card">
                             <div class="case-image-container">
                                 <img
                                     src="images/direktiv-workflow.png"
-                                    alt="Direktiv workflow automation platform"
+                                    alt="Workflow engine observability with metrics and traces"
                                     class="case-image"
+                                    loading="lazy"
                                 />
+                                <div class="case-image-overlay">
+                                    <span>Observability</span>
+                                </div>
                             </div>
                             <div class="case-content">
-                                <h3>Enterprise Workflow Automation Platform</h3>
+                                <h3>
+                                    Workflow Orchestration — Observability at
+                                    Scale
+                                </h3>
                                 <p class="case-description">
-                                    Core contributor to Direktiv.io - a
-                                    cloud-native workflow automation platform,
-                                    implementing observability, event systems,
-                                    and Kubernetes-native orchestration.
+                                    Led observability & event systems for a
+                                    Kubernetes-native workflow platform
+                                    (Prometheus, Fluent Bit, OpenTelemetry) to
+                                    unblock enterprise rollouts.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
-                                        <strong>Challenge:</strong> Building
-                                        scalable workflow orchestration with
-                                        full observability
+                                        <strong>Challenge:</strong> Diagnose
+                                        complex, distributed workflows in real
+                                        time.
                                     </li>
                                     <li>
-                                        <strong>Solution:</strong> Integrated
-                                        Prometheus, Fluent Bit, OpenTelemetry
-                                        for comprehensive monitoring
+                                        <strong>Solution:</strong> Full E2E
+                                        tracing & logging; standardized APIs;
+                                        dashboard UX.
                                     </li>
                                     <li>
-                                        <strong>Result:</strong>
-                                        Enterprise-grade automation platform
-                                        used by multiple organizations
+                                        <strong>Outcome:</strong> Shorter
+                                        incident MTTR; credible sales demos;
+                                        smoother onboarding.
                                     </li>
                                 </ul>
                                 <div class="case-tags">
-                                    <span class="case-tag"
-                                        >Workflow Automation</span
-                                    >
                                     <span class="case-tag">Kubernetes</span>
                                     <span class="case-tag">Observability</span>
+                                    <span class="case-tag">Event-Driven</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="case-study-card">
+                        </article>
+                        <!-- 4. Govern: Security & Compliance -->
+                        <article class="case-study-card">
                             <div class="case-image-container">
                                 <img
                                     src="images/telekom-compliance.png"
-                                    alt="Telekom security and compliance"
+                                    alt="Compliance and security visualization for enterprise systems"
                                     class="case-image"
+                                    loading="lazy"
                                 />
+                                <div class="case-image-overlay">
+                                    <span>Governance</span>
+                                </div>
                             </div>
                             <div class="case-content">
                                 <h3>Enterprise AI Security & Compliance</h3>
                                 <p class="case-description">
-                                    Led security and compliance initiatives for
-                                    AI/ML systems at Telekom Innovation Lab,
-                                    implementing comprehensive security scanning
-                                    and risk management.
+                                    Implemented vulnerability management,
+                                    SAST/DAST scanning, and hardened container
+                                    supply chains in a regulated environment.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
-                                        <strong>Challenge:</strong> Ensuring AI
-                                        system security in regulated telecom
-                                        environment
+                                        <strong>Challenge:</strong> Raise
+                                        security posture for AI/ML workloads
+                                        under audit.
                                     </li>
                                     <li>
-                                        <strong>Solution:</strong> Integrated
-                                        SAST/DAST security scanners, CVE
-                                        management, Docker hardening
+                                        <strong>Solution:</strong> SDSK
+                                        alignment, CI security gates, risk
+                                        workflows.
                                     </li>
                                     <li>
-                                        <strong>Result:</strong> Full compliance
-                                        with telecom security standards and data
-                                        protection
+                                        <strong>Outcome:</strong> Release
+                                        approvals unblocked; repeatable
+                                        compliance process.
                                     </li>
                                 </ul>
                                 <div class="case-tags">
@@ -316,155 +258,141 @@
                                     <span class="case-tag">MLOps</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="case-study-card">
+                        </article>
+                        <!-- 5. Govern: ABAC Security Platform (archTIS) -->
+                        <article class="case-study-card">
                             <div class="case-image-container">
                                 <img
-                                    src="images/case-compliance.jpg"
-                                    alt="Abstract image representing compliance and regulation"
+                                    src="images/case-abac.png"
+                                    alt="Attribute-based access control and policy enforcement dashboards"
                                     class="case-image"
+                                    loading="lazy"
                                 />
+                                <div class="case-image-overlay">
+                                    <span>Security</span>
+                                </div>
                             </div>
                             <div class="case-content">
-                                <h3>EU AI Act Readiness Audit</h3>
+                                <h3>
+                                    Policy Enforcement & ABAC Security Platform
+                                </h3>
                                 <p class="case-description">
-                                    A mid-sized German **e-commerce** firm
-                                    needed to classify its existing AI systems
-                                    (e.g., recommendation engines) and establish
-                                    a governance framework compliant with the
-                                    upcoming EU AI Act.
+                                    Co-led architecture and delivery of an
+                                    attribute-based access control (ABAC)
+                                    platform with policy enforcement, secure
+                                    connectors, and compliance alignment for a
+                                    defense/government context.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
-                                        <strong>Challenge:</strong> High-risk
-                                        classification of AI for internal HR.
+                                        <strong>Challenge:</strong> Enforce
+                                        fine-grained, dynamic access to
+                                        sensitive content across Microsoft 365.
                                     </li>
                                     <li>
-                                        <strong>Solution:</strong>
-                                        Risk-categorization, impact assessment,
-                                        and process documentation.
+                                        <strong>Solution:</strong> ABAC engine
+                                        with policy evaluation, Azure Entra ID
+                                        (OAuth/OIDC) integration, and secure
+                                        connectors for SharePoint/Drive.
                                     </li>
                                     <li>
-                                        <strong>Result:</strong> 100% compliance
-                                        roadmap established before the deadline.
+                                        <strong>Outcome:</strong>
+                                        Compliance-ready enforcement layer
+                                        aligned with NIST-informed requirements;
+                                        cross-team handover post M&A.
                                     </li>
                                 </ul>
                                 <div class="case-tags">
+                                    <span class="case-tag">ABAC</span>
+                                    <span class="case-tag"
+                                        >Policy Enforcement</span
+                                    >
                                     <span class="case-tag">Compliance</span>
+                                    <span class="case-tag">Azure Entra</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="case-study-card">
+                        </article>
+                        <!-- 6. Build: Document Intelligence & Semantic Search (Contenox) -->
+                        <article class="case-study-card">
                             <div class="case-image-container">
                                 <img
-                                    src="images/case-genai.jpg"
-                                    alt="Abstract image representing generative AI and text creation"
+                                    src="images/case-docsearch.png"
+                                    alt="Document search UI with semantic results and metadata filters"
                                     class="case-image"
+                                    loading="lazy"
                                 />
+                                <div class="case-image-overlay">
+                                    <span>RAG</span>
+                                </div>
                             </div>
                             <div class="case-content">
-                                <h3>Custom Generative AI Content Tool</h3>
+                                <h3>Document Intelligence & Semantic Search</h3>
                                 <p class="case-description">
-                                    Developed a custom, multilingual LLM-based
-                                    solution for a **travel and hospitality**
-                                    startup to automate the creation of
-                                    marketing copy and personalized tour
-                                    descriptions.
+                                    Implemented Contenox’s ingestion → chunking
+                                    → embeddings pipeline with a
+                                    high-performance vector index, enabling
+                                    reliable RAG over large document sets.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
-                                        <strong>Challenge:</strong> Scaling
-                                        content production while maintaining
-                                        brand voice.
+                                        <strong>Challenge:</strong> Make long,
+                                        messy documents reliably searchable by
+                                        meaning, not keywords.
                                     </li>
                                     <li>
-                                        <strong>Solution:</strong> Fine-tuned
-                                        open-source LLM, secure API integration.
+                                        <strong>Solution:</strong> File parsers,
+                                        adaptive chunking, embedding service,
+                                        and Vald-backed vector search.
                                     </li>
                                     <li>
-                                        <strong>Result:</strong> Reduced content
-                                        generation time by **85%**; launched in
-                                        3 major languages.
+                                        <strong>Outcome:</strong> Faster
+                                        retrieval, fewer hallucinations, and
+                                        consistent answers across multilingual
+                                        content.
                                     </li>
                                 </ul>
                                 <div class="case-tags">
-                                    <span class="case-tag"
-                                        >Custom Development</span
-                                    >
+                                    <span class="case-tag">RAG</span>
+                                    <span class="case-tag">Vector Search</span>
+                                    <span class="case-tag">Embeddings</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="case-study-card">
-                            <div class="case-image-container">
-                                <img
-                                    src="images/case-strategy.jpg"
-                                    alt="Abstract image representing a strategic roadmap or plan"
-                                    class="case-image"
-                                />
-                            </div>
-                            <div class="case-content">
-                                <h3>AI Strategy for Manufacturing SME</h3>
-                                <p class="case-description">
-                                    Conducted an end-to-end AI potential audit
-                                    for a traditional **mid-market
-                                    manufacturer**, leading to a prioritized
-                                    3-year AI adoption roadmap focused on
-                                    operations and supply chain.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Challenge:</strong> Identifying
-                                        high-impact, low-risk AI use-cases.
-                                    </li>
-                                    <li>
-                                        <strong>Solution:</strong> Opportunity
-                                        mapping, ROI projection, and data
-                                        readiness assessment.
-                                    </li>
-                                    <li>
-                                        <strong>Result:</strong> Secured initial
-                                        internal funding for a predictive
-                                        maintenance PoC.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag"
-                                        >Strategy & Roadmapping</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
+                        </article>
                     </div>
                 </section>
-
-                <section id="contact-cta" class="section section-alt">
+                <!-- Dual-audience CTA -->
+                <section class="section section-alt" id="contact-cta">
                     <div class="contact-content centered">
-                        <h2>Ready to See AI in Action for Your Business?</h2>
+                        <h2>Bring Your Use-Case — We’ll Ship It Responsibly</h2>
                         <p class="hero-subtitle">
-                            Discuss your specific challenges with Alexander
-                            Ertli, Founder & AI Transformation Expert.
+                            Whether you need a working MVP fast or an AI program
+                            that passes scrutiny — we’ve done both.
                         </p>
-                        <a
-                            href="index.html#contact"
-                            class="btn-primary btn-large"
-                            >Schedule a Consultation</a
-                        >
+                        <div class="hero-actions">
+                            <a
+                                href="index.html#contact"
+                                class="btn-primary btn-large"
+                                >Build an AI Product</a
+                            >
+                            <a
+                                href="index.html#contact"
+                                class="btn-secondary btn-large"
+                                >Start with a CTO/AI Audit</a
+                            >
+                        </div>
                     </div>
                 </section>
             </main>
-
+            <!-- Footer -->
             <footer>
                 <div class="footer-content">
                     <nav aria-label="Footer Navigation">
                         <ul>
                             <li><a href="index.html#services">Services</a></li>
                             <li><a href="index.html#approach">Approach</a></li>
-                            <li><a href="index.html#about">About</a></li>
                             <li><a href="#portfolio-cases">Portfolio</a></li>
-                            <li><a href="de.html">Deutsch</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="about-de.html">Deutsch</a></li>
                         </ul>
                     </nav>
                     <div class="social-links">

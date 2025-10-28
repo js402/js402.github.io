@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>
+            Why your SME doesn’t need an LLM — but does need a RAG pipeline
+        </title>
+        <meta
+            name="description"
+            content="For dependable answers, retrieval beats raw generation. Here’s a practical RAG blueprint SMEs can run with."
+        />
+        <meta name="author" content="Ertli’s AI & Technology Solutions" />
+
+        <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style-vars.css" />
+        <link rel="stylesheet" href="../global.css" />
+        <link rel="stylesheet" href="../components.css" />
+
+        <meta
+            property="og:title"
+            content="Why your SME doesn’t need an LLM — but does need a RAG pipeline"
+        />
+        <meta
+            property="og:description"
+            content="For dependable answers, retrieval beats raw generation."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="../images/banner.svg" />
+        <meta
+            property="og:url"
+            content="https://your-domain/posts/rag-for-smes.html"
+        />
+    </head>
+
+    <body>
+        <div class="document">
+            <header class="site-header">
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <div class="nav-brand">
+                        <a href="../index.html" class="brand-name"
+                            >Ertli’s AI &amp; Technology Solutions</a
+                        >
+                    </div>
+                    <button
+                        class="nav-toggle"
+                        aria-label="Toggle navigation"
+                        aria-expanded="false"
+                    >
+                        <span class="nav-toggle-bar"></span
+                        ><span class="nav-toggle-bar"></span
+                        ><span class="nav-toggle-bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="../index.html#why-education"
+                                >Why Education</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../index.html#enablement">Enablement</a>
+                        </li>
+                        <li><a href="../index.html#workshop">Workshops</a></li>
+                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                        <li>
+                            <a href="../about-de.html" class="language-switch"
+                                >DE</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <article class="section">
+                    <header class="article-header">
+                        <h1>
+                            Why your SME doesn’t need an LLM—<span
+                                >but does need a RAG pipeline</span
+                            >
+                        </h1>
+                        <p class="article-meta">
+                            Published Oct 29, 2025 · 4 min read
+                        </p>
+                    </header>
+
+                    <div class="prose">
+                        <p>
+                            Leaders ask for “an LLM.” What they actually want is
+                            <em>trustworthy answers</em> from their documents
+                            and systems. That’s a retrieval problem first, a
+                            generation problem second.
+                        </p>
+
+                        <h2>What reliable answers require</h2>
+                        <ul>
+                            <li>
+                                <strong>Authoritative sources:</strong> point to
+                                the doc/record, not just a sentence.
+                            </li>
+                            <li>
+                                <strong>Up-to-date content:</strong> syncs from
+                                your SharePoint, Drive, tickets, DBs.
+                            </li>
+                            <li>
+                                <strong>Auditability:</strong> show what was
+                                retrieved and why it was chosen.
+                            </li>
+                            <li>
+                                <strong>Human-in-the-loop:</strong> allow
+                                confirmation/feedback where it matters.
+                            </li>
+                        </ul>
+
+                        <h2>A practical RAG blueprint</h2>
+                        <ol>
+                            <li>
+                                <strong>Ingest:</strong> parse files (PDF,
+                                Office, HTML), normalize metadata, remove PII if
+                                required.
+                            </li>
+                            <li>
+                                <strong>Chunk:</strong> adaptive splitting by
+                                structure (headings, tables) to preserve
+                                context.
+                            </li>
+                            <li>
+                                <strong>Embed &amp; index:</strong> store in a
+                                vector index; attach source IDs and permissions.
+                            </li>
+                            <li>
+                                <strong>Retrieve:</strong> hybrid search
+                                (semantic + keyword + filters) with reranking.
+                            </li>
+                            <li>
+                                <strong>Generate:</strong> compose answers with
+                                citations; refuse if confidence is low.
+                            </li>
+                            <li>
+                                <strong>Evaluate:</strong> offline eval sets +
+                                feedback loops; track precision/latency/cost.
+                            </li>
+                        </ol>
+
+                        <h2>Guardrails that matter for SMEs</h2>
+                        <ul>
+                            <li>
+                                <strong>Permissions:</strong> enforce access
+                                control at retrieval time.
+                            </li>
+                            <li>
+                                <strong>Privacy:</strong> mask sensitive fields;
+                                log access to sources.
+                            </li>
+                            <li>
+                                <strong>Observability:</strong> traces for
+                                retrieval + generation to debug failures.
+                            </li>
+                        </ul>
+
+                        <h2>When do you actually need an LLM?</h2>
+                        <p>
+                            Use a hosted or local LLM as a
+                            <em>component</em> for summarization and composing
+                            answers. The value comes from your data and the
+                            retrieval pipeline—not the model’s brand name.
+                        </p>
+
+                        <div
+                            class="article-cta hero-actions"
+                            style="margin-top: 1.25rem"
+                        >
+                            <a href="../index.html#workshop" class="btn-primary"
+                                >Book the Leadership Workshop</a
+                            >
+                            <a
+                                href="../index.html#contact"
+                                class="btn-secondary"
+                                >Scope a Build</a
+                            >
+                        </div>
+                    </div>
+
+                    <nav class="article-nav">
+                        <a href="observability-first-ai.html" class="prev"
+                            >&larr; Observability-first AI</a
+                        >
+                        <a href="eu-ai-act-advantage.html" class="next"
+                            >EU AI Act as a competitive advantage &rarr;</a
+                        >
+                    </nav>
+                </article>
+            </main>
+
+            <footer>
+                <div class="footer-content">
+                    <nav aria-label="Footer Navigation">
+                        <ul>
+                            <li>
+                                <a href="../index.html#why-education"
+                                    >Why Education</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../index.html#enablement"
+                                    >Enablement</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../index.html#workshop">Workshops</a>
+                            </li>
+                            <li><a href="../portfolio.html">Portfolio</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                            <li><a href="../about-de.html">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-links">
+                        <a
+                            href="https://www.linkedin.com/in/ertli/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <img
+                                src="../icons/linkedin.png"
+                                alt="LinkedIn"
+                                class="icon16"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/js402"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <img
+                                src="../icons/github.png"
+                                alt="GitHub"
+                                class="icon16"
+                            />
+                        </a>
+                    </div>
+                    <p>&copy; 2025 Alexander Ertli. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            (function () {
+                const t = document.querySelector(".nav-toggle"),
+                    l = document.querySelector(".nav-links");
+                if (t && l) {
+                    t.addEventListener("click", () => {
+                        const e = t.getAttribute("aria-expanded") === "true";
+                        t.setAttribute("aria-expanded", String(!e));
+                        l.classList.toggle("open");
+                    });
+                }
+            })();
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "Why your SME doesn’t need an LLM — but does need a RAG pipeline",
+                "datePublished": "2025-10-29",
+                "author": { "@type": "Person", "name": "Alexander Ertli" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Ertli's AI & Technology Solutions"
+                },
+                "image": "https://your-domain/images/banner.svg",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://your-domain/posts/rag-for-smes.html"
+                }
+            }
+        </script>
+    </body>
+</html>
