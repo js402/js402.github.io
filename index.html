@@ -6,469 +6,826 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <title>
-            Ertli's AI & Technology Solutions | Responsible AI for German SMEs
+            Ertli — AI & Technology Solutions | Build, Automate, Comply
         </title>
         <meta
             name="description"
-            content="Pragmatic AI for German SMEs: strategy, EU AI Act readiness (2025–2027), and custom RAG/agentic builds with observability and change enablement."
+            content="We ship custom internal apps, AI automations, and RAG/model tuning — with EU‑ready governance and practical training. Built fast, run safely, handed over cleanly."
         />
-        <meta name="author" content="Ertli's AI & Technology Solutions" />
+        <meta name="author" content="Ertli — AI & Technology Solutions" />
 
-        <link rel="icon" href="images/logo.png" type="image/x-icon" />
+        <!-- Preload critical resources -->
+        <link rel="preload" href="style-vars.css" as="style" />
+        <link rel="preload" href="global.css" as="style" />
+        <link rel="preload" href="components.css" as="style" />
+
+        <link rel="icon" href="images/logo.png" type="image/png" />
         <link rel="stylesheet" href="style-vars.css" />
         <link rel="stylesheet" href="global.css" />
         <link rel="stylesheet" href="components.css" />
+
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://www.linkedin.com" />
+        <link rel="preconnect" href="https://github.com" />
     </head>
     <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
         <div class="document">
-            <header class="site-header">
+            <header class="site-header" role="banner">
                 <nav class="main-nav" aria-label="Main Navigation">
                     <div class="nav-brand">
-                        <a
-                            class="brand-name"
-                            href="index.html"
-                            aria-label="Home"
-                            >Ertli's AI & Technology Solutions</a
+                        <a class="brand-name" href="#home" aria-label="Home">
+                            Ertli — AI & Technology Solutions
+                        </a>
+                        <button
+                            class="nav-toggle"
+                            aria-expanded="false"
+                            aria-controls="nav-menu"
                         >
+                            <span class="hamburger" aria-hidden="true"></span>
+                            <span class="sr-only">Menu</span>
+                        </button>
                     </div>
-                    <ul class="nav-links">
+                    <ul class="nav-links" id="nav-menu">
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#enablement">Enablement</a></li>
+                        <li><a href="#packages">Packages</a></li>
                         <li><a href="#approach">Approach</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="#proof">Proof</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <li>
                             <a
                                 href="about-de.html"
                                 class="language-switch"
                                 hreflang="de"
-                                >DE</a
+                                lang="de"
                             >
+                                DE
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            <main>
+            <main id="main-content">
                 <!-- HERO -->
-                <section class="hero-section" id="home">
-                    <img
-                        src="images/banner.svg"
-                        alt="Abstract banner for AI transformation"
-                        class="hero-banner"
-                    />
-                    <div class="hero-content">
-                        <h1>AI that ships. Compliance that sticks.</h1>
+                <section class="hero-section" aria-labelledby="hero-heading">
+                    <div class="hero-background">
+                        <img
+                            src="images/banner.svg"
+                            alt=""
+                            class="hero-banner"
+                            role="presentation"
+                            loading="eager"
+                        />
+                    </div>
+                    <div class="hero-content container">
+                        <h1 id="hero-heading">
+                            AI that ships. Compliance that sticks.
+                        </h1>
                         <p class="hero-subtitle">
-                            We help non‑tech leaders in German SMEs adopt AI
-                            responsibly—clear strategy, EU AI Act readiness, and
-                            custom builds that pay for themselves.
+                            Custom internal apps, AI automation, and trustworthy
+                            search — delivered with governance and a clean
+                            handover.
                         </p>
                         <div class="hero-actions">
-                            <a href="#workshop" class="btn-primary"
-                                >Book Leadership Workshop</a
-                            >
-                            <a href="#contact" class="btn-secondary"
-                                >Talk to Alexander</a
-                            >
+                            <a href="#packages" class="btn btn-primary">
+                                See Ready‑to‑Start Packages
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                Book a Free 30‑min Health‑Check
+                            </a>
                         </div>
-                    </div>
-                </section>
-
-                <!-- ABOUT (compact) -->
-                <section id="about" class="section section-alt">
-                    <div class="about-content">
-                        <div class="founder-profile">
-                            <img
-                                src="images/profile.png"
-                                alt="Portrait of Alexander Ertli"
-                                class="profile-photo"
-                            />
-                            <div class="founder-info">
-                                <h3>Alexander Ertli</h3>
-                                <p class="founder-role">
-                                    AI Transformation & Technology Expert
-                                </p>
-                                <p>
-                                    Enterprise‑grade engineering brought to
-                                    SMEs: workflow orchestration, AI security,
-                                    and compliant AI delivery.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- SERVICES -->
-                <section id="services" class="section">
-                    <h2>Services</h2>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <h3>AI Strategy & Roadmap</h3>
-                            <p>
-                                Prioritised use‑cases, ROI model, and a 90‑day
-                                execution plan aligned with your operations and
-                                risk posture.
-                            </p>
-                        </div>
-                        <div class="service-card">
-                            <h3>EU AI Act Readiness</h3>
-                            <p>
-                                Gap assessment, risk classification, policies &
-                                documentation, and implementation guidance.
-                                Phased obligations 2025–2027.
-                            </p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Custom AI Solutions</h3>
-                            <p>
-                                RAG systems, agentic workflows, and
-                                integrations—from PoC to production with
-                                observability and guardrails.
-                            </p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Change Management & Training</h3>
-                            <p>
-                                Mandatory AI literacy, adoption playbooks, and
-                                role‑based training to make AI stick across
-                                teams.
-                            </p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Fractional AI Officer</h3>
-                            <p>
-                                Subscription governance: vendor reviews,
-                                incident response, KPIs, and ongoing compliance
-                                oversight.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- ENABLEMENT / WORKSHOP OFFERS -->
-                <section class="section" id="enablement">
-                    <h2>Enablement Offers</h2>
-                    <div class="services-grid">
-                        <div class="service-card" id="workshop">
-                            <h3>Leadership AI Workshop</h3>
-                            <p>
-                                Align leadership, de‑risk decisions, and leave
-                                with a 90‑day plan.
-                            </p>
-                            <ul>
-                                <li>3 hours · remote/onsite</li>
-                                <li>
-                                    Decision brief + risk & opportunity matrix
-                                </li>
-                            </ul>
-                            <a
-                                href="#contact"
-                                class="btn-secondary"
-                                aria-label="Book a leadership workshop"
-                                >Book a Workshop</a
-                            >
-                        </div>
-                        <div class="service-card">
-                            <h3>Tech Due Diligence</h3>
-                            <p>
-                                Evaluate vendors and architectures before you
-                                commit.
-                            </p>
-                            <ul>
-                                <li>Feasibility & compliance risks</li>
-                                <li>Total cost & rollout plan</li>
-                            </ul>
-                            <a
-                                href="#contact"
-                                class="btn-secondary"
-                                aria-label="Request a technical review"
-                                >Request a Review</a
-                            >
-                        </div>
-                        <div class="service-card">
-                            <h3>Build + Teach</h3>
-                            <p>
-                                Scoped custom software with internal upskilling
-                                and handover.
-                            </p>
-                            <ul>
-                                <li>RAG & agentic workflows</li>
-                                <li>Docs, runbooks, short trainings</li>
-                            </ul>
-                            <a
-                                href="#contact"
-                                class="btn-secondary"
-                                aria-label="Scope a build"
-                                >Scope a Build</a
-                            >
-                        </div>
-                    </div>
-                </section>
-
-                <!-- APPROACH -->
-                <section id="approach" class="section section-alt">
-                    <h2>Our Approach</h2>
-                    <div class="approach-content">
-                        <p>
-                            We bridge technology, people, and regulation for
-                            sustainable AI adoption—beyond prototypes to
-                            measurable outcomes.
-                        </p>
-                        <ul class="approach-list">
-                            <li>
-                                Build with
-                                <strong>compliance by design</strong> and clear
-                                ownership
+                        <ul class="hero-badges" aria-label="Our capabilities">
+                            <li class="badge-item">
+                                <span class="badge-icon" aria-hidden="true"
+                                    >⚙️</span
+                                >
+                                Build •
+                                <span class="badge-text"
+                                    >web & internal tools</span
+                                >
                             </li>
-                            <li>
-                                Modernise processes and integrate with your
-                                stack
+                            <li class="badge-item">
+                                <span class="badge-icon" aria-hidden="true"
+                                    >🤖</span
+                                >
+                                Automate •
+                                <span class="badge-text">bots & workflows</span>
                             </li>
-                            <li>
-                                Upskill teams and shape culture for adoption
+                            <li class="badge-item">
+                                <span class="badge-icon" aria-hidden="true"
+                                    >🔎</span
+                                >
+                                Trust •
+                                <span class="badge-text"
+                                    >RAG & model tuning</span
+                                >
                             </li>
-                            <li>Run continuous governance & oversight</li>
+                            <li class="badge-item">
+                                <span class="badge-icon" aria-hidden="true"
+                                    >🛡️</span
+                                >
+                                Govern •
+                                <span class="badge-text">policies & audit</span>
+                            </li>
+                            <li class="badge-item">
+                                <span class="badge-icon" aria-hidden="true"
+                                    >👥</span
+                                >
+                                Enable •
+                                <span class="badge-text"
+                                    >training & handover</span
+                                >
+                            </li>
                         </ul>
                     </div>
                 </section>
 
-                <!-- CAPABILITIES / EXPERIENCE -->
-                <section class="section">
-                    <h2>Technical Capabilities</h2>
-                    <div class="capabilities-grid">
-                        <div class="capability-card">
-                            <h4>🔄 Workflow Orchestration</h4>
-                            <p>
-                                Enterprise automation with Direktiv.io,
-                                event‑driven systems, and state machines.
-                            </p>
-                        </div>
-                        <div class="capability-card">
-                            <h4>🔒 AI Security & Compliance</h4>
-                            <p>
-                                EU AI Act readiness, security scanning, risk
-                                management, and regulatory alignment.
-                            </p>
-                        </div>
-                        <div class="capability-card">
-                            <h4>☁️ Cloud‑Native</h4>
-                            <p>
-                                Kubernetes, Docker, Prometheus, OpenTelemetry,
-                                and production infrastructure.
-                            </p>
-                        </div>
-                        <div class="capability-card">
-                            <h4>🤖 AI/ML Integration</h4>
-                            <p>
-                                LLM orchestration, RAG systems, MLOps, and
-                                generative applications.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="experience-highlights">
-                        <div class="experience-item">
-                            <strong>🏢 Enterprise:</strong> Direktiv.io, Telekom
-                            Innovation Lab, University of Bremen
-                        </div>
-                        <div class="experience-item">
-                            <strong>🔧 Leadership:</strong> Orchestration,
-                            Kubernetes, AI security, compliance
-                        </div>
-                        <div class="experience-item">
-                            <strong>🎓 Education:</strong> B.Sc. Computer
-                            Science, AI research projects, team mentoring
+                <!-- SERVICES -->
+                <section
+                    id="services"
+                    class="section"
+                    aria-labelledby="services-heading"
+                >
+                    <div class="container">
+                        <h2 id="services-heading">What we do</h2>
+                        <div class="services-grid">
+                            <article class="card service-card">
+                                <h3>Custom Internal Apps & Integrations</h3>
+                                <p>
+                                    We build the tools your teams actually use:
+                                    dashboards, approval flows, knowledge
+                                    portals, and secure integrations with your
+                                    stack.
+                                </p>
+                                <ul class="tech-list">
+                                    <li>Go/Python/React • PostgreSQL</li>
+                                    <li>Auth (OIDC), roles, audit trails</li>
+                                    <li>
+                                        CI/CD, tests, observability included
+                                    </li>
+                                </ul>
+                            </article>
+
+                            <article class="card service-card">
+                                <h3>RAG & Model Fine‑tuning</h3>
+                                <p>
+                                    Answers you can trust. Your documents
+                                    searchable with guardrails, plus optional
+                                    adapters/prompt‑programs tuned to your
+                                    domain.
+                                </p>
+                                <ul class="tech-list">
+                                    <li>Ingestion & chunking • embeddings</li>
+                                    <li>Evaluation harness & safety checks</li>
+                                    <li>OpenAI, Gemini, vLLM, Ollama</li>
+                                </ul>
+                            </article>
+
+                            <article class="card service-card">
+                                <h3>AI Agents & Automation</h3>
+                                <p>
+                                    Automate the busywork with bots and
+                                    multi‑step workflows — human‑in‑the‑loop
+                                    where it matters, with cost and risk
+                                    controls.
+                                </p>
+                                <ul class="tech-list">
+                                    <li>Email/Slack/Telegram channels</li>
+                                    <li>Approvals, retries, budgets, logs</li>
+                                    <li>Runbooks and handover training</li>
+                                </ul>
+                            </article>
+
+                            <article class="card service-card">
+                                <h3>Process Audit & Automation</h3>
+                                <p>
+                                    Find the 20% of work that eats 80% of time —
+                                    then automate it. Clear ROI model, quick
+                                    wins first.
+                                </p>
+                                <ul class="tech-list">
+                                    <li>ETL, CI/CD, cost, reliability</li>
+                                    <li>Observability (traces/logs/metrics)</li>
+                                    <li>Exec readout with roadmap</li>
+                                </ul>
+                            </article>
+
+                            <article class="card service-card">
+                                <h3>Training & Enablement</h3>
+                                <p>
+                                    Hands‑on sessions for leaders, engineers,
+                                    and ops. Use your data and stack; keep the
+                                    skills in‑house.
+                                </p>
+                                <ul class="tech-list">
+                                    <li>Essentials (4h), Build Day (1d)</li>
+                                    <li>Role‑based enablement (2 weeks)</li>
+                                    <li>Materials, cheatsheets, runbooks</li>
+                                </ul>
+                            </article>
+
+                            <article class="card service-card">
+                                <h3>Fractional AI Officer</h3>
+                                <p>
+                                    Lightweight governance: vendor reviews,
+                                    incident response, KPIs, and ongoing
+                                    oversight — monthly subscription.
+                                </p>
+                                <ul class="tech-list">
+                                    <li>Clear SLAs • capped hours</li>
+                                    <li>Policy templates & updates</li>
+                                    <li>Quarterly board‑ready report</li>
+                                </ul>
+                            </article>
                         </div>
                     </div>
                 </section>
 
-                <!-- WHO WE SERVE -->
-                <section class="section">
-                    <h2>Who We Serve</h2>
-                    <div class="clients-grid">
-                        <div class="client-card">
-                            <h3>German SMEs</h3>
-                            <p>
-                                50–500 employees seeking competitive advantage
-                                through responsible AI adoption.
-                            </p>
+                <!-- PACKAGES -->
+                <section
+                    id="packages"
+                    class="section section-alt"
+                    aria-labelledby="packages-heading"
+                >
+                    <div class="container">
+                        <h2 id="packages-heading">Ready‑to‑Start Packages</h2>
+                        <p class="section-lead">
+                            Fixed scope, clear outcomes, fast start. Indicative
+                            pricing; custom quotes available.
+                        </p>
+
+                        <div class="packages-grid">
+                            <article class="card package-card">
+                                <header class="package-header">
+                                    <h3>Internal App Sprint</h3>
+                                    <p class="package-sub">
+                                        2 weeks · from €9,900
+                                    </p>
+                                </header>
+                                <ul class="package-features">
+                                    <li>Wireframes + 1–2 core flows</li>
+                                    <li>Auth, roles, basic analytics</li>
+                                    <li>CI pipeline + monitoring</li>
+                                </ul>
+                                <footer class="package-footer">
+                                    <a
+                                        href="#contact"
+                                        class="btn btn-secondary"
+                                    >
+                                        Start this
+                                    </a>
+                                </footer>
+                            </article>
+
+                            <article class="card package-card">
+                                <header class="package-header">
+                                    <h3>RAG Pilot</h3>
+                                    <p class="package-sub">
+                                        2 weeks · from €7,900
+                                    </p>
+                                </header>
+                                <ul class="package-features">
+                                    <li>Ingestion → vector search</li>
+                                    <li>Hallucination guardrails</li>
+                                    <li>Eval set + quality report</li>
+                                </ul>
+                                <footer class="package-footer">
+                                    <a
+                                        href="#contact"
+                                        class="btn btn-secondary"
+                                    >
+                                        Start this
+                                    </a>
+                                </footer>
+                            </article>
+
+                            <article class="card package-card">
+                                <header class="package-header">
+                                    <h3>Quick‑Win Bot</h3>
+                                    <p class="package-sub">
+                                        1–2 weeks · from €6,900
+                                    </p>
+                                </header>
+                                <ul class="package-features">
+                                    <li>One channel (Email/Slack/etc.)</li>
+                                    <li>Safe actions + audit log</li>
+                                    <li>3 success & 3 failure tests</li>
+                                </ul>
+                                <footer class="package-footer">
+                                    <a
+                                        href="#contact"
+                                        class="btn btn-secondary"
+                                    >
+                                        Start this
+                                    </a>
+                                </footer>
+                            </article>
+
+                            <article class="card package-card">
+                                <header class="package-header">
+                                    <h3>Automation Audit</h3>
+                                    <p class="package-sub">
+                                        1–2 weeks · from €4,900
+                                    </p>
+                                </header>
+                                <ul class="package-features">
+                                    <li>Current‑state map</li>
+                                    <li>ROI model + quick‑wins</li>
+                                    <li>Exec readout + roadmap</li>
+                                </ul>
+                                <footer class="package-footer">
+                                    <a
+                                        href="#contact"
+                                        class="btn btn-secondary"
+                                    >
+                                        Start this
+                                    </a>
+                                </footer>
+                            </article>
+
+                            <article class="card package-card">
+                                <header class="package-header">
+                                    <h3>Build + Teach Day</h3>
+                                    <p class="package-sub">
+                                        1 day · €4,900 (≤12 ppl)
+                                    </p>
+                                </header>
+                                <ul class="package-features">
+                                    <li>One working bot or mini‑tool</li>
+                                    <li>Docs + handover video</li>
+                                    <li>Follow‑up Q&A window</li>
+                                </ul>
+                                <footer class="package-footer">
+                                    <a
+                                        href="#contact"
+                                        class="btn btn-secondary"
+                                    >
+                                        Book this
+                                    </a>
+                                </footer>
+                            </article>
+
+                            <article class="card package-card">
+                                <header class="package-header">
+                                    <h3>Fractional AI Officer</h3>
+                                    <p class="package-sub">
+                                        Monthly · from €1,200
+                                    </p>
+                                </header>
+                                <ul class="package-features">
+                                    <li>Governance & reviews</li>
+                                    <li>KPIs + quarterly report</li>
+                                    <li>Capped hours with SLA</li>
+                                </ul>
+                                <footer class="package-footer">
+                                    <a
+                                        href="#contact"
+                                        class="btn btn-secondary"
+                                    >
+                                        Enquire
+                                    </a>
+                                </footer>
+                            </article>
                         </div>
-                        <div class="client-card">
-                            <h3>International Startups</h3>
-                            <p>
-                                Scale‑ups needing robust, compliant AI
-                                infrastructure for global markets.
-                            </p>
+
+                        <p class="smallprint">
+                            All packages include: source code, documentation,
+                            architecture diagram, and a clean handover. Hosting
+                            costs not included.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- APPROACH -->
+                <section
+                    id="approach"
+                    class="section"
+                    aria-labelledby="approach-heading"
+                >
+                    <div class="container">
+                        <h2 id="approach-heading">How we work</h2>
+                        <ol class="approach-steps">
+                            <li class="approach-step">
+                                <strong>Discover:</strong> 60–90 min workshop to
+                                pick a valuable, feasible win.
+                            </li>
+                            <li class="approach-step">
+                                <strong>Build:</strong> Short, time‑boxed
+                                sprints with weekly demos.
+                            </li>
+                            <li class="approach-step">
+                                <strong>Enable:</strong> Docs, runbooks, and
+                                role‑based training.
+                            </li>
+                            <li class="approach-step">
+                                <strong>Handover:</strong> You own the code; we
+                                stay available for support or subscriptions.
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- PROOF / EXPERIENCE -->
+                <section
+                    id="proof"
+                    class="section section-alt"
+                    aria-labelledby="proof-heading"
+                >
+                    <div class="container">
+                        <h2 id="proof-heading">Proof you can trust</h2>
+
+                        <div class="capabilities-grid">
+                            <article class="card capability-card">
+                                <h4>Open‑core GenAI Platform</h4>
+                                <p>
+                                    Built a workflow & agent orchestration
+                                    platform (12+ services) with RAG, model
+                                    router, and connectors.
+                                </p>
+                            </article>
+
+                            <article class="card capability-card">
+                                <h4>Enterprise‑grade Ops</h4>
+                                <p>
+                                    Feature‑owner for event bus & observability
+                                    on a Kubernetes workflow engine; CI/CD and
+                                    monorepo at scale.
+                                </p>
+                            </article>
+
+                            <article class="card capability-card">
+                                <h4>Security & Compliance</h4>
+                                <p>
+                                    Delivered ABAC add‑ons and secure connectors
+                                    (OIDC/OAuth2); governance baked into
+                                    delivery.
+                                </p>
+                            </article>
                         </div>
-                        <div class="client-card">
-                            <h3>Public Sector</h3>
-                            <p>
-                                Organisations implementing AI with full
-                                regulatory compliance.
-                            </p>
+
+                        <div class="clients-section">
+                            <h3 class="clients-heading">Worked with</h3>
+                            <ul
+                                class="logo-list"
+                                aria-label="Client and partner logos"
+                            >
+                                <li class="logo-item">Direktiv.io</li>
+                                <li class="logo-item">
+                                    Telekom Innovation Lab
+                                </li>
+                                <li class="logo-item">University of Bremen</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
 
                 <!-- SHORT EXPLAINERS -->
-                <section class="section" id="content">
-                    <h2>Short Explainers</h2>
-                    <div class="cards-grid">
-                        <a class="post-card" href="/posts/rag-for-smes.html"
-                            ><h3>
-                                Why your SME doesn't need an LLM—<span
-                                    >but does need a RAG pipeline</span
-                                >
-                            </h3>
-                            <p>
-                                What "answers you can trust" actually requires.
-                            </p></a
-                        >
-                        <a
-                            class="post-card"
-                            href="/posts/eu-ai-act-advantage.html"
-                            ><h3>EU AI Act as a competitive advantage</h3>
-                            <p>
-                                Turn obligations into sales & ops leverage.
-                            </p></a
-                        >
-                        <a
-                            class="post-card"
-                            href="/posts/observability-first-ai.html"
-                            ><h3>Observability‑first AI</h3>
-                            <p>
-                                Measure reliability before you scale usage.
-                            </p></a
-                        >
+                <section
+                    class="section"
+                    id="content"
+                    aria-labelledby="content-heading"
+                >
+                    <div class="container">
+                        <h2 id="content-heading">Short explainers</h2>
+                        <div class="cards-grid">
+                            <a
+                                class="card post-card"
+                                href="/posts/rag-for-smes.html"
+                            >
+                                <h3>
+                                    Why you don't need your own LLM — but do
+                                    need RAG
+                                </h3>
+                                <p>
+                                    What "answers you can trust" actually
+                                    requires.
+                                </p>
+                            </a>
+
+                            <a
+                                class="card post-card"
+                                href="/posts/eu-ai-act-advantage.html"
+                            >
+                                <h3>EU AI governance as an advantage</h3>
+                                <p>
+                                    Turn obligations into sales and operations
+                                    leverage.
+                                </p>
+                            </a>
+
+                            <a
+                                class="card post-card"
+                                href="/posts/observability-first-ai.html"
+                            >
+                                <h3>Observability‑first AI</h3>
+                                <p>
+                                    Measure reliability before you scale usage.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" class="section" aria-labelledby="faq-heading">
+                    <div class="container">
+                        <h2 id="faq-heading">Frequently Asked Questions</h2>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    How fast can we start?
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>
+                                        Pilots usually start within 1–2 weeks.
+                                        We begin with a short discovery to scope
+                                        a crisp win.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    Do we keep the code?
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>
+                                        Yes. You own the code and documentation.
+                                        We prefer open standards to avoid
+                                        lock‑in.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    What about privacy and compliance?
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>
+                                        We implement least‑privilege access,
+                                        audit trails, and clear data handling.
+                                        Governance is built into our process.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    Do you work with SMEs, startups, or large
+                                    enterprises?
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>
+                                        All of the above. Packages are designed
+                                        for fast, low‑risk starts; larger
+                                        rollouts use milestones.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
                     </div>
                 </section>
 
                 <!-- CONTACT -->
-                <section id="contact" class="section">
-                    <h2>Start Your AI Transformation</h2>
-                    <div class="contact-content">
-                        <div class="contact-info">
-                            <h3>Get in Touch</h3>
-                            <p>
-                                Ready to harness the power of AI while ensuring
-                                compliance and sustainability?
-                            </p>
-                            <div class="contact-details">
+                <section
+                    id="contact"
+                    class="section"
+                    aria-labelledby="contact-heading"
+                >
+                    <div class="container">
+                        <h2 id="contact-heading">Start here</h2>
+                        <div class="contact-content">
+                            <div class="contact-info">
+                                <h3>Book a free 30‑min health‑check</h3>
                                 <p>
-                                    📧
-                                    <a href="mailto:ertli.alexander@gmail.com"
-                                        >ertli.alexander@gmail.com</a
-                                    >
+                                    We'll map one high‑value opportunity and
+                                    outline a safe, fast path to results.
                                 </p>
-                                <p>📍 Hamburg, Germany</p>
+                                <div class="contact-details">
+                                    <p class="contact-item">
+                                        <span
+                                            class="contact-icon"
+                                            aria-hidden="true"
+                                            >📧</span
+                                        >
+                                        <a href="mailto:alexander@contenox.com"
+                                            >alexander@contenox.com</a
+                                        >
+                                    </p>
+                                    <p class="contact-item">
+                                        <span
+                                            class="contact-icon"
+                                            aria-hidden="true"
+                                            >📍</span
+                                        >
+                                        Hamburg, Germany
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <form class="contact-form" id="contact-form" novalidate>
-                            <label class="sr-only" for="name">Your Name</label>
-                            <input
-                                id="name"
-                                type="text"
-                                name="name"
-                                placeholder="Your Name"
-                                required
-                            />
-                            <label class="sr-only" for="email"
-                                >Your Email</label
+
+                            <form
+                                class="contact-form"
+                                id="contact-form"
+                                novalidate
                             >
-                            <input
-                                id="email"
-                                type="email"
-                                name="email"
-                                placeholder="Your Email"
-                                required
-                            />
-                            <label class="sr-only" for="company">Company</label>
-                            <input
-                                id="company"
-                                type="text"
-                                name="company"
-                                placeholder="Company"
-                            />
-                            <label class="sr-only" for="message">Message</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                placeholder="How can we help you?"
-                                rows="4"
-                            ></textarea>
-                            <button type="submit" class="btn-primary">
-                                Send Message
-                            </button>
-                        </form>
+                                <div class="form-group">
+                                    <label for="name" class="form-label"
+                                        >Your Name</label
+                                    >
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Your Name"
+                                        required
+                                        class="form-input"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label"
+                                        >Your Email</label
+                                    >
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Your Email"
+                                        required
+                                        class="form-input"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="company" class="form-label"
+                                        >Company</label
+                                    >
+                                    <input
+                                        id="company"
+                                        type="text"
+                                        name="company"
+                                        placeholder="Company"
+                                        class="form-input"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label"
+                                        >Message</label
+                                    >
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        placeholder="What do you want to build or automate?"
+                                        rows="4"
+                                        class="form-textarea"
+                                    ></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </section>
             </main>
 
-            <footer>
-                <div class="footer-content">
-                    <nav aria-label="Footer Navigation">
-                        <ul>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#enablement">Enablement</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="about-de.html">Deutsch</a></li>
-                        </ul>
-                    </nav>
-                    <div class="social-links">
-                        <a
-                            href="https://www.linkedin.com/in/ertli/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn"
-                        >
-                            <img
-                                src="icons/linkedin.png"
-                                alt="LinkedIn"
-                                class="icon16"
-                            />
-                        </a>
-                        <a
-                            href="https://github.com/js402"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub"
-                        >
-                            <img
-                                src="icons/github.png"
-                                alt="GitHub"
-                                class="icon16"
-                            />
-                        </a>
+            <footer class="site-footer" role="contentinfo">
+                <div class="container">
+                    <div class="footer-content">
+                        <nav class="footer-nav" aria-label="Footer Navigation">
+                            <ul class="footer-links">
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#packages">Packages</a></li>
+                                <li><a href="#approach">Approach</a></li>
+                                <li><a href="#proof">Proof</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="about-de.html">Deutsch</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="social-links">
+                            <a
+                                href="https://www.linkedin.com/in/ertli/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <img
+                                    src="icons/linkedin.png"
+                                    alt=""
+                                    class="icon16"
+                                />
+                            </a>
+                            <a
+                                href="https://github.com/js402"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <img
+                                    src="icons/github.png"
+                                    alt=""
+                                    class="icon16"
+                                />
+                            </a>
+                        </div>
+
+                        <p class="copyright">
+                            &copy; 2025 Alexander Ertli. All rights reserved.
+                        </p>
                     </div>
-                    <p>&copy; 2025 Alexander Ertli. All rights reserved.</p>
                 </div>
             </footer>
         </div>
 
         <script>
-            // Optional: simple client-side validation hint
+            // Enhanced mobile navigation
             (function () {
-                const form = document.getElementById("contact-form");
-                if (!form) return;
-                form.addEventListener("submit", function (e) {
-                    if (!form.checkValidity()) {
+                const navToggle = document.querySelector(".nav-toggle");
+                const navMenu = document.getElementById("nav-menu");
+
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener("click", function () {
+                        const isExpanded =
+                            this.getAttribute("aria-expanded") === "true";
+                        this.setAttribute("aria-expanded", !isExpanded);
+                        navMenu.classList.toggle("is-active");
+                    });
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                    anchor.addEventListener("click", function (e) {
                         e.preventDefault();
-                        alert("Please complete the required fields.");
-                    }
+                        const target = document.querySelector(
+                            this.getAttribute("href"),
+                        );
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            });
+                        }
+                    });
                 });
+
+                // Form validation with better UX
+                const contactForm = document.getElementById("contact-form");
+                if (contactForm) {
+                    contactForm.addEventListener("submit", function (e) {
+                        if (!this.checkValidity()) {
+                            e.preventDefault();
+                            this.classList.add("was-validated");
+                            // Focus first invalid field
+                            const firstInvalid = this.querySelector(":invalid");
+                            if (firstInvalid) {
+                                firstInvalid.focus();
+                            }
+                        }
+                    });
+                }
+
+                // Lazy load images (if any)
+                if ("IntersectionObserver" in window) {
+                    const imageObserver = new IntersectionObserver(
+                        (entries, observer) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    const img = entry.target;
+                                    img.src = img.dataset.src;
+                                    img.classList.remove("lazy");
+                                    imageObserver.unobserve(img);
+                                }
+                            });
+                        },
+                    );
+
+                    document
+                        .querySelectorAll("img[data-src]")
+                        .forEach((img) => {
+                            imageObserver.observe(img);
+                        });
+                }
             })();
         </script>
 
+        <!-- Schema.org: Organization + Services -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "Organization",
-                "name": "Ertli's AI & Technology Solutions",
-                "url": "https://your-domain/",
-                "logo": "https://your-domain/images/logo.png",
+                "name": "Ertli — AI & Technology Solutions",
+                "url": "https://your-domain.com/",
+                "logo": "https://your-domain.com/images/logo.png",
                 "sameAs": [
                     "https://www.linkedin.com/in/ertli/",
                     "https://github.com/js402"
@@ -476,6 +833,12 @@
                 "founder": {
                     "@type": "Person",
                     "name": "Alexander Ertli"
+                },
+                "description": "Custom AI solutions, automation, and governance for businesses",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Hamburg",
+                    "addressCountry": "DE"
                 }
             }
         </script>

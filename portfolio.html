@@ -5,14 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Portfolio | Ertli's AI & Technology Solutions</title>
+        <title>Portfolio | Ertli — AI & Technology Solutions</title>
         <meta
             name="description"
-            content="Selected work across custom AI builds, workflow automation, observability, and responsible AI for SMEs and startups."
+            content="Selected deliveries across custom AI builds, workflow automation, observability, and responsible AI. Real work, shipped fast and governed well."
         />
-        <meta name="author" content="Ertli's AI & Technology Solutions" />
+        <meta name="author" content="Ertli — AI & Technology Solutions" />
 
-        <link rel="icon" href="images/logo.png" type="image/x-icon" />
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="Portfolio | Ertli — AI & Technology Solutions"
+        />
+        <meta
+            property="og:description"
+            content="Custom AI builds, automation, and governance — case studies and highlights."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/og-portfolio.png" />
+
+        <link rel="icon" href="images/logo.png" type="image/png" />
         <link rel="stylesheet" href="style-vars.css" />
         <link rel="stylesheet" href="global.css" />
         <link rel="stylesheet" href="components.css" />
@@ -20,16 +32,27 @@
     </head>
     <body>
         <div class="document">
-            <header class="site-header">
+            <header class="site-header" role="banner">
                 <nav class="main-nav" aria-label="Main Navigation">
                     <div class="nav-brand">
-                        <a class="brand-name" href="index.html"
-                            >Ertli's AI & Technology Solutions</a
+                        <a
+                            class="brand-name"
+                            href="index.html"
+                            aria-label="Home"
+                            >Ertli — AI & Technology Solutions</a
                         >
+                        <button
+                            class="nav-toggle"
+                            aria-expanded="false"
+                            aria-controls="nav-menu"
+                        >
+                            <span class="hamburger" aria-hidden="true"></span>
+                            <span class="sr-only">Menu</span>
+                        </button>
                     </div>
-                    <ul class="nav-links">
+                    <ul class="nav-links" id="nav-menu">
                         <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#enablement">Enablement</a></li>
+                        <li><a href="index.html#packages">Packages</a></li>
                         <li>
                             <a href="portfolio.html" aria-current="page"
                                 >Portfolio</a
@@ -38,15 +61,22 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                         <li>
-                            <a href="about-de.html" class="language-switch"
+                            <a href="about-de.html" class="language-switch" hreflang="de" lang="de"
                                 >DE</a
                             >
                         </li>
                     </ul>
                 </nav>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Portfolio</li>
+                    </ol>
+                </nav>
             </header>
 
             <main>
+                <!-- HERO -->
                 <section class="hero-section hero-portfolio">
                     <div class="hero-content">
                         <h1>Selected Work</h1>
@@ -58,40 +88,81 @@
                             <strong>responsible AI</strong>.
                         </p>
                         <div class="hero-actions">
-                            <a href="#portfolio-cases" class="btn-primary"
+                            <a href="#portfolio-cases" class="btn btn-primary"
                                 >View Case Studies</a
                             >
-                            <a href="index.html#contact" class="btn-secondary"
+                            <a href="index.html#contact" class="btn btn-secondary"
                                 >Start a Project</a
                             >
+                        </div>
+                        <div
+                            class="filters"
+                            role="group"
+                            aria-label="Filter case studies"
+                        >
+                            <button
+                                class="chip is-active"
+                                data-filter="all"
+                                aria-pressed="true"
+                            >
+                                All
+                            </button>
+                            <button class="chip" data-filter="build">
+                                Build
+                            </button>
+                            <button class="chip" data-filter="automation">
+                                Automation
+                            </button>
+                            <button class="chip" data-filter="observability">
+                                Observability
+                            </button>
+                            <button class="chip" data-filter="governance">
+                                Governance
+                            </button>
+                            <button class="chip" data-filter="rag">RAG</button>
                         </div>
                     </div>
                 </section>
 
-                <section id="portfolio-cases" class="section">
-                    <h2>Case Studies</h2>
-                    <div class="portfolio-grid">
+                <!-- CASES -->
+                <section
+                    id="portfolio-cases"
+                    class="section"
+                    aria-labelledby="cases-heading"
+                >
+                    <h2 id="cases-heading">Case Studies</h2>
+                    <p class="section-lead">
+                        A mix of platforms, assistants, and infrastructure
+                        improvements. Each engagement ends with a clean
+                        handover: code, docs, and runbooks.
+                    </p>
+
+                    <div class="portfolio-grid" id="portfolio-grid">
                         <!-- 1. Build: Contenox Runtime -->
-                        <article class="case-study-card featured-case">
-                            <div class="case-image-container">
+                        <article
+                            id="case-contenox"
+                            class="case-study-card featured-case"
+                            data-tags="build rag automation"
+                        >
+                            <figure class="case-image-container">
                                 <img
                                     src="images/contenox-screenshot-1.png"
-                                    alt="Contenox admin dashboard showing AI workflow orchestration"
+                                    alt="Contenox admin dashboard with workflow orchestration views"
                                     class="case-image"
                                     loading="lazy"
                                 />
-                                <div class="case-image-overlay">
+                                <figcaption class="case-image-overlay">
                                     <span>AI Runtime</span>
-                                </div>
-                            </div>
+                                </figcaption>
+                            </figure>
                             <div class="case-content">
                                 <h3>Contenox — Open‑Source AI Runtime</h3>
                                 <p class="case-description">
-                                    Architected and built a
-                                    <em>vendor‑agnostic</em> runtime to execute
-                                    LLM workflows as observable state machines.
-                                    Enables on‑prem/cloud deployments with full
-                                    data control.
+                                    Architected and built a vendor‑agnostic
+                                    runtime to execute LLM workflows as
+                                    observable state machines. Enables
+                                    on‑prem/cloud deployments with full data
+                                    control.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>
@@ -119,18 +190,22 @@
                         </article>
 
                         <!-- 2. Agentic Assistant -->
-                        <article class="case-study-card">
-                            <div class="case-image-container">
+                        <article
+                            id="case-assistant"
+                            class="case-study-card"
+                            data-tags="automation rag build"
+                        >
+                            <figure class="case-image-container">
                                 <img
                                     src="images/telegram-bot-screenshot-1.png"
-                                    alt="Telegram AI assistant conversing and triggering actions"
+                                    alt="Telegram assistant conversing and triggering actions"
                                     class="case-image"
                                     loading="lazy"
                                 />
-                                <div class="case-image-overlay">
+                                <figcaption class="case-image-overlay">
                                     <span>AI Automation</span>
-                                </div>
-                            </div>
+                                </figcaption>
+                            </figure>
                             <div class="case-content">
                                 <h3>
                                     Agentic Assistant — Knowledge & Automation
@@ -166,18 +241,22 @@
                         </article>
 
                         <!-- 3. Observability at Scale -->
-                        <article class="case-study-card">
-                            <div class="case-image-container">
+                        <article
+                            id="case-observability"
+                            class="case-study-card"
+                            data-tags="observability build"
+                        >
+                            <figure class="case-image-container">
                                 <img
                                     src="images/direktiv-workflow.png"
                                     alt="Workflow engine observability with metrics and traces"
                                     class="case-image"
                                     loading="lazy"
                                 />
-                                <div class="case-image-overlay">
+                                <figcaption class="case-image-overlay">
                                     <span>Observability</span>
-                                </div>
-                            </div>
+                                </figcaption>
+                            </figure>
                             <div class="case-content">
                                 <h3>
                                     Workflow Orchestration — Observability at
@@ -196,7 +275,7 @@
                                     </li>
                                     <li>
                                         <strong>Solution:</strong> E2E tracing &
-                                        logging; standardised APIs; dashboard
+                                        logging; standardized APIs; dashboard
                                         UX.
                                     </li>
                                     <li>
@@ -214,18 +293,22 @@
                         </article>
 
                         <!-- 4. Enterprise AI Security & Compliance -->
-                        <article class="case-study-card">
-                            <div class="case-image-container">
+                        <article
+                            id="case-compliance"
+                            class="case-study-card"
+                            data-tags="governance automation"
+                        >
+                            <figure class="case-image-container">
                                 <img
                                     src="images/telekom-compliance.png"
-                                    alt="Compliance and security visualisation for enterprise systems"
+                                    alt="Compliance dashboard visualizing security scans and risk levels"
                                     class="case-image"
                                     loading="lazy"
                                 />
-                                <div class="case-image-overlay">
+                                <figcaption class="case-image-overlay">
                                     <span>Governance</span>
-                                </div>
-                            </div>
+                                </figcaption>
+                            </figure>
                             <div class="case-content">
                                 <h3>Enterprise AI Security & Compliance</h3>
                                 <p class="case-description">
@@ -259,18 +342,22 @@
                         </article>
 
                         <!-- 5. ABAC Platform -->
-                        <article class="case-study-card">
-                            <div class="case-image-container">
+                        <article
+                            id="case-abac"
+                            class="case-study-card"
+                            data-tags="governance build"
+                        >
+                            <figure class="case-image-container">
                                 <img
                                     src="images/case-abac.png"
-                                    alt="Attribute‑based access control policy enforcement dashboards"
+                                    alt="ABAC policy enforcement dashboards and access rules"
                                     class="case-image"
                                     loading="lazy"
                                 />
-                                <div class="case-image-overlay">
+                                <figcaption class="case-image-overlay">
                                     <span>Security</span>
-                                </div>
-                            </div>
+                                </figcaption>
+                            </figure>
                             <div class="case-content">
                                 <h3>
                                     Policy Enforcement & ABAC Security Platform
@@ -309,18 +396,22 @@
                         </article>
 
                         <!-- 6. Document Intelligence & Search -->
-                        <article class="case-study-card">
-                            <div class="case-image-container">
+                        <article
+                            id="case-docsearch"
+                            class="case-study-card"
+                            data-tags="rag build"
+                        >
+                            <figure class="case-image-container">
                                 <img
                                     src="images/case-docsearch.png"
                                     alt="Document search UI with semantic results and metadata filters"
                                     class="case-image"
                                     loading="lazy"
                                 />
-                                <div class="case-image-overlay">
+                                <figcaption class="case-image-overlay">
                                     <span>RAG</span>
-                                </div>
-                            </div>
+                                </figcaption>
+                            </figure>
                             <div class="case-content">
                                 <h3>Document Intelligence & Semantic Search</h3>
                                 <p class="case-description">
@@ -355,22 +446,23 @@
                     </div>
                 </section>
 
+                <!-- CONTACT CTA -->
                 <section class="section section-alt" id="contact-cta">
                     <div class="contact-content centered">
-                        <h2>Bring Your Use‑Case — We'll Ship It Responsibly</h2>
+                        <h2>Bring Your Use‑Case — We’ll Ship It Responsibly</h2>
                         <p class="hero-subtitle">
                             Whether you need a working MVP fast or an AI program
-                            that passes scrutiny — we've done both.
+                            that passes scrutiny — we’ve done both.
                         </p>
                         <div class="hero-actions">
                             <a
                                 href="index.html#contact"
-                                class="btn-primary btn-large"
+                                class="btn btn-primary btn-large"
                                 >Build an AI Product</a
                             >
                             <a
                                 href="index.html#contact"
-                                class="btn-secondary btn-large"
+                                class="btn btn-secondary btn-large"
                                 >Start with a CTO/AI Audit</a
                             >
                         </div>
@@ -378,44 +470,140 @@
                 </section>
             </main>
 
-            <footer>
-                <div class="footer-content">
-                    <nav aria-label="Footer Navigation">
-                        <ul>
-                            <li><a href="index.html#services">Services</a></li>
-                            <li>
-                                <a href="index.html#enablement">Enablement</a>
-                            </li>
-                            <li><a href="#portfolio-cases">Portfolio</a></li>
-                            <li><a href="index.html#contact">Contact</a></li>
-                            <li><a href="about-de.html">Deutsch</a></li>
-                        </ul>
-                    </nav>
-                    <div class="social-links">
-                        <a
-                            href="https://www.linkedin.com/in/ertli/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn"
-                            ><img
-                                src="icons/linkedin.png"
-                                alt="LinkedIn"
-                                class="icon16"
-                        /></a>
-                        <a
-                            href="https://github.com/js402"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub"
-                            ><img
-                                src="icons/github.png"
-                                alt="GitHub"
-                                class="icon16"
-                        /></a>
+            <footer class="site-footer" role="contentinfo">
+                <div class="container">
+                    <div class="footer-content">
+                        <nav class="footer-nav" aria-label="Footer Navigation">
+                            <ul class="footer-links">
+                                <li><a href="index.html#services">Services</a></li>
+                                <li><a href="index.html#packages">Packages</a></li>
+                                <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                                <li><a href="about-de.html">Deutsch</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="social-links">
+                            <a
+                                href="https://www.linkedin.com/in/ertli/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <img
+                                    src="icons/linkedin.png"
+                                    alt=""
+                                    class="icon16"
+                                />
+                            </a>
+                            <a
+                                href="https://github.com/js402"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <img
+                                    src="icons/github.png"
+                                    alt=""
+                                    class="icon16"
+                                />
+                            </a>
+                        </div>
+
+                        <p class="copyright">&copy; 2025 Alexander Ertli. All rights reserved.</p>
                     </div>
-                    <p>&copy; 2025 Alexander Ertli. All rights reserved.</p>
                 </div>
             </footer>
         </div>
+
+        <script>
+            // Enhanced mobile navigation
+            (function () {
+                const navToggle = document.querySelector(".nav-toggle");
+                const navMenu = document.getElementById("nav-menu");
+
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener("click", function () {
+                        const isExpanded =
+                            this.getAttribute("aria-expanded") === "true";
+                        this.setAttribute("aria-expanded", !isExpanded);
+                        navMenu.classList.toggle("is-active");
+                    });
+                }
+            })();
+
+            // Simple filter chips for case studies
+            (function () {
+                const grid = document.getElementById("portfolio-grid");
+                const chips = document.querySelectorAll(".filters .chip");
+                if (!grid || !chips.length) return;
+                chips.forEach((chip) => {
+                    chip.addEventListener("click", () => {
+                        chips.forEach((c) => {
+                            c.classList.remove("is-active");
+                            c.setAttribute("aria-pressed", "false");
+                        });
+                        chip.classList.add("is-active");
+                        chip.setAttribute("aria-pressed", "true");
+                        const f = chip.dataset.filter;
+                        Array.from(grid.children).forEach((card) => {
+                            const tags = (
+                                card.getAttribute("data-tags") || ""
+                            ).split(/\s+/);
+                            const show = f === "all" || tags.includes(f);
+                            card.style.display = show ? "" : "none";
+                        });
+                    });
+                });
+            })();
+        </script>
+
+        <!-- Schema.org: ItemList of case studies -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "name": "Ertli Portfolio Case Studies",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "#case-contenox",
+                        "name": "Contenox — Open‑Source AI Runtime"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "#case-assistant",
+                        "name": "Agentic Assistant — Knowledge & Automation"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "url": "#case-observability",
+                        "name": "Workflow Orchestration — Observability at Scale"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "url": "#case-compliance",
+                        "name": "Enterprise AI Security & Compliance"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "url": "#case-abac",
+                        "name": "Policy Enforcement & ABAC Security Platform"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "url": "#case-docsearch",
+                        "name": "Document Intelligence & Semantic Search"
+                    }
+                ]
+            }
+        </script>
     </body>
 </html>
