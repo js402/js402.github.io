@@ -448,6 +448,21 @@
     box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }
 
+.service-card,
+.capability-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.capability-card h4 {
+    margin-bottom: var(--space-sm);
+}
+.capability-card p {
+    margin: 0;
+    color: var(--color-text-light);
+}
+
 /* Misc */
 .smallprint {
     text-align: center;
