@@ -162,7 +162,7 @@
                                 </figcaption>
                             </figure>
                             <div class="case-content">
-                                <h3>contenox — Declarative AI Platform</h3>
+                                <h3>Contenox — Declarative AI Platform</h3>
                                 <p class="case-description">
                                     Architected and built a vendor‑agnostic
                                     declarative platform for AI-native
@@ -617,10 +617,15 @@
                 const filters = document.querySelectorAll(".filters .chip");
                 const cases = document.querySelectorAll(".case-study-card");
 
+                if (!filters.length || !cases.length) return;
+
                 filters.forEach((filter) => {
                     filter.addEventListener("click", () => {
                         // Update active state
-                        filters.forEach((f) => f.classList.remove("is-active"));
+                        filters.forEach((f) => {
+                            f.classList.remove("is-active");
+                            f.setAttribute("aria-pressed", "false");
+                        });
                         filter.classList.add("is-active");
                         filter.setAttribute("aria-pressed", "true");
 
@@ -628,22 +633,37 @@
 
                         // Filter cases
                         cases.forEach((caseItem) => {
-                            if (
-                                filterValue === "all" ||
-                                caseItem
-                                    .getAttribute("data-tags")
-                                    .includes(filterValue)
-                            ) {
+                            if (filterValue === "all") {
                                 caseItem.style.display = "block";
+                                setTimeout(() => {
+                                    caseItem.style.opacity = "1";
+                                    caseItem.style.transform = "translateY(0)";
+                                }, 50);
                             } else {
-                                caseItem.style.display = "none";
+                                const tags = caseItem
+                                    .getAttribute("data-tags")
+                                    .split(" ");
+                                if (tags.includes(filterValue)) {
+                                    caseItem.style.display = "block";
+                                    setTimeout(() => {
+                                        caseItem.style.opacity = "1";
+                                        caseItem.style.transform =
+                                            "translateY(0)";
+                                    }, 50);
+                                } else {
+                                    caseItem.style.opacity = "0";
+                                    caseItem.style.transform =
+                                        "translateY(20px)";
+                                    setTimeout(() => {
+                                        caseItem.style.display = "none";
+                                    }, 300);
+                                }
                             }
                         });
                     });
                 });
             })();
 
-            // Optional: smooth scroll for same-page anchors
             document.querySelectorAll('a[href^="#"]').forEach((a) => {
                 a.addEventListener("click", (e) => {
                     const id = a.getAttribute("href");

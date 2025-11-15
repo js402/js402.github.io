@@ -521,3 +521,191 @@ img.lazy-loaded {
         border: 2px solid var(--color-border);
     }
 }
+/* Chip Components */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-full);
+    background-color: var(--color-surface-alt);
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    user-select: none;
+}
+
+.chip:hover {
+    border-color: var(--color-primary-light);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.chip.is-active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.chip.is-active:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-top: var(--space-xl);
+}
+
+/* Approach List */
+.approach-list {
+    list-style: none;
+    max-width: 600px;
+    margin: var(--space-2xl) auto;
+}
+
+.approach-list li {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-lg);
+    background-color: var(--color-surface-alt);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.approach-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-light);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: var(--space-2xl) auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background-color: var(--color-border-light);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: var(--space-2xl);
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    text-align: right;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    background-color: var(--color-surface-alt);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-company {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+    font-style: italic;
+}
+
+.timeline-highlights {
+    list-style: none;
+}
+
+.timeline-highlights li {
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.timeline-highlights li::before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.education-item {
+    background-color: var(--color-surface-alt);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.education-item h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.education-institution {
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-xs);
+}
+
+.education-date {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+}
+
+.education-item ul {
+    list-style: none;
+}
+
+.education-item li {
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.education-item li::before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
