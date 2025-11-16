@@ -195,6 +195,8 @@
     padding: var(--space-xs) 0;
     border-bottom: 1px solid var(--color-border-light);
     color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--space-lg);
 }
 
 .education-item li:last-child {
