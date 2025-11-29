@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://js402.github.io/sitemap.xml
+Sitemap: https://ertli.com/sitemap.xml

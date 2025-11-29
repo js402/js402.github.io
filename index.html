@@ -1,259 +1,222 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>
-            Alexander Ertli – Custom software engineering (Go) & Cloud-Native
-            Systems
-        </title>
-        <meta
-            name="description"
-            content="Custom software engineering specializing in Go, with expertise in cloud infrastructure, AI systems, and full-stack development. Building scalable, production-ready systems."
-        />
-        <meta name="author" content="Alexander Ertli" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="assets/images/og-main.png" />
-        <!-- Preload critical resources -->
-        <link rel="preload" href="css/style-vars.css" as="style" />
-        <link rel="preload" href="css/global.css" as="style" />
-        <link rel="preload" href="css/components.css" as="style" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="icon" href="assets/images/logo.png" type="image/png" />
-        <link rel="stylesheet" href="css/style-vars.css" />
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/components.css" />
+    <title>
+        Alexander Ertli – Custom software engineering (Go) & Cloud-Native
+        Systems
+    </title>
+    <meta name="description"
+        content="Custom software engineering specializing in Go, with expertise in cloud infrastructure, AI systems, and full-stack development. Building scalable, production-ready systems." />
+    <meta name="author" content="Alexander Ertli" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-main.png" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style-vars.css" as="style" />
+    <link rel="preload" href="css/global.css" as="style" />
+    <link rel="preload" href="css/components.css" as="style" />
 
-        <!-- Preconnect to external domains -->
-        <link rel="preconnect" href="https://www.linkedin.com" />
-        <link rel="preconnect" href="https://github.com" />
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    </head>
-    <body>
-        <a href="#main-content" class="skip-link">Skip to main content</a>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style-vars.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
 
-        <div class="document">
-            <header class="site-header" role="banner">
-                <nav class="main-nav" aria-label="Main Navigation">
-                    <div class="nav-brand">
-                        <a
-                            class="brand-name"
-                            href="index.html"
-                            aria-label="Home"
-                        >
-                            Alexander Ertli
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://www.linkedin.com" />
+    <link rel="preconnect" href="https://github.com" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="document">
+        <header class="site-header" role="banner">
+            <nav class="main-nav" aria-label="Main Navigation">
+                <div class="nav-brand">
+                    <a class="brand-name" href="index.html" aria-label="Home">
+                        Alexander Ertli
+                    </a>
+                    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                        <span class="hamburger" aria-hidden="true"></span>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                </div>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#packages">Packages</a></li>
+                    <li><a href="index.html#approach">Approach</a></li>
+                    <li><a href="index.html#proof">Proof</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li>
+                        <a href="index-de.html" class="language-switch" hreflang="de" lang="de">DE</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <!-- HERO -->
+            <section class="hero-section" aria-labelledby="hero-heading">
+                <div class="hero-background">
+                    <img src="assets/images/banner.svg" alt="" class="hero-banner" role="presentation"
+                        loading="eager" />
+                </div>
+                <div class="hero-content container">
+                    <h1 id="hero-heading">
+                        Custom Software Engineering & Cloud-Native Systems
+                    </h1>
+                    <p class="hero-subtitle">
+                        Building scalable backend systems, AI-native
+                        applications, and cloud infrastructure full-stack.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#packages" class="btn btn-primary">
+                            Explore Solutions
                         </a>
-                        <button
-                            class="nav-toggle"
-                            aria-expanded="false"
-                            aria-controls="nav-menu"
-                        >
-                            <span class="hamburger" aria-hidden="true"></span>
-                            <span class="sr-only">Menu</span>
-                        </button>
+                        <a href="#contact" class="btn btn-secondary">
+                            Get in Touch
+                        </a>
                     </div>
-                    <ul class="nav-links" id="nav-menu">
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#packages">Packages</a></li>
-                        <li><a href="index.html#approach">Approach</a></li>
-                        <li><a href="index.html#proof">Proof</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                        <li>
-                            <a
-                                href="index-de.html"
-                                class="language-switch"
-                                hreflang="de"
-                                lang="de"
-                                >DE</a
-                            >
+                    <ul class="hero-badges" aria-label="My expertise">
+                        <li class="badge-item">
+                            <span class="badge-icon" aria-hidden="true">⚙️</span>
+                            Go •
+                            <span class="badge-text">Backend Systems</span>
+                        </li>
+                        <li class="badge-item">
+                            <span class="badge-icon" aria-hidden="true">🔧</span>
+                            Cloud Native •
+                            <span class="badge-text">Kubernetes, DevOps</span>
+                        </li>
+                        <li class="badge-item">
+                            <span class="badge-icon" aria-hidden="true">🤖</span>
+                            AI Systems •
+                            <span class="badge-text">RAG, LLM Orchestration</span>
+                        </li>
+                        <li class="badge-item">
+                            <span class="badge-icon" aria-hidden="true">🎯</span>
+                            Full-Stack •
+                            <span class="badge-text">React, Python, Infrastructure</span>
                         </li>
                     </ul>
-                </nav>
-            </header>
+                </div>
+            </section>
 
-            <main id="main-content">
-                <!-- HERO -->
-                <section class="hero-section" aria-labelledby="hero-heading">
-                    <div class="hero-background">
-                        <img
-                            src="assets/images/banner.svg"
-                            alt=""
-                            class="hero-banner"
-                            role="presentation"
-                            loading="eager"
-                        />
+            <!-- SERVICES -->
+            <section id="services" class="section" aria-labelledby="services-heading">
+                <div class="container">
+                    <h2 id="services-heading">What I Build</h2>
+                    <div class="services-grid">
+                        <article class="card service-card">
+                            <h3>Custom Backend Systems</h3>
+                            <p>
+                                Building robust backend systems and
+                                distributed platforms with Go, focusing on
+                                performance, scalability, and clean
+                                architecture.
+                            </p>
+                            <ul class="tech-list">
+                                <li>
+                                    Go • Distributed Systems • Event-Driven
+                                    Architecture
+                                </li>
+                                <li>
+                                    PostgreSQL • API Design • Performance
+                                    Optimization
+                                </li>
+                                <li>
+                                    Kubernetes • Microservices • Platform
+                                    Engineering
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card service-card">
+                            <h3>AI-Native Applications</h3>
+                            <p>
+                                Creating applications designed from the
+                                ground up for AI capabilities, with robust
+                                RAG pipelines and intelligent workflows
+                                built on scalable Go backends.
+                            </p>
+                            <ul class="tech-list">
+                                <li>RAG systems & vector databases</li>
+                                <li>LLM integration & orchestration</li>
+                                <li>Evaluation & safety frameworks</li>
+                            </ul>
+                        </article>
+
+                        <article class="card service-card">
+                            <h3>Cloud Infrastructure</h3>
+                            <p>
+                                Designing and implementing distributed
+                                systems with security and compliance
+                                built-in, from Kubernetes to serverless
+                                architectures.
+                            </p>
+                            <ul class="tech-list">
+                                <li>
+                                    Kubernetes & container orchestration
+                                </li>
+                                <li>Security by design • Compliance</li>
+                                <li>Observability & monitoring</li>
+                            </ul>
+                        </article>
+
+                        <article class="card service-card">
+                            <h3>Developer Tooling</h3>
+                            <p>
+                                Streamlining development processes with
+                                automated workflows, CI/CD pipelines, and
+                                tools that boost productivity.
+                            </p>
+                            <ul class="tech-list">
+                                <li>CI/CD automation • Dev tooling</li>
+                                <li>Workflow orchestration</li>
+                                <li>Code generation & scaffolding</li>
+                            </ul>
+                        </article>
+
+                        <article class="card service-card">
+                            <h3>Internal Tools & Dashboards</h3>
+                            <p>
+                                Creating powerful internal applications that
+                                help teams manage complex systems, visualize
+                                data, and streamline operations.
+                            </p>
+                            <ul class="tech-list">
+                                <li>Admin dashboards • Control panels</li>
+                                <li>Data visualization • Analytics</li>
+                                <li>Integration management</li>
+                            </ul>
+                        </article>
+
+                        <article class="card service-card">
+                            <h3>Technical Strategy</h3>
+                            <p>
+                                Providing expert guidance on system
+                                architecture, AI adoption, and building
+                                scalable, maintainable backend systems.
+                            </p>
+                            <ul class="tech-list">
+                                <li>Architecture reviews • Roadmapping</li>
+                                <li>Team enablement & training</li>
+                                <li>Technology selection</li>
+                            </ul>
+                        </article>
                     </div>
-                    <div class="hero-content container">
-                        <h1 id="hero-heading">
-                            Custom Software Engineering & Cloud-Native Systems
-                        </h1>
-                        <p class="hero-subtitle">
-                            Building scalable backend systems, AI-native
-                            applications, and cloud infrastructure full-stack.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#packages" class="btn btn-primary">
-                                Explore Solutions
-                            </a>
-                            <a href="#contact" class="btn btn-secondary">
-                                Get in Touch
-                            </a>
-                        </div>
-                        <ul class="hero-badges" aria-label="My expertise">
-                            <li class="badge-item">
-                                <span class="badge-icon" aria-hidden="true"
-                                    >⚙️</span
-                                >
-                                Go •
-                                <span class="badge-text">Backend Systems</span>
-                            </li>
-                            <li class="badge-item">
-                                <span class="badge-icon" aria-hidden="true"
-                                    >🔧</span
-                                >
-                                Cloud Native •
-                                <span class="badge-text"
-                                    >Kubernetes, DevOps</span
-                                >
-                            </li>
-                            <li class="badge-item">
-                                <span class="badge-icon" aria-hidden="true"
-                                    >🤖</span
-                                >
-                                AI Systems •
-                                <span class="badge-text"
-                                    >RAG, LLM Orchestration</span
-                                >
-                            </li>
-                            <li class="badge-item">
-                                <span class="badge-icon" aria-hidden="true"
-                                    >🎯</span
-                                >
-                                Full-Stack •
-                                <span class="badge-text"
-                                    >React, Python, Infrastructure</span
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- SERVICES -->
-                <section
-                    id="services"
-                    class="section"
-                    aria-labelledby="services-heading"
-                >
-                    <div class="container">
-                        <h2 id="services-heading">What I Build</h2>
-                        <div class="services-grid">
-                            <article class="card service-card">
-                                <h3>Custom Backend Systems</h3>
-                                <p>
-                                    Building robust backend systems and
-                                    distributed platforms with Go, focusing on
-                                    performance, scalability, and clean
-                                    architecture.
-                                </p>
-                                <ul class="tech-list">
-                                    <li>
-                                        Go • Distributed Systems • Event-Driven
-                                        Architecture
-                                    </li>
-                                    <li>
-                                        PostgreSQL • API Design • Performance
-                                        Optimization
-                                    </li>
-                                    <li>
-                                        Kubernetes • Microservices • Platform
-                                        Engineering
-                                    </li>
-                                </ul>
-                            </article>
-
-                            <article class="card service-card">
-                                <h3>AI-Native Applications</h3>
-                                <p>
-                                    Creating applications designed from the
-                                    ground up for AI capabilities, with robust
-                                    RAG pipelines and intelligent workflows
-                                    built on scalable Go backends.
-                                </p>
-                                <ul class="tech-list">
-                                    <li>RAG systems & vector databases</li>
-                                    <li>LLM integration & orchestration</li>
-                                    <li>Evaluation & safety frameworks</li>
-                                </ul>
-                            </article>
-
-                            <article class="card service-card">
-                                <h3>Cloud Infrastructure</h3>
-                                <p>
-                                    Designing and implementing distributed
-                                    systems with security and compliance
-                                    built-in, from Kubernetes to serverless
-                                    architectures.
-                                </p>
-                                <ul class="tech-list">
-                                    <li>
-                                        Kubernetes & container orchestration
-                                    </li>
-                                    <li>Security by design • Compliance</li>
-                                    <li>Observability & monitoring</li>
-                                </ul>
-                            </article>
-
-                            <article class="card service-card">
-                                <h3>Developer Tooling</h3>
-                                <p>
-                                    Streamlining development processes with
-                                    automated workflows, CI/CD pipelines, and
-                                    tools that boost productivity.
-                                </p>
-                                <ul class="tech-list">
-                                    <li>CI/CD automation • Dev tooling</li>
-                                    <li>Workflow orchestration</li>
-                                    <li>Code generation & scaffolding</li>
-                                </ul>
-                            </article>
-
-                            <article class="card service-card">
-                                <h3>Internal Tools & Dashboards</h3>
-                                <p>
-                                    Creating powerful internal applications that
-                                    help teams manage complex systems, visualize
-                                    data, and streamline operations.
-                                </p>
-                                <ul class="tech-list">
-                                    <li>Admin dashboards • Control panels</li>
-                                    <li>Data visualization • Analytics</li>
-                                    <li>Integration management</li>
-                                </ul>
-                            </article>
-
-                            <article class="card service-card">
-                                <h3>Technical Strategy</h3>
-                                <p>
-                                    Providing expert guidance on system
-                                    architecture, AI adoption, and building
-                                    scalable, maintainable backend systems.
-                                </p>
-                                <ul class="tech-list">
-                                    <li>Architecture reviews • Roadmapping</li>
-                                    <li>Team enablement & training</li>
-                                    <li>Technology selection</li>
-                                </ul>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-
-                <!--
+            <!--
 
                 <section
                     id="packages"
@@ -412,201 +375,176 @@
                 </section>
                 -->
 
-                <!-- APPROACH -->
-                <section
-                    id="approach"
-                    class="section"
-                    aria-labelledby="approach-heading"
-                >
-                    <div class="container">
-                        <h2 id="approach-heading">How I Work</h2>
-                        <ol class="approach-steps">
-                            <li class="approach-step">
-                                <strong>Discover:</strong> Deep dive into your
-                                needs and technical landscape to define the
-                                right solution.
-                            </li>
-                            <li class="approach-step">
-                                <strong>Architect:</strong> Design robust,
-                                scalable systems with clear technical
-                                specifications.
-                            </li>
-                            <li class="approach-step">
-                                <strong>Build:</strong> Iterative development
-                                with regular demos and feedback cycles.
-                            </li>
-                            <li class="approach-step">
-                                <strong>Enable:</strong> Comprehensive
-                                documentation, training, and smooth handover.
-                            </li>
-                        </ol>
+            <!-- APPROACH -->
+            <section id="approach" class="section" aria-labelledby="approach-heading">
+                <div class="container">
+                    <h2 id="approach-heading">How I Work</h2>
+                    <ol class="approach-steps">
+                        <li class="approach-step">
+                            <strong>Discover:</strong> Deep dive into your
+                            needs and technical landscape to define the
+                            right solution.
+                        </li>
+                        <li class="approach-step">
+                            <strong>Architect:</strong> Design robust,
+                            scalable systems with clear technical
+                            specifications.
+                        </li>
+                        <li class="approach-step">
+                            <strong>Build:</strong> Iterative development
+                            with regular demos and feedback cycles.
+                        </li>
+                        <li class="approach-step">
+                            <strong>Enable:</strong> Comprehensive
+                            documentation, training, and smooth handover.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- PROOF / EXPERIENCE -->
+            <section id="proof" class="section section-alt" aria-labelledby="proof-heading">
+                <div class="container">
+                    <h2 id="proof-heading">Technical Expertise</h2>
+
+                    <div class="capabilities-grid">
+                        <article class="card capability-card">
+                            <h4>Custom Backend Engineering</h4>
+                            <p>
+                                Built scalable backend systems and
+                                distributed platforms with Go, focusing on
+                                performance, clean architecture, and
+                                cloud-native deployment.
+                            </p>
+                        </article>
+
+                        <article class="card capability-card">
+                            <h4>AI-Native Systems</h4>
+                            <p>
+                                Designed and implemented RAG pipelines, LLM
+                                orchestration, and AI-powered workflows for
+                                enterprise applications with Go backends.
+                            </p>
+                        </article>
+
+                        <article class="card capability-card">
+                            <h4>Cloud Infrastructure</h4>
+                            <p>
+                                Extensive experience with Kubernetes,
+                                distributed systems, and cloud-native
+                                architectures across multiple cloud
+                                providers.
+                            </p>
+                        </article>
                     </div>
-                </section>
 
-                <!-- PROOF / EXPERIENCE -->
-                <section
-                    id="proof"
-                    class="section section-alt"
-                    aria-labelledby="proof-heading"
-                >
-                    <div class="container">
-                        <h2 id="proof-heading">Technical Expertise</h2>
-
-                        <div class="capabilities-grid">
-                            <article class="card capability-card">
-                                <h4>Custom Backend Engineering</h4>
-                                <p>
-                                    Built scalable backend systems and
-                                    distributed platforms with Go, focusing on
-                                    performance, clean architecture, and
-                                    cloud-native deployment.
-                                </p>
-                            </article>
-
-                            <article class="card capability-card">
-                                <h4>AI-Native Systems</h4>
-                                <p>
-                                    Designed and implemented RAG pipelines, LLM
-                                    orchestration, and AI-powered workflows for
-                                    enterprise applications with Go backends.
-                                </p>
-                            </article>
-
-                            <article class="card capability-card">
-                                <h4>Cloud Infrastructure</h4>
-                                <p>
-                                    Extensive experience with Kubernetes,
-                                    distributed systems, and cloud-native
-                                    architectures across multiple cloud
-                                    providers.
-                                </p>
-                            </article>
-                        </div>
-
-                        <div class="clients-section">
-                            <h3 class="clients-heading">Experience With</h3>
-                            <ul
-                                class="logo-list"
-                                aria-label="Client and partner logos"
-                            >
-                                <li class="logo-item">Direktiv.io</li>
-                                <li class="logo-item">
-                                    Telekom Innovation Lab
-                                </li>
-                                <li class="logo-item">University of Bremen</li>
-                            </ul>
-                        </div>
+                    <div class="clients-section">
+                        <h3 class="clients-heading">Experience With</h3>
+                        <ul class="logo-list" aria-label="Client and partner logos">
+                            <li class="logo-item">Direktiv.io</li>
+                            <li class="logo-item">
+                                Telekom Innovation Lab
+                            </li>
+                            <li class="logo-item">University of Bremen</li>
+                        </ul>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- FAQ -->
-                <section id="faq" class="section" aria-labelledby="faq-heading">
-                    <div class="container">
-                        <h2 id="faq-heading">Frequently Asked Questions</h2>
-                        <div class="faq-list">
-                            <details class="faq-item">
-                                <summary class="faq-question">
-                                    What is your primary technical focus?
-                                </summary>
-                                <div class="faq-answer">
-                                    <p>
-                                        I specialize in custom software
-                                        engineering with Go, building scalable
-                                        distributed systems and cloud-native
-                                        platforms. My T-shaped expertise extends
-                                        to AI systems, React frontends, and
-                                        infrastructure, allowing me to deliver
-                                        complete solutions.
-                                    </p>
-                                </div>
-                            </details>
-
-                            <details class="faq-item">
-                                <summary class="faq-question">
-                                    Do I retain ownership of the code?
-                                </summary>
-                                <div class="faq-answer">
-                                    <p>
-                                        Yes, you own all the code and
-                                        intellectual property. I believe in
-                                        building solutions that you can maintain
-                                        and extend independently.
-                                    </p>
-                                </div>
-                            </details>
-
-                            <details class="faq-item">
-                                <summary class="faq-question">
-                                    How do you ensure security and compliance?
-                                </summary>
-                                <div class="faq-answer">
-                                    <p>
-                                        Security is built into every layer, from
-                                        infrastructure to application code. I
-                                        implement least-privilege access, audit
-                                        trails, and follow industry best
-                                        practices for data protection.
-                                    </p>
-                                </div>
-                            </details>
-
-                            <details class="faq-item">
-                                <summary class="faq-question">
-                                    What types of projects do you work on?
-                                </summary>
-                                <div class="faq-answer">
-                                    <p>
-                                        I specialize in backend systems,
-                                        AI-native applications, and cloud
-                                        infrastructure. This includes everything
-                                        from internal tools and APIs to complete
-                                        platform development.
-                                    </p>
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CONTACT -->
-                <section
-                    id="contact"
-                    class="section"
-                    aria-labelledby="contact-heading"
-                >
-                    <div class="container">
-                        <h2 id="contact-heading">Get In Touch</h2>
-                        <div class="contact-content">
-                            <div class="contact-info">
-                                <h3>Let's discuss your project</h3>
+            <!-- FAQ -->
+            <section id="faq" class="section" aria-labelledby="faq-heading">
+                <div class="container">
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                What is your primary technical focus?
+                            </summary>
+                            <div class="faq-answer">
                                 <p>
-                                    Whether you're building a new backend
-                                    system, integrating AI capabilities, or
-                                    optimizing your infrastructure, I'd love to
-                                    help.
+                                    I specialize in custom software
+                                    engineering with Go, building scalable
+                                    distributed systems and cloud-native
+                                    platforms. My T-shaped expertise extends
+                                    to AI systems, React frontends, and
+                                    infrastructure, allowing me to deliver
+                                    complete solutions.
                                 </p>
-                                <div class="contact-details">
-                                    <p class="contact-item">
-                                        <span
-                                            class="contact-icon"
-                                            aria-hidden="true"
-                                            >📧</span
-                                        >
-                                        <a href="mailto:alexander@contenox.com"
-                                            >alexander@contenox.com</a
-                                        >
-                                    </p>
-                                    <p class="contact-item">
-                                        <span
-                                            class="contact-icon"
-                                            aria-hidden="true"
-                                            >📍</span
-                                        >
-                                        Hamburg, Germany
-                                    </p>
-                                </div>
                             </div>
-                            <!--
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                Do I retain ownership of the code?
+                            </summary>
+                            <div class="faq-answer">
+                                <p>
+                                    Yes, you own all the code and
+                                    intellectual property. I believe in
+                                    building solutions that you can maintain
+                                    and extend independently.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                How do you ensure security and compliance?
+                            </summary>
+                            <div class="faq-answer">
+                                <p>
+                                    Security is built into every layer, from
+                                    infrastructure to application code. I
+                                    implement least-privilege access, audit
+                                    trails, and follow industry best
+                                    practices for data protection.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                What types of projects do you work on?
+                            </summary>
+                            <div class="faq-answer">
+                                <p>
+                                    I specialize in backend systems,
+                                    AI-native applications, and cloud
+                                    infrastructure. This includes everything
+                                    from internal tools and APIs to complete
+                                    platform development.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="section" aria-labelledby="contact-heading">
+                <div class="container">
+                    <h2 id="contact-heading">Get In Touch</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Let's discuss your project</h3>
+                            <p>
+                                Whether you're building a new backend
+                                system, integrating AI capabilities, or
+                                optimizing your infrastructure, I'd love to
+                                help.
+                            </p>
+                            <div class="contact-details">
+                                <p class="contact-item">
+                                    <span class="contact-icon" aria-hidden="true">📧</span>
+                                    <a href="mailto:alexander@contenox.com">alexander@contenox.com</a>
+                                </p>
+                                <p class="contact-item">
+                                    <span class="contact-icon" aria-hidden="true">📍</span>
+                                    Hamburg, Germany
+                                </p>
+                            </div>
+                        </div>
+                        <!--
                             <form
                                 class="contact-form"
                                 id="contact-form"
@@ -670,140 +608,115 @@
                                     Send Message
                                 </button>
                             </form>-->
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="site-footer" role="contentinfo">
-                <div class="container">
-                    <div class="footer-content">
-                        <nav class="footer-nav" aria-label="Footer Navigation">
-                            <ul class="footer-links">
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#packages">Packages</a></li>
-                                <li><a href="#approach">Approach</a></li>
-                                <li><a href="#proof">Proof</a></li>
-                                <li><a href="#faq">FAQ</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="index-de.html">Deutsch</a></li>
-                            </ul>
-                        </nav>
-
-                        <div class="social-links">
-                            <a
-                                href="https://www.linkedin.com/in/ertli/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="LinkedIn"
-                            >
-                                <img
-                                    src="assets/icons/linkedin.png"
-                                    alt=""
-                                    class="icon16"
-                                />
-                            </a>
-                            <a
-                                href="https://github.com/contenox"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="GitHub"
-                            >
-                                <img
-                                    src="assets/icons/github.png"
-                                    alt=""
-                                    class="icon16"
-                                />
-                            </a>
-                            <a
-                                href="https://dev.to/js402"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="dev.to"
-                            >
-                                <img
-                                    src="assets/icons/dev-to.svg"
-                                    alt=""
-                                    class="icon16"
-                                />
-                            </a>
-                        </div>
-
-                        <p class="copyright">
-                            &copy; 2025 Alexander Ertli. All rights reserved.
-                        </p>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </section>
+        </main>
 
-        <script>
-            // Mobile toggle
-            (function () {
-                const navToggle = document.querySelector(".nav-toggle");
-                const navMenu = document.getElementById("nav-menu");
-                if (!navToggle || !navMenu) return;
-                navToggle.addEventListener("click", () => {
-                    const expanded =
-                        navToggle.getAttribute("aria-expanded") === "true";
-                    navToggle.setAttribute("aria-expanded", String(!expanded));
-                    navMenu.classList.toggle("is-active");
-                });
-            })();
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <nav class="footer-nav" aria-label="Footer Navigation">
+                        <ul class="footer-links">
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#approach">Approach</a></li>
+                            <li><a href="#proof">Proof</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="index-de.html">Deutsch</a></li>
+                        </ul>
+                    </nav>
 
-            // Set active link consistently across pages
-            (function () {
-                const links = document.querySelectorAll(".nav-links a[href]");
-                const page = (
-                    location.pathname.split("/").pop() || "index.html"
-                ).toLowerCase();
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ertli/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <img src="assets/icons/linkedin.png" alt="" class="icon16" />
+                        </a>
+                        <a href="https://github.com/contenox" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <img src="assets/icons/github.png" alt="" class="icon16" />
+                        </a>
+                        <a href="https://dev.to/js402" target="_blank" rel="noopener noreferrer" aria-label="dev.to">
+                            <img src="assets/icons/dev-to.svg" alt="" class="icon16" />
+                        </a>
+                    </div>
 
-                links.forEach((a) => {
-                    const href = a.getAttribute("href");
-                    if (!href) return;
+                    <p class="copyright">
+                        &copy; 2025 Alexander Ertli. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-                    // exact page match (about.html, portfolio.html)
-                    if (href.toLowerCase() === page) {
-                        a.setAttribute("aria-current", "page");
-                        return;
-                    }
-
-                    // Index anchors (index.html#section) should be considered active when you're on index.html
-                    const [path, hash] = href.split("#");
-                    if (
-                        (page === "" || page === "index.html") &&
-                        path === "index.html" &&
-                        hash &&
-                        location.hash === "#" + hash
-                    ) {
-                        a.setAttribute("aria-current", "page");
-                    }
-                });
-            })();
-
-            // Optional: smooth scroll for same-page anchors
-            document.querySelectorAll('a[href^="#"]').forEach((a) => {
-                a.addEventListener("click", (e) => {
-                    const id = a.getAttribute("href");
-                    const target = document.querySelector(id);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start",
-                        });
-                    }
-                });
+    <script>
+        // Mobile toggle
+        (function () {
+            const navToggle = document.querySelector(".nav-toggle");
+            const navMenu = document.getElementById("nav-menu");
+            if (!navToggle || !navMenu) return;
+            navToggle.addEventListener("click", () => {
+                const expanded =
+                    navToggle.getAttribute("aria-expanded") === "true";
+                navToggle.setAttribute("aria-expanded", String(!expanded));
+                navMenu.classList.toggle("is-active");
             });
-        </script>
+        })();
 
-        <!-- Schema.org: Person + Services -->
-        <script type="application/ld+json">
+        // Set active link consistently across pages
+        (function () {
+            const links = document.querySelectorAll(".nav-links a[href]");
+            const page = (
+                location.pathname.split("/").pop() || "index.html"
+            ).toLowerCase();
+
+            links.forEach((a) => {
+                const href = a.getAttribute("href");
+                if (!href) return;
+
+                // exact page match (about.html, portfolio.html)
+                if (href.toLowerCase() === page) {
+                    a.setAttribute("aria-current", "page");
+                    return;
+                }
+
+                // Index anchors (index.html#section) should be considered active when you're on index.html
+                const [path, hash] = href.split("#");
+                if (
+                    (page === "" || page === "index.html") &&
+                    path === "index.html" &&
+                    hash &&
+                    location.hash === "#" + hash
+                ) {
+                    a.setAttribute("aria-current", "page");
+                }
+            });
+        })();
+
+        // Optional: smooth scroll for same-page anchors
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+            a.addEventListener("click", (e) => {
+                const id = a.getAttribute("href");
+                const target = document.querySelector(id);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Schema.org: Person + Services -->
+    <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Alexander Ertli",
-                "url": "https://js402.github.io/",
+                "url": "https://ertli.com/",
                 "jobTitle": "Software Engineer",
                 "sameAs": [
                     "https://www.linkedin.com/in/ertli/",
@@ -818,5 +731,6 @@
                 }
             }
         </script>
-    </body>
+</body>
+
 </html>
