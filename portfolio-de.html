@@ -1,780 +1,620 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>
-            Portfolio | Alexander Ertli — Platform Engineering & KI-Systeme
-        </title>
-        <meta
-            name="description"
-            content="Ausgewählte Lieferungen in deklarativen KI-Plattformen, Workflow-Automatisierung, Cloud-Infrastruktur und verantwortungsvollen KI-Systemen. Echte Plattformen, schnell geliefert und sauber abgesichert."
-        />
-        <meta name="author" content="Alexander Ertli" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta
-            property="og:title"
-            content="Portfolio | Alexander Ertli — Platform Engineering & KI-Systeme"
-        />
-        <meta
-            property="og:description"
-            content="Deklarative KI-Plattformen, Automatisierung und Cloud-Infrastruktur — Fallstudien & Highlights."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="assets/images/og-portfolio.png" />
+    <title>
+        Portfolio | Alexander Ertli — Platform Engineering & KI-Systeme
+    </title>
+    <meta name="description"
+        content="Ausgewählte Lieferungen in deklarativen KI-Plattformen, Workflow-Automatisierung, Cloud-Infrastruktur und verantwortungsvollen KI-Systemen. Echte Plattformen, schnell geliefert und sauber abgesichert." />
+    <meta name="author" content="Alexander Ertli" />
 
-        <link rel="icon" href="assets/images/logo.png" type="image/png" />
-        <link rel="stylesheet" href="css/style-vars.css" />
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/components.css" />
-        <link rel="stylesheet" href="css/portfolio.css" />
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    </head>
+    <meta property="og:title" content="Portfolio | Alexander Ertli — Platform Engineering & KI-Systeme" />
+    <meta property="og:description"
+        content="Deklarative KI-Plattformen, Automatisierung und Cloud-Infrastruktur — Fallstudien & Highlights." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-portfolio.png" />
 
-    <body>
-        <div class="document">
-            <header class="site-header" role="banner">
-                <nav class="main-nav" aria-label="Hauptnavigation">
-                    <div class="nav-brand">
-                        <a
-                            class="brand-name"
-                            href="index-de.html"
-                            aria-label="Startseite"
-                            >Alexander Ertli</a
-                        >
-                        <button
-                            class="nav-toggle"
-                            aria-expanded="false"
-                            aria-controls="nav-menu"
-                        >
-                            <span class="hamburger" aria-hidden="true"></span>
-                            <span class="sr-only">Menü</span>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style-vars.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+</head>
+
+<body>
+    <div class="document">
+        <header class="site-header" role="banner">
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <div class="nav-brand">
+                    <a class="brand-name" href="index-de.html" aria-label="Startseite">Alexander Ertli</a>
+                    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                        <span class="hamburger" aria-hidden="true"></span>
+                        <span class="sr-only">Menü</span>
+                    </button>
+                </div>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="index-de.html#services">Leistungen</a></li>
+                    <li><a href="index-de.html#packages">Pakete</a></li>
+                    <li><a href="index-de.html#approach">Vorgehen</a></li>
+                    <li><a href="index-de.html#proof">Referenzen</a></li>
+                    <li><a href="index-de.html#faq">FAQ</a></li>
+                    <li>
+                        <a href="portfolio-de.html" aria-current="page">Portfolio</a>
+                    </li>
+                    <li><a href="about-de.html">Über mich</a></li>
+                    <li><a href="index-de.html#contact">Kontakt</a></li>
+                    <li>
+                        <a href="portfolio.html" class="language-switch" hreflang="en" lang="en">EN</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section class="hero-section hero-portfolio">
+                <div class="hero-background">
+                    <img src="assets/images/banner.svg" alt="" class="hero-banner" role="presentation"
+                        loading="eager" />
+                </div>
+                <div class="hero-content">
+                    <h1>Platform Engineering & KI-Systeme</h1>
+                    <p class="hero-subtitle">
+                        Echte Lieferungen in
+                        <strong>deklarativen Plattformen</strong>,
+                        <strong>KI-nativen Anwendungen</strong>,
+                        <strong>Cloud-Infrastruktur</strong> und
+                        <strong>verantwortungsvoller KI</strong>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio-cases" class="btn btn-primary">Fallstudien ansehen</a>
+                        <a href="index-de.html#contact" class="btn btn-secondary">Projekt starten</a>
+                    </div>
+                    <div class="filters" role="group" aria-label="Fallstudien filtern">
+                        <button class="chip is-active" data-filter="all" aria-pressed="true">
+                            Alle
+                        </button>
+                        <button class="chip" data-filter="platform">
+                            Plattformen
+                        </button>
+                        <button class="chip" data-filter="ai">
+                            KI-Systeme
+                        </button>
+                        <button class="chip" data-filter="infrastructure">
+                            Infrastruktur
+                        </button>
+                        <button class="chip" data-filter="governance">
+                            Governance
+                        </button>
+                        <button class="chip" data-filter="automation">
+                            Automatisierung
                         </button>
                     </div>
-                    <ul class="nav-links" id="nav-menu">
-                        <li><a href="index-de.html#services">Leistungen</a></li>
-                        <li><a href="index-de.html#packages">Pakete</a></li>
-                        <li><a href="index-de.html#approach">Vorgehen</a></li>
-                        <li><a href="index-de.html#proof">Referenzen</a></li>
-                        <li><a href="index-de.html#faq">FAQ</a></li>
-                        <li>
-                            <a href="portfolio-de.html" aria-current="page"
-                                >Portfolio</a
-                            >
-                        </li>
-                        <li><a href="about-de.html">Über mich</a></li>
-                        <li><a href="index-de.html#contact">Kontakt</a></li>
-                        <li>
-                            <a
-                                href="portfolio.html"
-                                class="language-switch"
-                                hreflang="en"
-                                lang="en"
-                                >EN</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+                </div>
+            </section>
 
-            <main>
-                <!-- HERO -->
-                <section class="hero-section hero-portfolio">
-                    <div class="hero-background">
-                        <img
-                            src="assets/images/banner.svg"
-                            alt=""
-                            class="hero-banner"
-                            role="presentation"
-                            loading="eager"
-                        />
-                    </div>
-                    <div class="hero-content">
-                        <h1>Platform Engineering & KI-Systeme</h1>
-                        <p class="hero-subtitle">
-                            Echte Lieferungen in
-                            <strong>deklarativen Plattformen</strong>,
-                            <strong>KI-nativen Anwendungen</strong>,
-                            <strong>Cloud-Infrastruktur</strong> und
-                            <strong>verantwortungsvoller KI</strong>.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#portfolio-cases" class="btn btn-primary"
-                                >Fallstudien ansehen</a
-                            >
-                            <a
-                                href="index-de.html#contact"
-                                class="btn btn-secondary"
-                                >Projekt starten</a
-                            >
-                        </div>
-                        <div
-                            class="filters"
-                            role="group"
-                            aria-label="Fallstudien filtern"
-                        >
-                            <button
-                                class="chip is-active"
-                                data-filter="all"
-                                aria-pressed="true"
-                            >
-                                Alle
-                            </button>
-                            <button class="chip" data-filter="platform">
-                                Plattformen
-                            </button>
-                            <button class="chip" data-filter="ai">
-                                KI-Systeme
-                            </button>
-                            <button class="chip" data-filter="infrastructure">
-                                Infrastruktur
-                            </button>
-                            <button class="chip" data-filter="governance">
-                                Governance
-                            </button>
-                            <button class="chip" data-filter="automation">
-                                Automatisierung
-                            </button>
-                        </div>
-                    </div>
-                </section>
+            <!-- CASES -->
+            <section id="portfolio-cases" class="section" aria-labelledby="cases-heading">
+                <h2 id="cases-heading">Plattform- & System-Lieferungen</h2>
+                <p class="section-lead">
+                    Eine Mischung aus deklarativen Plattformen, KI-nativen
+                    Anwendungen und Cloud-Infrastruktur. Jede Zusammenarbeit
+                    endet mit sauberer Übergabe: Code, Dokumentation und
+                    operative Runbooks.
+                </p>
 
-                <!-- CASES -->
-                <section
-                    id="portfolio-cases"
-                    class="section"
-                    aria-labelledby="cases-heading"
-                >
-                    <h2 id="cases-heading">Plattform- & System-Lieferungen</h2>
-                    <p class="section-lead">
-                        Eine Mischung aus deklarativen Plattformen, KI-nativen
-                        Anwendungen und Cloud-Infrastruktur. Jede Zusammenarbeit
-                        endet mit sauberer Übergabe: Code, Dokumentation und
-                        operative Runbooks.
-                    </p>
-
-                    <div class="portfolio-grid" id="portfolio-grid">
-                        <!-- 1. Platform: Contenox Runtime -->
-                        <article
-                            id="case-contenox"
-                            class="case-study-card featured-case"
-                            data-tags="platform ai automation"
-                        >
-                            <figure class="case-image-container">
-                                <video
-                                    class="case-image"
-                                    src="assets/video/contenox-product-demo.mp4"
-                                    poster="assets/video/contenox-product-demo-poster.png"
-                                    autoplay
-                                    muted
-                                    loop
-                                    playsinline
-                                    controls
-                                    preload="metadata"
-                                >
-                                    Ihr Browser unterstützt das Video-Tag nicht.
-                                </video>
-                                <figcaption class="case-image-overlay">
-                                    <span>KI-Plattform</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>Contenox — Deklarative KI-Plattform</h3>
-                                <p class="case-description">
-                                    Architektur & Build einer
-                                    herstellerunabhängigen deklarativen
-                                    Plattform für KI-native Anwendungen.
-                                    Ermöglicht Teams, komplexe KI-Workflows
-                                    durch Konfiguration statt Custom-Code zu
-                                    erstellen.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Herausforderung:</strong>
-                                        Schnelle KI-Anwendungsentwicklung ohne
-                                        Vendor-Lock-in und mit voller
-                                        Observability ermöglichen.
-                                    </li>
-                                    <li>
-                                        <strong>Lösung:</strong> Deklarative
-                                        Workflow-Engine,
-                                        Multi-Provider-LLM-Routing, RAG-Systeme
-                                        und Low-Code-UI-Builder.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong> 70%
-                                        schnellere KI-Anwendungsentwicklung;
-                                        produktionsreif auf Self-Hosted oder
-                                        Cloud-Infrastruktur.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag"
-                                        >Platform Engineering</span
-                                    ><span class="case-tag"
-                                        >Deklarative Systeme</span
-                                    ><span class="case-tag">KI-Nativ</span>
-                                </div>
-                            </div>
-                        </article>
-                        <article
-                            id="case-techcareer"
-                            class="case-study-card featured-case"
-                            data-tags="platform ai automation"
-                        >
-                            <figure class="case-image-container">
-                                <video
-                                    class="case-image"
-                                    src="assets/video/techcareer_demo_fast.mp4"
-                                    poster="assets/images/techcareer-ui-screenshot-1.png"
-                                    autoplay
-                                    muted
-                                    loop
-                                    playsinline
-                                    controls
-                                    preload="metadata"
-                                >
-                                    Ihr Browser unterstützt das Video-Tag nicht.
-                                </video>
-                                <figcaption class="case-image-overlay">
-                                    <span>KI-SaaS-Plattform</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>
-                                    TechCareer.AI —
-                                    Karriere-Intelligenz-Plattform
-                                </h3>
-                                <p class="case-description">
-                                    Eine produktionsreife B2C-SaaS-Plattform für
-                                    KI-gestützte Lebenslaufanalyse,
-                                    Marktwertschätzung und Skill-Gap-Roadmaps.
-                                    Gebaut auf dem neuesten Stand des
-                                    React-Ökosystems.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Architektur:</strong> Next.js 16
-                                        (App Router) mit React 19 Server
-                                        Components, Supabase SSR für Auth/Daten
-                                        und Tailwind v4.
-                                    </li>
-                                    <li>
-                                        <strong>Integration:</strong> Nahtlose
-                                        Monetarisierung via Stripe SDK,
-                                        KI-Analyse via OpenAI und typsicherer
-                                        Datenbankzugriff.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong>
-                                        Zero-Latency-UX dank React Compiler
-                                        Optimierung; vollautomatisierte
-                                        Subscription- und Content-Workflows.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag">Next.js 16</span>
-                                    <span class="case-tag">React 19</span>
-                                    <span class="case-tag">Supabase</span>
-                                    <span class="case-tag">Stripe</span>
-                                </div>
-                            </div>
-                        </article>
-                        <!-- 2. AI-Native Application -->
-                        <article
-                            id="case-assistant"
-                            class="case-study-card"
-                            data-tags="ai automation platform"
-                        >
-                            <figure class="case-image-container">
-                                <img
-                                    src="assets/images/telegram-bot-screenshot-1.png"
-                                    alt="KI-Assistent-Interface mit Konversation und Tool-Ausführung"
-                                    class="case-image"
-                                    loading="lazy"
-                                />
-                                <figcaption class="case-image-overlay">
-                                    <span>KI-Anwendung</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>KI-Native Assistenten-Plattform</h3>
-                                <p class="case-description">
-                                    Multi-Tenant-KI-Assistenten-Plattform mit
-                                    RAG-Suche, Tool-Execution und
-                                    Workflow-Automatisierung. Auf deklarativen
-                                    Prinzipien für schnelle Customization.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Herausforderung:</strong>
-                                        Entwicklungszeit für
-                                        Custom-KI-Assistenten reduzieren bei
-                                        gleichbleibender Security und
-                                        Observability.
-                                    </li>
-                                    <li>
-                                        <strong>Lösung:</strong>
-                                        Konfigurationsgesteuerte
-                                        Assistenten-Framework, semantische
-                                        Suche, Aktions-APIs und
-                                        Echtzeit-Monitoring.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong> 24/7
-                                        intelligenter Support mit 60% Reduktion
-                                        bei Routine-Operationen.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag">KI-Nativ</span
-                                    ><span class="case-tag">RAG</span
-                                    ><span class="case-tag"
-                                        >Automatisierung</span
-                                    >
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- 3. Cloud Infrastructure -->
-                        <article
-                            id="case-observability"
-                            class="case-study-card"
-                            data-tags="infrastructure platform"
-                        >
-                            <figure class="case-image-container">
-                                <img
-                                    src="assets/images/contenox-screenshot-1.png"
-                                    alt="Cloud-Infrastruktur-Dashboard mit Metriken und Distributed Tracing"
-                                    class="case-image"
-                                    loading="lazy"
-                                />
-                                <figcaption class="case-image-overlay">
-                                    <span>Infrastruktur</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>Cloud-Native Plattform-Infrastruktur</h3>
-                                <p class="case-description">
-                                    Design und Implementierung von
-                                    Kubernetes-nativer Infrastruktur für
-                                    KI-Plattform mit voller Observability,
-                                    Security-Hardening und
-                                    Multi-Cloud-Deployment-Fähigkeiten.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Herausforderung:</strong>
-                                        Zuverlässige, observable Infrastruktur
-                                        für verteilte KI-Workloads über mehrere
-                                        Umgebungen bereitstellen.
-                                    </li>
-                                    <li>
-                                        <strong>Lösung:</strong>
-                                        Kubernetes-Operators,
-                                        OpenTelemetry-Instrumentierung, sichere
-                                        Service-Mesh und GitOps-Workflows.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong> 99,9%
-                                        Plattform-Verfügbarkeit; 80% schnellere
-                                        Incident-Resolution; konsistente
-                                        Deployment über Cloud-Provider.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag">Kubernetes</span
-                                    ><span class="case-tag">Observability</span
-                                    ><span class="case-tag">Cloud Native</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- 4. Enterprise AI Governance -->
-                        <article
-                            id="case-compliance"
-                            class="case-study-card"
-                            data-tags="governance platform"
-                        >
-                            <figure class="case-image-container">
-                                <img
-                                    src="assets/images/telekom-compliance.png"
-                                    alt="Governance-Dashboard mit Compliance-Status und Audit-Trails"
-                                    class="case-image"
-                                    loading="lazy"
-                                />
-                                <figcaption class="case-image-overlay">
-                                    <span>Governance</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>Enterprise-KI-Governance-Plattform</h3>
-                                <p class="case-description">
-                                    Governance-Framework und Tooling für
-                                    KI-Systeme in regulierten Umgebungen, mit
-                                    Audit-Trails, Policy-Enforcement und
-                                    Compliance-Reporting.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Herausforderung:</strong>
-                                        KI-Innovation ermöglichen bei
-                                        gleichzeitiger Erfüllung strenger
-                                        Compliance-Anforderungen und
-                                        Audit-Readiness.
-                                    </li>
-                                    <li>
-                                        <strong>Lösung:</strong> Eingebaute
-                                        Audit-Logging, Policy-as-Code-Framework,
-                                        Compliance-Dashboards und
-                                        Risikobewertungs-Workflows.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong> Beschleunigte
-                                        KI-Adoption mit 100% Audit-Compliance;
-                                        Reduzierte Compliance-Review-Zeit um
-                                        75%.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag">Governance</span
-                                    ><span class="case-tag">Compliance</span
-                                    ><span class="case-tag">Security</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- 5. Developer Platform -->
-                        <article
-                            id="case-abac"
-                            class="case-study-card"
-                            data-tags="platform infrastructure"
-                        >
-                            <figure class="case-image-container">
-                                <img
-                                    src="assets/images/case-abac.png"
-                                    alt="Developer-Plattform mit API-Management und Workflow-Tools"
-                                    class="case-image"
-                                    loading="lazy"
-                                />
-                                <figcaption class="case-image-overlay">
-                                    <span>Developer-Plattform</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>Interne Developer-Plattform</h3>
-                                <p class="case-description">
-                                    Erstellung interner Plattform für
-                                    Entwicklungsteams zum Bauen, Deployen und
-                                    Betreiben von KI-Anwendungen mit eingebauter
-                                    Security, Observability und Compliance.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Herausforderung:</strong>
-                                        Standardisierung der
-                                        KI-Anwendungsentwicklung bei
-                                        gleichzeitiger Beibehaltung von
-                                        Flexibilität und
-                                        Innovationsgeschwindigkeit.
-                                    </li>
-                                    <li>
-                                        <strong>Lösung:</strong>
-                                        Self-Service-Plattform mit Golden Paths,
-                                        automatisierte Security-Controls und
-                                        Developer-Tooling.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong> 50% Reduktion
-                                        der Time-to-Production; konsistente
-                                        Security-Posture über alle Anwendungen.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag"
-                                        >Platform Engineering</span
-                                    ><span class="case-tag"
-                                        >Developer Experience</span
-                                    ><span class="case-tag">Interne Tools</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- 6. RAG Platform -->
-                        <article
-                            id="case-docsearch"
-                            class="case-study-card"
-                            data-tags="ai platform"
-                        >
-                            <figure class="case-image-container">
-                                <img
-                                    src="assets/images/case-docsearch.png"
-                                    alt="RAG-Plattform-Interface mit Dokumenten-Management und semantischer Suche"
-                                    class="case-image"
-                                    loading="lazy"
-                                />
-                                <figcaption class="case-image-overlay">
-                                    <span>RAG-Plattform</span>
-                                </figcaption>
-                            </figure>
-                            <div class="case-content">
-                                <h3>Enterprise-RAG-Plattform</h3>
-                                <p class="case-description">
-                                    Skalierbare RAG-Plattform für
-                                    Enterprise-Wissensmanagement, mit
-                                    Dokument-Ingestion, Vektorsuche und
-                                    Multi-Tenant-Isolation.
-                                </p>
-                                <ul class="case-highlights">
-                                    <li>
-                                        <strong>Herausforderung:</strong>
-                                        Enterprise-Wissensbasen durchsuchbar und
-                                        handlungsfähig machen bei gleichzeitiger
-                                        Daten-Sicherheit und Performance.
-                                    </li>
-                                    <li>
-                                        <strong>Lösung:</strong> Verteilter
-                                        Vektor-Database, adaptives Chunking,
-                                        Embedding-Pipelines und
-                                        Access-Control-Integration.
-                                    </li>
-                                    <li>
-                                        <strong>Ergebnis:</strong> 90%
-                                        Verbesserung bei
-                                        Informations-Retrieval-Genauigkeit;
-                                        Unterstützung für Millionen von
-                                        Dokumenten mit
-                                        Sub-Sekunden-Antwortzeiten.
-                                    </li>
-                                </ul>
-                                <div class="case-tags">
-                                    <span class="case-tag">RAG</span
-                                    ><span class="case-tag">Vektorsuche</span
-                                    ><span class="case-tag"
-                                        >Wissensmanagement</span
-                                    >
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-
-                <!-- CONTACT CTA -->
-                <section class="section section-alt" id="contact-cta">
-                    <div class="contact-content centered">
-                        <h2>
-                            Bauen Sie Ihre KI-Plattform — schnell und
-                            verantwortungsvoll
-                        </h2>
-                        <p class="hero-subtitle">
-                            Ob Sie eine deklarative Plattform, KI-native
-                            Anwendungen oder Cloud-Infrastruktur benötigen — wir
-                            liefern produktionsreife Systeme mit sauberer
-                            Übergabe.
-                        </p>
-                        <div class="hero-actions">
-                            <a
-                                href="index-de.html#contact"
-                                class="btn btn-primary btn-large"
-                                >Plattform-Projekt starten</a
-                            >
-                            <a
-                                href="index-de.html#contact"
-                                class="btn btn-secondary btn-large"
-                                >Architektur-Review buchen</a
-                            >
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="site-footer" role="contentinfo">
-                <div class="container">
-                    <div class="footer-content">
-                        <nav
-                            class="footer-nav"
-                            aria-label="Fußzeilen-Navigation"
-                        >
-                            <ul class="footer-links">
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- 1. Platform: Contenox Runtime -->
+                    <article id="case-contenox" class="case-study-card featured-case"
+                        data-tags="platform ai automation">
+                        <figure class="case-image-container">
+                            <video class="case-image" src="assets/video/contenox-product-demo.mp4"
+                                poster="assets/video/contenox-product-demo-poster.png" autoplay muted loop playsinline
+                                controls preload="metadata">
+                                Ihr Browser unterstützt das Video-Tag nicht.
+                            </video>
+                            <figcaption class="case-image-overlay">
+                                <span>KI-Plattform</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>Contenox — Deklarative KI-Plattform</h3>
+                            <p class="case-description">
+                                Architektur & Build einer
+                                herstellerunabhängigen deklarativen
+                                Plattform für KI-native Anwendungen.
+                                Ermöglicht Teams, komplexe KI-Workflows
+                                durch Konfiguration statt Custom-Code zu
+                                erstellen.
+                            </p>
+                            <ul class="case-highlights">
                                 <li>
-                                    <a href="index-de.html#services"
-                                        >Leistungen</a
-                                    >
+                                    <strong>Herausforderung:</strong>
+                                    Schnelle KI-Anwendungsentwicklung ohne
+                                    Vendor-Lock-in und mit voller
+                                    Observability ermöglichen.
                                 </li>
                                 <li>
-                                    <a href="index-de.html#packages">Pakete</a>
+                                    <strong>Lösung:</strong> Deklarative
+                                    Workflow-Engine,
+                                    Multi-Provider-LLM-Routing, RAG-Systeme
+                                    und Low-Code-UI-Builder.
                                 </li>
                                 <li>
-                                    <a href="index-de.html#approach"
-                                        >Vorgehen</a
-                                    >
+                                    <strong>Ergebnis:</strong> 70%
+                                    schnellere KI-Anwendungsentwicklung;
+                                    produktionsreif auf Self-Hosted oder
+                                    Cloud-Infrastruktur.
                                 </li>
-                                <li>
-                                    <a href="index-de.html#proof">Referenzen</a>
-                                </li>
-                                <li><a href="index-de.html#faq">FAQ</a></li>
-                                <li>
-                                    <a
-                                        href="portfolio-de.html"
-                                        aria-current="page"
-                                        >Portfolio</a
-                                    >
-                                </li>
-                                <li><a href="about-de.html">Über mich</a></li>
-                                <li>
-                                    <a href="index-de.html#contact">Kontakt</a>
-                                </li>
-                                <li><a href="portfolio.html">English</a></li>
                             </ul>
-                        </nav>
-
-                        <div class="social-links">
-                            <a
-                                href="https://www.linkedin.com/in/ertli/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="LinkedIn"
-                            >
-                                <img
-                                    src="assets/icons/linkedin.png"
-                                    alt=""
-                                    class="icon16"
-                                />
-                            </a>
-                            <a
-                                href="https://github.com/contenox"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="GitHub"
-                            >
-                                <img
-                                    src="assets/icons/github.png"
-                                    alt=""
-                                    class="icon16"
-                                />
-                            </a>
-                            <a
-                                href="https://dev.to/js402"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="dev.to"
-                            >
-                                <img
-                                    src="assets/icons/dev-to.svg"
-                                    alt=""
-                                    class="icon16"
-                                />
-                            </a>
+                            <div class="case-tags">
+                                <span class="case-tag">Platform Engineering</span><span class="case-tag">Deklarative
+                                    Systeme</span><span class="case-tag">KI-Nativ</span>
+                            </div>
                         </div>
+                    </article>
+                    <article id="case-techcareer" class="case-study-card featured-case"
+                        data-tags="platform ai automation">
+                        <figure class="case-image-container">
+                            <video class="case-image" src="assets/video/techcareer_demo_web.mp4"
+                                poster="assets/images/techcareer-ui-screenshot-1.png" autoplay muted loop playsinline
+                                controls preload="metadata">
+                                Ihr Browser unterstützt das Video-Tag nicht.
+                            </video>
+                            <figcaption class="case-image-overlay">
+                                <span>KI-SaaS-Plattform</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>
+                                TechCareer.AI —
+                                Karriere-Intelligenz-Plattform
+                            </h3>
+                            <p class="case-description">
+                                Eine produktionsreife B2C-SaaS-Plattform für
+                                KI-gestützte Lebenslaufanalyse,
+                                Marktwertschätzung und Skill-Gap-Roadmaps.
+                                Gebaut auf dem neuesten Stand des
+                                React-Ökosystems.
+                            </p>
+                            <ul class="case-highlights">
+                                <li>
+                                    <strong>Architektur:</strong> Next.js 16
+                                    (App Router) mit React 19 Server
+                                    Components, Supabase SSR für Auth/Daten
+                                    und Tailwind v4.
+                                </li>
+                                <li>
+                                    <strong>Integration:</strong> Nahtlose
+                                    Monetarisierung via Stripe SDK,
+                                    KI-Analyse via OpenAI und typsicherer
+                                    Datenbankzugriff.
+                                </li>
+                                <li>
+                                    <strong>Ergebnis:</strong>
+                                    Zero-Latency-UX dank React Compiler
+                                    Optimierung; vollautomatisierte
+                                    Subscription- und Content-Workflows.
+                                </li>
+                            </ul>
+                            <div class="case-tags">
+                                <span class="case-tag">Next.js 16</span>
+                                <span class="case-tag">React 19</span>
+                                <span class="case-tag">Supabase</span>
+                                <span class="case-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 2. AI-Native Application -->
+                    <article id="case-assistant" class="case-study-card" data-tags="ai automation platform">
+                        <figure class="case-image-container">
+                            <img src="assets/images/telegram-bot-screenshot-1.png"
+                                alt="KI-Assistent-Interface mit Konversation und Tool-Ausführung" class="case-image"
+                                loading="lazy" />
+                            <figcaption class="case-image-overlay">
+                                <span>KI-Anwendung</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>KI-Native Assistenten-Plattform</h3>
+                            <p class="case-description">
+                                Multi-Tenant-KI-Assistenten-Plattform mit
+                                RAG-Suche, Tool-Execution und
+                                Workflow-Automatisierung. Auf deklarativen
+                                Prinzipien für schnelle Customization.
+                            </p>
+                            <ul class="case-highlights">
+                                <li>
+                                    <strong>Herausforderung:</strong>
+                                    Entwicklungszeit für
+                                    Custom-KI-Assistenten reduzieren bei
+                                    gleichbleibender Security und
+                                    Observability.
+                                </li>
+                                <li>
+                                    <strong>Lösung:</strong>
+                                    Konfigurationsgesteuerte
+                                    Assistenten-Framework, semantische
+                                    Suche, Aktions-APIs und
+                                    Echtzeit-Monitoring.
+                                </li>
+                                <li>
+                                    <strong>Ergebnis:</strong> 24/7
+                                    intelligenter Support mit 60% Reduktion
+                                    bei Routine-Operationen.
+                                </li>
+                            </ul>
+                            <div class="case-tags">
+                                <span class="case-tag">KI-Nativ</span><span class="case-tag">RAG</span><span
+                                    class="case-tag">Automatisierung</span>
+                            </div>
+                        </div>
+                    </article>
 
-                        <p class="copyright">
-                            © 2025 Alexander Ertli. Alle Rechte vorbehalten.
-                        </p>
+                    <!-- 3. Cloud Infrastructure -->
+                    <article id="case-observability" class="case-study-card" data-tags="infrastructure platform">
+                        <figure class="case-image-container">
+                            <img src="assets/images/contenox-screenshot-1.png"
+                                alt="Cloud-Infrastruktur-Dashboard mit Metriken und Distributed Tracing"
+                                class="case-image" loading="lazy" />
+                            <figcaption class="case-image-overlay">
+                                <span>Infrastruktur</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>Cloud-Native Plattform-Infrastruktur</h3>
+                            <p class="case-description">
+                                Design und Implementierung von
+                                Kubernetes-nativer Infrastruktur für
+                                KI-Plattform mit voller Observability,
+                                Security-Hardening und
+                                Multi-Cloud-Deployment-Fähigkeiten.
+                            </p>
+                            <ul class="case-highlights">
+                                <li>
+                                    <strong>Herausforderung:</strong>
+                                    Zuverlässige, observable Infrastruktur
+                                    für verteilte KI-Workloads über mehrere
+                                    Umgebungen bereitstellen.
+                                </li>
+                                <li>
+                                    <strong>Lösung:</strong>
+                                    Kubernetes-Operators,
+                                    OpenTelemetry-Instrumentierung, sichere
+                                    Service-Mesh und GitOps-Workflows.
+                                </li>
+                                <li>
+                                    <strong>Ergebnis:</strong> 99,9%
+                                    Plattform-Verfügbarkeit; 80% schnellere
+                                    Incident-Resolution; konsistente
+                                    Deployment über Cloud-Provider.
+                                </li>
+                            </ul>
+                            <div class="case-tags">
+                                <span class="case-tag">Kubernetes</span><span class="case-tag">Observability</span><span
+                                    class="case-tag">Cloud Native</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Enterprise AI Governance -->
+                    <article id="case-compliance" class="case-study-card" data-tags="governance platform">
+                        <figure class="case-image-container">
+                            <img src="assets/images/telekom-compliance.png"
+                                alt="Governance-Dashboard mit Compliance-Status und Audit-Trails" class="case-image"
+                                loading="lazy" />
+                            <figcaption class="case-image-overlay">
+                                <span>Governance</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>Enterprise-KI-Governance-Plattform</h3>
+                            <p class="case-description">
+                                Governance-Framework und Tooling für
+                                KI-Systeme in regulierten Umgebungen, mit
+                                Audit-Trails, Policy-Enforcement und
+                                Compliance-Reporting.
+                            </p>
+                            <ul class="case-highlights">
+                                <li>
+                                    <strong>Herausforderung:</strong>
+                                    KI-Innovation ermöglichen bei
+                                    gleichzeitiger Erfüllung strenger
+                                    Compliance-Anforderungen und
+                                    Audit-Readiness.
+                                </li>
+                                <li>
+                                    <strong>Lösung:</strong> Eingebaute
+                                    Audit-Logging, Policy-as-Code-Framework,
+                                    Compliance-Dashboards und
+                                    Risikobewertungs-Workflows.
+                                </li>
+                                <li>
+                                    <strong>Ergebnis:</strong> Beschleunigte
+                                    KI-Adoption mit 100% Audit-Compliance;
+                                    Reduzierte Compliance-Review-Zeit um
+                                    75%.
+                                </li>
+                            </ul>
+                            <div class="case-tags">
+                                <span class="case-tag">Governance</span><span class="case-tag">Compliance</span><span
+                                    class="case-tag">Security</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Developer Platform -->
+                    <article id="case-abac" class="case-study-card" data-tags="platform infrastructure">
+                        <figure class="case-image-container">
+                            <img src="assets/images/case-abac.png"
+                                alt="Developer-Plattform mit API-Management und Workflow-Tools" class="case-image"
+                                loading="lazy" />
+                            <figcaption class="case-image-overlay">
+                                <span>Developer-Plattform</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>Interne Developer-Plattform</h3>
+                            <p class="case-description">
+                                Erstellung interner Plattform für
+                                Entwicklungsteams zum Bauen, Deployen und
+                                Betreiben von KI-Anwendungen mit eingebauter
+                                Security, Observability und Compliance.
+                            </p>
+                            <ul class="case-highlights">
+                                <li>
+                                    <strong>Herausforderung:</strong>
+                                    Standardisierung der
+                                    KI-Anwendungsentwicklung bei
+                                    gleichzeitiger Beibehaltung von
+                                    Flexibilität und
+                                    Innovationsgeschwindigkeit.
+                                </li>
+                                <li>
+                                    <strong>Lösung:</strong>
+                                    Self-Service-Plattform mit Golden Paths,
+                                    automatisierte Security-Controls und
+                                    Developer-Tooling.
+                                </li>
+                                <li>
+                                    <strong>Ergebnis:</strong> 50% Reduktion
+                                    der Time-to-Production; konsistente
+                                    Security-Posture über alle Anwendungen.
+                                </li>
+                            </ul>
+                            <div class="case-tags">
+                                <span class="case-tag">Platform Engineering</span><span class="case-tag">Developer
+                                    Experience</span><span class="case-tag">Interne Tools</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. RAG Platform -->
+                    <article id="case-docsearch" class="case-study-card" data-tags="ai platform">
+                        <figure class="case-image-container">
+                            <img src="assets/images/case-docsearch.png"
+                                alt="RAG-Plattform-Interface mit Dokumenten-Management und semantischer Suche"
+                                class="case-image" loading="lazy" />
+                            <figcaption class="case-image-overlay">
+                                <span>RAG-Plattform</span>
+                            </figcaption>
+                        </figure>
+                        <div class="case-content">
+                            <h3>Enterprise-RAG-Plattform</h3>
+                            <p class="case-description">
+                                Skalierbare RAG-Plattform für
+                                Enterprise-Wissensmanagement, mit
+                                Dokument-Ingestion, Vektorsuche und
+                                Multi-Tenant-Isolation.
+                            </p>
+                            <ul class="case-highlights">
+                                <li>
+                                    <strong>Herausforderung:</strong>
+                                    Enterprise-Wissensbasen durchsuchbar und
+                                    handlungsfähig machen bei gleichzeitiger
+                                    Daten-Sicherheit und Performance.
+                                </li>
+                                <li>
+                                    <strong>Lösung:</strong> Verteilter
+                                    Vektor-Database, adaptives Chunking,
+                                    Embedding-Pipelines und
+                                    Access-Control-Integration.
+                                </li>
+                                <li>
+                                    <strong>Ergebnis:</strong> 90%
+                                    Verbesserung bei
+                                    Informations-Retrieval-Genauigkeit;
+                                    Unterstützung für Millionen von
+                                    Dokumenten mit
+                                    Sub-Sekunden-Antwortzeiten.
+                                </li>
+                            </ul>
+                            <div class="case-tags">
+                                <span class="case-tag">RAG</span><span class="case-tag">Vektorsuche</span><span
+                                    class="case-tag">Wissensmanagement</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CONTACT CTA -->
+            <section class="section section-alt" id="contact-cta">
+                <div class="contact-content centered">
+                    <h2>
+                        Bauen Sie Ihre KI-Plattform — schnell und
+                        verantwortungsvoll
+                    </h2>
+                    <p class="hero-subtitle">
+                        Ob Sie eine deklarative Plattform, KI-native
+                        Anwendungen oder Cloud-Infrastruktur benötigen — wir
+                        liefern produktionsreife Systeme mit sauberer
+                        Übergabe.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="index-de.html#contact" class="btn btn-primary btn-large">Plattform-Projekt starten</a>
+                        <a href="index-de.html#contact" class="btn btn-secondary btn-large">Architektur-Review
+                            buchen</a>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </section>
+        </main>
 
-        <script>
-            // Mobile toggle
-            (function () {
-                const navToggle = document.querySelector(".nav-toggle");
-                const navMenu = document.getElementById("nav-menu");
-                if (!navToggle || !navMenu) return;
-                navToggle.addEventListener("click", () => {
-                    const expanded =
-                        navToggle.getAttribute("aria-expanded") === "true";
-                    navToggle.setAttribute("aria-expanded", String(!expanded));
-                    navMenu.classList.toggle("is-active");
-                });
-            })();
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <nav class="footer-nav" aria-label="Fußzeilen-Navigation">
+                        <ul class="footer-links">
+                            <li>
+                                <a href="index-de.html#services">Leistungen</a>
+                            </li>
+                            <li>
+                                <a href="index-de.html#packages">Pakete</a>
+                            </li>
+                            <li>
+                                <a href="index-de.html#approach">Vorgehen</a>
+                            </li>
+                            <li>
+                                <a href="index-de.html#proof">Referenzen</a>
+                            </li>
+                            <li><a href="index-de.html#faq">FAQ</a></li>
+                            <li>
+                                <a href="portfolio-de.html" aria-current="page">Portfolio</a>
+                            </li>
+                            <li><a href="about-de.html">Über mich</a></li>
+                            <li>
+                                <a href="index-de.html#contact">Kontakt</a>
+                            </li>
+                            <li><a href="portfolio.html">English</a></li>
+                        </ul>
+                    </nav>
 
-            // Active link
-            (function () {
-                const links = document.querySelectorAll(".nav-links a[href]");
-                const page = (
-                    location.pathname.split("/").pop() || "portfolio-de.html"
-                ).toLowerCase();
-                links.forEach((a) => {
-                    const href = a.getAttribute("href");
-                    if (!href) return;
-                    if (href.toLowerCase() === page) {
-                        a.setAttribute("aria-current", "page");
-                    }
-                });
-            })();
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ertli/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <img src="assets/icons/linkedin.png" alt="" class="icon16" />
+                        </a>
+                        <a href="https://github.com/contenox" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <img src="assets/icons/github.png" alt="" class="icon16" />
+                        </a>
+                        <a href="https://dev.to/js402" target="_blank" rel="noopener noreferrer" aria-label="dev.to">
+                            <img src="assets/icons/dev-to.svg" alt="" class="icon16" />
+                        </a>
+                    </div>
 
-            // Portfolio filtering
-            (function () {
-                const filters = document.querySelectorAll(".filters .chip");
-                const cases = document.querySelectorAll(".case-study-card");
+                    <p class="copyright">
+                        © 2025 Alexander Ertli. Alle Rechte vorbehalten.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-                if (!filters.length || !cases.length) return;
+    <script>
+        // Mobile toggle
+        (function () {
+            const navToggle = document.querySelector(".nav-toggle");
+            const navMenu = document.getElementById("nav-menu");
+            if (!navToggle || !navMenu) return;
+            navToggle.addEventListener("click", () => {
+                const expanded =
+                    navToggle.getAttribute("aria-expanded") === "true";
+                navToggle.setAttribute("aria-expanded", String(!expanded));
+                navMenu.classList.toggle("is-active");
+            });
+        })();
 
-                filters.forEach((filter) => {
-                    filter.addEventListener("click", () => {
-                        // Update active state
-                        filters.forEach((f) => {
-                            f.classList.remove("is-active");
-                            f.setAttribute("aria-pressed", "false");
-                        });
-                        filter.classList.add("is-active");
-                        filter.setAttribute("aria-pressed", "true");
+        // Active link
+        (function () {
+            const links = document.querySelectorAll(".nav-links a[href]");
+            const page = (
+                location.pathname.split("/").pop() || "portfolio-de.html"
+            ).toLowerCase();
+            links.forEach((a) => {
+                const href = a.getAttribute("href");
+                if (!href) return;
+                if (href.toLowerCase() === page) {
+                    a.setAttribute("aria-current", "page");
+                }
+            });
+        })();
 
-                        const filterValue = filter.getAttribute("data-filter");
+        // Portfolio filtering
+        (function () {
+            const filters = document.querySelectorAll(".filters .chip");
+            const cases = document.querySelectorAll(".case-study-card");
 
-                        // Filter cases
-                        cases.forEach((caseItem) => {
-                            if (filterValue === "all") {
+            if (!filters.length || !cases.length) return;
+
+            filters.forEach((filter) => {
+                filter.addEventListener("click", () => {
+                    // Update active state
+                    filters.forEach((f) => {
+                        f.classList.remove("is-active");
+                        f.setAttribute("aria-pressed", "false");
+                    });
+                    filter.classList.add("is-active");
+                    filter.setAttribute("aria-pressed", "true");
+
+                    const filterValue = filter.getAttribute("data-filter");
+
+                    // Filter cases
+                    cases.forEach((caseItem) => {
+                        if (filterValue === "all") {
+                            caseItem.style.display = "block";
+                            setTimeout(() => {
+                                caseItem.style.opacity = "1";
+                                caseItem.style.transform = "translateY(0)";
+                            }, 50);
+                        } else {
+                            const tags = caseItem
+                                .getAttribute("data-tags")
+                                .split(" ");
+                            if (tags.includes(filterValue)) {
                                 caseItem.style.display = "block";
                                 setTimeout(() => {
                                     caseItem.style.opacity = "1";
-                                    caseItem.style.transform = "translateY(0)";
+                                    caseItem.style.transform =
+                                        "translateY(0)";
                                 }, 50);
                             } else {
-                                const tags = caseItem
-                                    .getAttribute("data-tags")
-                                    .split(" ");
-                                if (tags.includes(filterValue)) {
-                                    caseItem.style.display = "block";
-                                    setTimeout(() => {
-                                        caseItem.style.opacity = "1";
-                                        caseItem.style.transform =
-                                            "translateY(0)";
-                                    }, 50);
-                                } else {
-                                    caseItem.style.opacity = "0";
-                                    caseItem.style.transform =
-                                        "translateY(20px)";
-                                    setTimeout(() => {
-                                        caseItem.style.display = "none";
-                                    }, 300);
-                                }
+                                caseItem.style.opacity = "0";
+                                caseItem.style.transform =
+                                    "translateY(20px)";
+                                setTimeout(() => {
+                                    caseItem.style.display = "none";
+                                }, 300);
                             }
-                        });
+                        }
                     });
                 });
-            })();
-
-            document.querySelectorAll('a[href^="#"]').forEach((a) => {
-                a.addEventListener("click", (e) => {
-                    const id = a.getAttribute("href");
-                    const target = document.querySelector(id);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start",
-                        });
-                    }
-                });
             });
-        </script>
+        })();
 
-        <!-- Schema.org: ItemList -->
-        <script type="application/ld+json">
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+            a.addEventListener("click", (e) => {
+                const id = a.getAttribute("href");
+                const target = document.querySelector(id);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Schema.org: ItemList -->
+    <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "ItemList",
@@ -825,5 +665,6 @@
                 ]
             }
         </script>
-    </body>
+</body>
+
 </html>
