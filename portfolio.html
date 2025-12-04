@@ -33,6 +33,7 @@
         <link rel="stylesheet" href="css/portfolio.css" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     </head>
+
     <body>
         <div class="document">
             <header class="site-header" role="banner">
@@ -215,7 +216,68 @@
                                 </div>
                             </div>
                         </article>
-
+                        <article
+                            id="case-techcareer"
+                            class="case-study-card featured-case"
+                            data-tags="platform ai automation"
+                        >
+                            <figure class="case-image-container">
+                                <video
+                                    class="case-image"
+                                    src="assets/video/techcareer_demo_fast.mp4"
+                                    poster="assets/images/techcareer-ui-screenshot-1.png"
+                                    autoplay
+                                    muted
+                                    loop
+                                    playsinline
+                                    controls
+                                    preload="metadata"
+                                >
+                                    Your browser does not support the video tag.
+                                </video>
+                                <figcaption class="case-image-overlay">
+                                    <span>AI SaaS Platform</span>
+                                </figcaption>
+                            </figure>
+                            <div class="case-content">
+                                <h3>
+                                    TechCareer.AI — Career Intelligence Platform
+                                </h3>
+                                <p class="case-description">
+                                    A production-grade B2C SaaS platform
+                                    offering AI-driven resume analysis, market
+                                    valuation, and skill gap roadmaps. Built on
+                                    the bleeding edge of the React ecosystem.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>
+                                        <strong>Architecture:</strong> Next.js
+                                        16 (App Router) with React 19 Server
+                                        Components, Supabase SSR for auth/data,
+                                        and Tailwind v4.
+                                    </li>
+                                    <li>
+                                        <strong>Integration:</strong> Seamless
+                                        monetization via Stripe SDK, AI analysis
+                                        via OpenAI, and type-safe database
+                                        access.
+                                    </li>
+                                    <li>
+                                        <strong>Outcome:</strong> Zero-latency
+                                        user experience with React Compiler
+                                        optimization; fully automated
+                                        subscription and content generation
+                                        workflows.
+                                    </li>
+                                </ul>
+                                <div class="case-tags">
+                                    <span class="case-tag">Next.js 16</span>
+                                    <span class="case-tag">React 19</span>
+                                    <span class="case-tag">Supabase</span>
+                                    <span class="case-tag">Stripe</span>
+                                </div>
+                            </div>
+                        </article>
                         <!-- 2. AI-Native Application -->
                         <article
                             id="case-assistant"
@@ -705,36 +767,42 @@
                     {
                         "@type": "ListItem",
                         "position": 1,
+                        "url": "#case-techcareer",
+                        "name": "TechCareer.AI — Career Intelligence Platform"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
                         "url": "#case-contenox",
                         "name": "contenox — Declarative AI Platform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 2,
+                        "position": 3,
                         "url": "#case-assistant",
                         "name": "AI-Native Assistant Platform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 3,
+                        "position": 4,
                         "url": "#case-observability",
                         "name": "Cloud-Native Platform Infrastructure"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 4,
+                        "position": 5,
                         "url": "#case-compliance",
                         "name": "Enterprise AI Governance Platform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 5,
+                        "position": 6,
                         "url": "#case-abac",
                         "name": "Internal Developer Platform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 6,
+                        "position": 7,
                         "url": "#case-docsearch",
                         "name": "Enterprise RAG Platform"
                     }

@@ -32,6 +32,7 @@
         <link rel="stylesheet" href="css/portfolio.css" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     </head>
+
     <body>
         <div class="document">
             <header class="site-header" role="banner">
@@ -218,7 +219,69 @@
                                 </div>
                             </div>
                         </article>
-
+                        <article
+                            id="case-techcareer"
+                            class="case-study-card featured-case"
+                            data-tags="platform ai automation"
+                        >
+                            <figure class="case-image-container">
+                                <video
+                                    class="case-image"
+                                    src="assets/video/techcareer_demo_fast.mp4"
+                                    poster="assets/images/techcareer-ui-screenshot-1.png"
+                                    autoplay
+                                    muted
+                                    loop
+                                    playsinline
+                                    controls
+                                    preload="metadata"
+                                >
+                                    Ihr Browser unterstützt das Video-Tag nicht.
+                                </video>
+                                <figcaption class="case-image-overlay">
+                                    <span>KI-SaaS-Plattform</span>
+                                </figcaption>
+                            </figure>
+                            <div class="case-content">
+                                <h3>
+                                    TechCareer.AI —
+                                    Karriere-Intelligenz-Plattform
+                                </h3>
+                                <p class="case-description">
+                                    Eine produktionsreife B2C-SaaS-Plattform für
+                                    KI-gestützte Lebenslaufanalyse,
+                                    Marktwertschätzung und Skill-Gap-Roadmaps.
+                                    Gebaut auf dem neuesten Stand des
+                                    React-Ökosystems.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>
+                                        <strong>Architektur:</strong> Next.js 16
+                                        (App Router) mit React 19 Server
+                                        Components, Supabase SSR für Auth/Daten
+                                        und Tailwind v4.
+                                    </li>
+                                    <li>
+                                        <strong>Integration:</strong> Nahtlose
+                                        Monetarisierung via Stripe SDK,
+                                        KI-Analyse via OpenAI und typsicherer
+                                        Datenbankzugriff.
+                                    </li>
+                                    <li>
+                                        <strong>Ergebnis:</strong>
+                                        Zero-Latency-UX dank React Compiler
+                                        Optimierung; vollautomatisierte
+                                        Subscription- und Content-Workflows.
+                                    </li>
+                                </ul>
+                                <div class="case-tags">
+                                    <span class="case-tag">Next.js 16</span>
+                                    <span class="case-tag">React 19</span>
+                                    <span class="case-tag">Supabase</span>
+                                    <span class="case-tag">Stripe</span>
+                                </div>
+                            </div>
+                        </article>
                         <!-- 2. AI-Native Application -->
                         <article
                             id="case-assistant"
@@ -720,36 +783,42 @@
                     {
                         "@type": "ListItem",
                         "position": 1,
+                        "url": "#case-techcareer",
+                        "name": "TechCareer.AI — Karriere-Intelligenz-Plattform"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
                         "url": "#case-contenox",
                         "name": "Contenox — Deklarative KI-Plattform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 2,
+                        "position": 3,
                         "url": "#case-assistant",
                         "name": "KI-Native Assistenten-Plattform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 3,
+                        "position": 4,
                         "url": "#case-observability",
                         "name": "Cloud-Native Plattform-Infrastruktur"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 4,
+                        "position": 5,
                         "url": "#case-compliance",
                         "name": "Enterprise-KI-Governance-Plattform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 5,
+                        "position": 6,
                         "url": "#case-abac",
                         "name": "Interne Developer-Plattform"
                     },
                     {
                         "@type": "ListItem",
-                        "position": 6,
+                        "position": 7,
                         "url": "#case-docsearch",
                         "name": "Enterprise-RAG-Plattform"
                     }
