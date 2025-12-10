@@ -13,6 +13,7 @@
         content="Ausgewählte Lieferungen in deklarativen KI-Plattformen, Workflow-Automatisierung, Cloud-Infrastruktur und verantwortungsvollen KI-Systemen. Echte Plattformen, schnell geliefert und sauber abgesichert." />
     <meta name="author" content="Alexander Ertli" />
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Portfolio | Alexander Ertli — Platform Engineering & KI-Systeme" />
     <meta property="og:description"
         content="Deklarative KI-Plattformen, Automatisierung und Cloud-Infrastruktur — Fallstudien & Highlights." />
@@ -103,10 +104,7 @@
             <section id="portfolio-cases" class="section" aria-labelledby="cases-heading">
                 <h2 id="cases-heading">Plattform- & System-Lieferungen</h2>
                 <p class="section-lead">
-                    Eine Mischung aus deklarativen Plattformen, KI-nativen
-                    Anwendungen und Cloud-Infrastruktur. Jede Zusammenarbeit
-                    endet mit sauberer Übergabe: Code, Dokumentation und
-                    operative Runbooks.
+                    Eine Mischung aus deklarativen Plattformen, KI-nativen Anwendungen und Cloud-Infrastruktur. Jede Zusammenarbeit endet mit sauberer Übergabe: Code, Dokumentation und operative Runbooks.
                 </p>
 
                 <div class="portfolio-grid" id="portfolio-grid">
@@ -124,43 +122,30 @@
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>Contenox — Deklarative KI-Plattform</h3>
+                            <h3>contenox — Open-Core GenAI-Plattform</h3>
                             <p class="case-description">
-                                Architektur & Build einer
-                                herstellerunabhängigen deklarativen
-                                Plattform für KI-native Anwendungen.
-                                Ermöglicht Teams, komplexe KI-Workflows
-                                durch Konfiguration statt Custom-Code zu
-                                erstellen.
+                                Entwicklung einer kompletten GenAI-Orchestrierungsplattform (~150k LOC über 23 Repos) mit deklarativer Workflow-Engine, Multi-Provider-LLM-Routing, RAG-Systemen und Enterprise-Dashboard.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Herausforderung:</strong>
-                                    Schnelle KI-Anwendungsentwicklung ohne
-                                    Vendor-Lock-in und mit voller
-                                    Observability ermöglichen.
+                                    <strong>Herausforderung:</strong> Schnelle KI-Anwendungsentwicklung ohne Vendor-Lock-in und mit voller Observability ermöglichen.
                                 </li>
                                 <li>
-                                    <strong>Lösung:</strong> Deklarative
-                                    Workflow-Engine,
-                                    Multi-Provider-LLM-Routing, RAG-Systeme
-                                    und Low-Code-UI-Builder.
+                                    <strong>Lösung:</strong> Deklarative State-Machine-Engine, Hook-basiertes Integration-System, JavaScript-Execution-Sandbox und OpenAI-kompatible APIs.
                                 </li>
                                 <li>
-                                    <strong>Ergebnis:</strong> 70%
-                                    schnellere KI-Anwendungsentwicklung;
-                                    produktionsreif auf Self-Hosted oder
-                                    Cloud-Infrastruktur.
+                                    <strong>Ergebnis:</strong> Produktionsreife Plattform für den Bau von KI-nativen Anwendungen mit vollständiger Observability und Multi-Tenant-Support.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Platform Engineering</span><span class="case-tag">Deklarative
-                                    Systeme</span><span class="case-tag">KI-Nativ</span>
+                                <span class="case-tag">Platform Engineering</span><span class="case-tag">Go</span><span class="case-tag">KI-Orchestrierung</span>
                             </div>
                         </div>
                     </article>
+
+                    <!-- 2. AI-Native Application -->
                     <article id="case-techcareer" class="case-study-card featured-case"
-                        data-tags="platform ai automation">
+                        data-tags="ai automation platform">
                         <figure class="case-image-container">
                             <video class="case-image" src="assets/video/techcareer_demo_web.mp4"
                                 poster="assets/images/techcareer-ui-screenshot-1.png" autoplay muted loop playsinline
@@ -173,34 +158,20 @@
                         </figure>
                         <div class="case-content">
                             <h3>
-                                TechCareer.AI —
-                                Karriere-Intelligenz-Plattform
+                                TechCareer Portal — KI-Karriere-Intelligenz
                             </h3>
                             <p class="case-description">
-                                Eine produktionsreife B2C-SaaS-Plattform für
-                                KI-gestützte Lebenslaufanalyse,
-                                Marktwertschätzung und Skill-Gap-Roadmaps.
-                                Gebaut auf dem neuesten Stand des
-                                React-Ökosystems.
+                                Produktionsreife B2C-SaaS-Plattform für KI-gestützte Lebenslaufanalyse, Marktwertschätzung und Skill-Gap-Roadmaps. Entwickelt mit Next.js 16, React 19, Supabase und Stripe-Integration.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Architektur:</strong> Next.js 16
-                                    (App Router) mit React 19 Server
-                                    Components, Supabase SSR für Auth/Daten
-                                    und Tailwind v4.
+                                    <strong>Architektur:</strong> Next.js 16 (App Router) mit React 19 Server Components, Supabase SSR für Auth/Daten und komplette Stripe-Monetarisierung.
                                 </li>
                                 <li>
-                                    <strong>Integration:</strong> Nahtlose
-                                    Monetarisierung via Stripe SDK,
-                                    KI-Analyse via OpenAI und typsicherer
-                                    Datenbankzugriff.
+                                    <strong>Features:</strong> CV-Validierung & -Extraktion, Karrierepfad-Vorschläge, Job-Matching mit Scoring und KI-gestützte CV-Anpassung.
                                 </li>
                                 <li>
-                                    <strong>Ergebnis:</strong>
-                                    Zero-Latency-UX dank React Compiler
-                                    Optimierung; vollautomatisierte
-                                    Subscription- und Content-Workflows.
+                                    <strong>Ergebnis:</strong> Zero-Latency-User-Experience mit React Compiler-Optimierung; vollautomatisierte Subscription- und Content-Generation-Workflows.
                                 </li>
                             </ul>
                             <div class="case-tags">
@@ -211,233 +182,131 @@
                             </div>
                         </div>
                     </article>
-                    <!-- 2. AI-Native Application -->
-                    <article id="case-assistant" class="case-study-card" data-tags="ai automation platform">
-                        <figure class="case-image-container">
-                            <img src="assets/images/telegram-bot-screenshot-1.png"
-                                alt="KI-Assistent-Interface mit Konversation und Tool-Ausführung" class="case-image"
-                                loading="lazy" />
-                            <figcaption class="case-image-overlay">
-                                <span>KI-Anwendung</span>
-                            </figcaption>
-                        </figure>
-                        <div class="case-content">
-                            <h3>KI-Native Assistenten-Plattform</h3>
-                            <p class="case-description">
-                                Multi-Tenant-KI-Assistenten-Plattform mit
-                                RAG-Suche, Tool-Execution und
-                                Workflow-Automatisierung. Auf deklarativen
-                                Prinzipien für schnelle Customization.
-                            </p>
-                            <ul class="case-highlights">
-                                <li>
-                                    <strong>Herausforderung:</strong>
-                                    Entwicklungszeit für
-                                    Custom-KI-Assistenten reduzieren bei
-                                    gleichbleibender Security und
-                                    Observability.
-                                </li>
-                                <li>
-                                    <strong>Lösung:</strong>
-                                    Konfigurationsgesteuerte
-                                    Assistenten-Framework, semantische
-                                    Suche, Aktions-APIs und
-                                    Echtzeit-Monitoring.
-                                </li>
-                                <li>
-                                    <strong>Ergebnis:</strong> 24/7
-                                    intelligenter Support mit 60% Reduktion
-                                    bei Routine-Operationen.
-                                </li>
-                            </ul>
-                            <div class="case-tags">
-                                <span class="case-tag">KI-Nativ</span><span class="case-tag">RAG</span><span
-                                    class="case-tag">Automatisierung</span>
-                            </div>
-                        </div>
-                    </article>
 
                     <!-- 3. Cloud Infrastructure -->
-                    <article id="case-observability" class="case-study-card" data-tags="infrastructure platform">
+                    <article id="case-direktiv" class="case-study-card" data-tags="infrastructure platform automation">
                         <figure class="case-image-container">
-                            <img src="assets/images/contenox-screenshot-1.png"
-                                alt="Cloud-Infrastruktur-Dashboard mit Metriken und Distributed Tracing"
-                                class="case-image" loading="lazy" />
+                            <img src="assets/images/direktiv-screenshot.png"
+                                alt="Kubernetes-native Workflow-Engine-Dashboard" class="case-image"
+                                loading="lazy" />
                             <figcaption class="case-image-overlay">
                                 <span>Infrastruktur</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>Cloud-Native Plattform-Infrastruktur</h3>
+                            <h3>Direktiv — Kubernetes-Workflow-Engine</h3>
                             <p class="case-description">
-                                Design und Implementierung von
-                                Kubernetes-nativer Infrastruktur für
-                                KI-Plattform mit voller Observability,
-                                Security-Hardening und
-                                Multi-Cloud-Deployment-Fähigkeiten.
+                                Senior Engineer und Feature-Owner für Kubernetes-native Workflow-Engine-Plattform. Verantwortlich für Event-Bus, Observability-Stack und Enterprise-Integrationen.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Herausforderung:</strong>
-                                    Zuverlässige, observable Infrastruktur
-                                    für verteilte KI-Workloads über mehrere
-                                    Umgebungen bereitstellen.
+                                    <strong>Herausforderung:</strong> Zuverlässige, observable Infrastruktur für verteilte Workflows über mehrere Cloud-Umgebungen bereitstellen.
                                 </li>
                                 <li>
-                                    <strong>Lösung:</strong>
-                                    Kubernetes-Operators,
-                                    OpenTelemetry-Instrumentierung, sichere
-                                    Service-Mesh und GitOps-Workflows.
+                                    <strong>Lösung:</strong> OpenTelemetry-Integration, Fluent Bit-Logging, Prometheus-Metriken und sichere Enterprise-Connectors (Azure Entra, OAuth, Microsoft 365).
                                 </li>
                                 <li>
-                                    <strong>Ergebnis:</strong> 99,9%
-                                    Plattform-Verfügbarkeit; 80% schnellere
-                                    Incident-Resolution; konsistente
-                                    Deployment über Cloud-Provider.
+                                    <strong>Ergebnis:</strong> 10x Event-Processing-Throughput-Steigerung, &lt;5ms p99-Latenz und erfolgreiche Akquisition durch archTIS.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Kubernetes</span><span class="case-tag">Observability</span><span
-                                    class="case-tag">Cloud Native</span>
+                                <span class="case-tag">Kubernetes</span><span class="case-tag">Observability</span><span class="case-tag">Go</span>
                             </div>
                         </div>
                     </article>
 
                     <!-- 4. Enterprise AI Governance -->
-                    <article id="case-compliance" class="case-study-card" data-tags="governance platform">
+                    <article id="case-archtis" class="case-study-card" data-tags="governance platform infrastructure">
                         <figure class="case-image-container">
-                            <img src="assets/images/telekom-compliance.png"
-                                alt="Governance-Dashboard mit Compliance-Status und Audit-Trails" class="case-image"
+                            <img src="assets/images/abac-dashboard.png"
+                                alt="ABAC-Sicherheitsplattform-Dashboard" class="case-image"
                                 loading="lazy" />
                             <figcaption class="case-image-overlay">
                                 <span>Governance</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>Enterprise-KI-Governance-Plattform</h3>
+                            <h3>archTIS — ABAC-Sicherheitsplattform</h3>
                             <p class="case-description">
-                                Governance-Framework und Tooling für
-                                KI-Systeme in regulierten Umgebungen, mit
-                                Audit-Trails, Policy-Enforcement und
-                                Compliance-Reporting.
+                                Interim Senior Engineer für die Entwicklung einer Attribute-Based Access Control-Sicherheitsplattform mit NIST 800-53-Compliance-Anforderungen. Leitung von Architektur, QA-Prozessen und sicherer Connector-Entwicklung.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Herausforderung:</strong>
-                                    KI-Innovation ermöglichen bei
-                                    gleichzeitiger Erfüllung strenger
-                                    Compliance-Anforderungen und
-                                    Audit-Readiness.
+                                    <strong>Herausforderung:</strong> Sichere KI-Integration bei gleichzeitiger Erfüllung strenger Compliance-Anforderungen für Verteidigungs- und Regierungssektoren.
                                 </li>
                                 <li>
-                                    <strong>Lösung:</strong> Eingebaute
-                                    Audit-Logging, Policy-as-Code-Framework,
-                                    Compliance-Dashboards und
-                                    Risikobewertungs-Workflows.
+                                    <strong>Lösung:</strong> ABAC-Policy-Enforcement-Engine, sichere Azure EntraID-Integration, SharePoint-Connectors und umfassende Audit-Logging.
                                 </li>
                                 <li>
-                                    <strong>Ergebnis:</strong> Beschleunigte
-                                    KI-Adoption mit 100% Audit-Compliance;
-                                    Reduzierte Compliance-Review-Zeit um
-                                    75%.
+                                    <strong>Ergebnis:</strong> Erfolgreicher Cross-Company-Wissenstransfer während der Akquisition und deployment-bereite Sicherheitsplattform.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Governance</span><span class="case-tag">Compliance</span><span
-                                    class="case-tag">Security</span>
+                                <span class="case-tag">Sicherheit</span><span class="case-tag">ABAC</span><span class="case-tag">NIST 800-53</span>
                             </div>
                         </div>
                     </article>
 
                     <!-- 5. Developer Platform -->
-                    <article id="case-abac" class="case-study-card" data-tags="platform infrastructure">
+                    <article id="case-telekom" class="case-study-card" data-tags="platform infrastructure automation">
                         <figure class="case-image-container">
-                            <img src="assets/images/case-abac.png"
-                                alt="Developer-Plattform mit API-Management und Workflow-Tools" class="case-image"
+                            <img src="assets/images/telekom-mlops.png"
+                                alt="MLOps-Pipeline-Dashboard und Monitoring" class="case-image"
                                 loading="lazy" />
                             <figcaption class="case-image-overlay">
                                 <span>Developer-Plattform</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>Interne Developer-Plattform</h3>
+                            <h3>Telekom Innovation Lab — MLOps-Plattform</h3>
                             <p class="case-description">
-                                Erstellung interner Plattform für
-                                Entwicklungsteams zum Bauen, Deployen und
-                                Betreiben von KI-Anwendungen mit eingebauter
-                                Security, Observability und Compliance.
+                                Python Engineer für die Entwicklung von Microservices und ETL-Pipelines für 4G-Netzwerkoptimierungssysteme. Fokus auf DevSecOps, Vulnerability-Management und Datenbankmigration für MLOps-Prozesse.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Herausforderung:</strong>
-                                    Standardisierung der
-                                    KI-Anwendungsentwicklung bei
-                                    gleichzeitiger Beibehaltung von
-                                    Flexibilität und
-                                    Innovationsgeschwindigkeit.
+                                    <strong>Herausforderung:</strong> Standardisierung der AI/ML-Entwicklung bei gleichzeitiger Beibehaltung von Security-Compliance und Datenintegrität.
                                 </li>
                                 <li>
-                                    <strong>Lösung:</strong>
-                                    Self-Service-Plattform mit Golden Paths,
-                                    automatisierte Security-Controls und
-                                    Developer-Tooling.
+                                    <strong>Lösung:</strong> Vulnerability-Scanning-Integration, Datenbankkonsolidierung (300+ GB), Kubernetes-Optimierung und &gt;90% Testabdeckung.
                                 </li>
                                 <li>
-                                    <strong>Ergebnis:</strong> 50% Reduktion
-                                    der Time-to-Production; konsistente
-                                    Security-Posture über alle Anwendungen.
+                                    <strong>Ergebnis:</strong> Erfolgreicher Go-Live mit Compliance-Freigabe und verdoppelter Sprint-Velocity durch Prozessverbesserungen.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Platform Engineering</span><span class="case-tag">Developer
-                                    Experience</span><span class="case-tag">Interne Tools</span>
+                                <span class="case-tag">MLOps</span><span class="case-tag">DevSecOps</span><span class="case-tag">Python</span>
                             </div>
                         </div>
                     </article>
 
                     <!-- 6. RAG Platform -->
-                    <article id="case-docsearch" class="case-study-card" data-tags="ai platform">
+                    <article id="case-research" class="case-study-card" data-tags="ai platform research">
                         <figure class="case-image-container">
-                            <img src="assets/images/case-docsearch.png"
-                                alt="RAG-Plattform-Interface mit Dokumenten-Management und semantischer Suche"
-                                class="case-image" loading="lazy" />
+                            <img src="assets/images/mimesis-research.png"
+                                alt="Forschungsplattform für Developer-Interaktions-Analytics" class="case-image"
+                                loading="lazy" />
                             <figcaption class="case-image-overlay">
-                                <span>RAG-Plattform</span>
+                                <span>Forschungsplattform</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>Enterprise-RAG-Plattform</h3>
+                            <h3>Universitätsforschung — Developer Analytics</h3>
                             <p class="case-description">
-                                Skalierbare RAG-Plattform für
-                                Enterprise-Wissensmanagement, mit
-                                Dokument-Ingestion, Vektorsuche und
-                                Multi-Tenant-Isolation.
+                                Akademisches Forschungsprojekt zur Entwicklung einer Telemetrie-Erfassungs- und Analyseplattform für Developer-Workflow-Studien. Full-Stack-Entwicklung von Eclipse-Plugin bis Web-Analytics-Dashboard.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Herausforderung:</strong>
-                                    Enterprise-Wissensbasen durchsuchbar und
-                                    handlungsfähig machen bei gleichzeitiger
-                                    Daten-Sicherheit und Performance.
+                                    <strong>Herausforderung:</strong> Sammlung und Analyse von Developer-Interaktionsdaten im großen Maßstab für akademische Forschung zu Programmierworkflows.
                                 </li>
                                 <li>
-                                    <strong>Lösung:</strong> Verteilter
-                                    Vektor-Database, adaptives Chunking,
-                                    Embedding-Pipelines und
-                                    Access-Control-Integration.
+                                    <strong>Lösung:</strong> Eclipse-Plugin-Telemetrie, Java/Jakarta EE-Backend, Python-Analytics-Pipeline und React-Visualisierungs-Dashboard.
                                 </li>
                                 <li>
-                                    <strong>Ergebnis:</strong> 90%
-                                    Verbesserung bei
-                                    Informations-Retrieval-Genauigkeit;
-                                    Unterstützung für Millionen von
-                                    Dokumenten mit
-                                    Sub-Sekunden-Antwortzeiten.
+                                    <strong>Ergebnis:</strong> Veröffentlichte Forschung zu Developer-Navigation-Patterns und erfolgreiche Datensammlung von mehreren Studien-Teilnehmern.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">RAG</span><span class="case-tag">Vektorsuche</span><span
-                                    class="case-tag">Wissensmanagement</span>
+                                <span class="case-tag">Forschung</span><span class="case-tag">Java</span><span class="case-tag">Analytics</span>
                             </div>
                         </div>
                     </article>
@@ -447,20 +316,13 @@
             <!-- CONTACT CTA -->
             <section class="section section-alt" id="contact-cta">
                 <div class="contact-content centered">
-                    <h2>
-                        Bauen Sie Ihre KI-Plattform — schnell und
-                        verantwortungsvoll
-                    </h2>
+                    <h2>Bauen Sie Ihre KI-Plattform — schnell und verantwortungsvoll</h2>
                     <p class="hero-subtitle">
-                        Ob Sie eine deklarative Plattform, KI-native
-                        Anwendungen oder Cloud-Infrastruktur benötigen — wir
-                        liefern produktionsreife Systeme mit sauberer
-                        Übergabe.
+                        Ob Sie eine deklarative Plattform, KI-native Anwendungen oder Cloud-Infrastruktur benötigen — wir liefern produktionsreife Systeme mit sauberer Übergabe.
                     </p>
                     <div class="hero-actions">
                         <a href="index-de.html#contact" class="btn btn-primary btn-large">Plattform-Projekt starten</a>
-                        <a href="index-de.html#contact" class="btn btn-secondary btn-large">Architektur-Review
-                            buchen</a>
+                        <a href="index-de.html#contact" class="btn btn-secondary btn-large">Architektur-Review buchen</a>
                     </div>
                 </div>
             </section>
@@ -477,13 +339,6 @@
                             <li>
                                 <a href="index-de.html#packages">Pakete</a>
                             </li>
-                            <li>
-                                <a href="index-de.html#approach">Vorgehen</a>
-                            </li>
-                            <li>
-                                <a href="index-de.html#proof">Referenzen</a>
-                            </li>
-                            <li><a href="index-de.html#faq">FAQ</a></li>
                             <li>
                                 <a href="portfolio-de.html" aria-current="page">Portfolio</a>
                             </li>
@@ -510,7 +365,7 @@
                     </div>
 
                     <p class="copyright">
-                        © 2025 Alexander Ertli. Alle Rechte vorbehalten.
+                        &copy; 2026 Alexander Ertli. Alle Rechte vorbehalten.
                     </p>
                 </div>
             </div>
@@ -531,16 +386,31 @@
             });
         })();
 
-        // Active link
+        // Set active link consistently across pages
         (function () {
             const links = document.querySelectorAll(".nav-links a[href]");
             const page = (
-                location.pathname.split("/").pop() || "portfolio-de.html"
+                location.pathname.split("/").pop() || "index-de.html"
             ).toLowerCase();
+
             links.forEach((a) => {
                 const href = a.getAttribute("href");
                 if (!href) return;
+
+                // exact page match (about-de.html, portfolio-de.html)
                 if (href.toLowerCase() === page) {
+                    a.setAttribute("aria-current", "page");
+                    return;
+                }
+
+                // Index anchors (index-de.html#section) should be considered active when you're on index-de.html
+                const [path, hash] = href.split("#");
+                if (
+                    (page === "" || page === "index-de.html") &&
+                    path === "index-de.html" &&
+                    hash &&
+                    location.hash === "#" + hash
+                ) {
                     a.setAttribute("aria-current", "page");
                 }
             });
@@ -613,7 +483,7 @@
         });
     </script>
 
-    <!-- Schema.org: ItemList -->
+    <!-- Schema.org: ItemList of case studies -->
     <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -623,44 +493,38 @@
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "url": "#case-techcareer",
-                        "name": "TechCareer.AI — Karriere-Intelligenz-Plattform"
+                        "url": "#case-contenox",
+                        "name": "contenox — Open-Core GenAI-Plattform"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "url": "#case-contenox",
-                        "name": "Contenox — Deklarative KI-Plattform"
+                        "url": "#case-techcareer",
+                        "name": "TechCareer Portal — KI-Karriere-Intelligenz"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "url": "#case-assistant",
-                        "name": "KI-Native Assistenten-Plattform"
+                        "url": "#case-direktiv",
+                        "name": "Direktiv — Kubernetes-Workflow-Engine"
                     },
                     {
                         "@type": "ListItem",
                         "position": 4,
-                        "url": "#case-observability",
-                        "name": "Cloud-Native Plattform-Infrastruktur"
+                        "url": "#case-archtis",
+                        "name": "archTIS — ABAC-Sicherheitsplattform"
                     },
                     {
                         "@type": "ListItem",
                         "position": 5,
-                        "url": "#case-compliance",
-                        "name": "Enterprise-KI-Governance-Plattform"
+                        "url": "#case-telekom",
+                        "name": "Telekom Innovation Lab — MLOps-Plattform"
                     },
                     {
                         "@type": "ListItem",
                         "position": 6,
-                        "url": "#case-abac",
-                        "name": "Interne Developer-Plattform"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 7,
-                        "url": "#case-docsearch",
-                        "name": "Enterprise-RAG-Plattform"
+                        "url": "#case-research",
+                        "name": "Universitätsforschung — Developer Analytics"
                     }
                 ]
             }
