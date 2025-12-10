@@ -104,11 +104,12 @@
             <section id="portfolio-cases" class="section" aria-labelledby="cases-heading">
                 <h2 id="cases-heading">Platform & System Delivery</h2>
                 <p class="section-lead">
-                    A mix of declarative platforms, AI-native applications, and cloud infrastructure. Each engagement ends with clean handover: code, documentation, and operational runbooks.
+                    A mix of declarative platforms, AI-native applications, and cloud infrastructure. Each engagement
+                    ends with clean handover: code, documentation, and operational runbooks.
                 </p>
 
                 <div class="portfolio-grid" id="portfolio-grid">
-                    <!-- 1. Platform: Contenox Runtime -->
+                    <!-- 1. Platform: Contenox -->
                     <article id="case-contenox" class="case-study-card featured-case"
                         data-tags="platform ai automation">
                         <figure class="case-image-container">
@@ -122,30 +123,38 @@
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>contenox — Open-Core GenAI Platform</h3>
+                            <h3>contenox — AI Platform & RAG Architecture</h3>
                             <p class="case-description">
-                                Built a complete GenAI orchestration platform (~150k LOC across 23 repos) with declarative workflow engine, multi-provider LLM routing, RAG systems, and enterprise dashboard.
+                                <strong>Technical Founder</strong>. Built an <strong>AI Platform</strong> (~150k LOC)
+                                with <strong>RAG Pipelines</strong>, <strong>Vector Search (Vald)</strong>, and
+                                <strong>LLM Routing</strong>.
+                                Engineered a custom state machine in <strong>Go</strong> with a secure <strong>Goja JS
+                                    Sandbox</strong> for executing untrusted user code.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Challenge:</strong> Enable rapid AI application development without vendor lock-in and with full observability.
+                                    <strong>Scale:</strong> 23 microservices, 150k+ LOC, high-throughput event
+                                    processing.
                                 </li>
                                 <li>
-                                    <strong>Solution:</strong> Declarative state machine engine, hook-based integration system, JavaScript execution sandbox, and OpenAI-compatible APIs.
+                                    <strong>Tech:</strong> <strong>Go</strong>, <strong>React 19</strong>,
+                                    <strong>Standardized Hook System</strong> (OpenAPI), <strong>OpenAI-compatible
+                                        Runtime</strong>.
                                 </li>
                                 <li>
-                                    <strong>Outcome:</strong> Production-ready platform for building AI-native applications with complete observability and multi-tenant support.
+                                    <strong>Outcome:</strong> A production-ready AI orchestration engine capable of
+                                    running complex, multi-step agentic workflows.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Platform Engineering</span><span class="case-tag">Go</span><span class="case-tag">AI Orchestration</span>
+                                <span class="case-tag">AI Platform</span><span class="case-tag">RAG</span><span
+                                    class="case-tag">Vector DB</span><span class="case-tag">Go</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 2. AI-Native Application -->
-                    <article id="case-techcareer" class="case-study-card featured-case"
-                        data-tags="ai automation platform">
+                    <!-- 2. SaaS: TechCareer Portal -->
+                    <article id="case-techcareer" class="case-study-card featured-case" data-tags="ai saas platform">
                         <figure class="case-image-container">
                             <video class="case-image" src="assets/video/techcareer_demo_web.mp4"
                                 poster="assets/images/techcareer-ui-screenshot-1.png" autoplay muted loop playsinline
@@ -153,136 +162,123 @@
                                 Your browser does not support the video tag.
                             </video>
                             <figcaption class="case-image-overlay">
-                                <span>AI SaaS Platform</span>
+                                <span>SaaS Product</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>
-                                TechCareer Portal — AI Career Intelligence
-                            </h3>
+                            <h3>TechCareer — SaaS Architecture (Next.js 16)</h3>
                             <p class="case-description">
-                                Production-grade B2C SaaS platform offering AI-driven resume analysis, market valuation, and skill gap roadmaps. Built with Next.js 16, React 19, Supabase, and Stripe integration.
+                                <strong>Full-Stack Architect</strong> for a B2C AI SaaS. Built with <strong>Next.js
+                                    16</strong>, <strong>React 19 Server Components</strong>, and
+                                <strong>Supabase</strong>.
+                                Integrated <strong>Stripe</strong> for subscriptions and automated AI workflows for CV
+                                analysis.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Architecture:</strong> Next.js 16 (App Router) with React 19 Server Components, Supabase SSR for auth/data, and complete Stripe monetization.
+                                    <strong>Architecture:</strong> Modern <strong>Next.js App Router</strong> stack with
+                                    <strong>Zero-Latency</strong> UX optimization.
                                 </li>
                                 <li>
-                                    <strong>Features:</strong> CV validation & extraction, career path suggestions, job matching with scoring, and AI-powered CV tailoring.
+                                    <strong>Features:</strong> Automated PDF parsing, AI-driven content generation, and
+                                    full subscription lifecycle management.
                                 </li>
                                 <li>
-                                    <strong>Outcome:</strong> Zero-latency user experience with React Compiler optimization; fully automated subscription and content generation workflows.
+                                    <strong>Outcome:</strong> A high-performance, revenue-generating product built from
+                                    scratch to production.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Next.js 16</span>
-                                <span class="case-tag">React 19</span>
-                                <span class="case-tag">Supabase</span>
-                                <span class="case-tag">Stripe</span>
+                                <span class="case-tag">Next.js 16</span><span class="case-tag">React 19</span><span
+                                    class="case-tag">Stripe</span><span class="case-tag">SaaS</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 3. Cloud Infrastructure -->
+                    <!-- 3. Platform: Direktiv -->
                     <article id="case-direktiv" class="case-study-card" data-tags="infrastructure platform automation">
                         <figure class="case-image-container">
-                            <img src="assets/images/direktiv-screenshot.png"
-                                alt="Kubernetes-native workflow engine dashboard" class="case-image"
-                                loading="lazy" />
+                            <img src="assets/images/placeholder-internal.svg"
+                                alt="Kubernetes-native workflow engine dashboard" class="case-image" loading="lazy" />
                             <figcaption class="case-image-overlay">
-                                <span>Infrastructure</span>
+                                <span>K8s Platform</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>Direktiv — Kubernetes Workflow Engine</h3>
+                            <h3>Direktiv — Kubernetes-Native Engine</h3>
                             <p class="case-description">
-                                Senior engineer and feature owner for Kubernetes-native workflow engine platform. Responsible for event bus, observability stack, and enterprise integrations.
+                                <strong>Feature Owner</strong> for a <strong>Kubernetes-Native</strong> orchestration
+                                platform.
+                                Built <strong>K8s Controllers</strong> in Go and the <strong>Event-Streaming</strong>
+                                bus.
+                                Responsible for the observability stack (<strong>OpenTelemetry</strong>, <strong>Fluent
+                                    Bit</strong>) and enterprise security (<strong>OIDC/OAuth2</strong>).
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Challenge:</strong> Provide reliable, observable infrastructure for distributed workflows across multiple cloud environments.
+                                    <strong>Core Tech:</strong> <strong>Go Controllers</strong>,
+                                    <strong>Knative</strong>, <strong>PostgreSQL</strong>, <strong>Prometheus</strong>.
                                 </li>
                                 <li>
-                                    <strong>Solution:</strong> OpenTelemetry integration, Fluent Bit logging, Prometheus metrics, and secure enterprise connectors (Azure Entra, OAuth, Microsoft 365).
+                                    <strong>Security:</strong> Implemented <strong>Enterprise SSO</strong> and RBAC
+                                    policies for large-scale deployments.
                                 </li>
                                 <li>
-                                    <strong>Outcome:</strong> 10x event processing throughput increase, &lt;5ms p99 latency, and successful acquisition by archTIS.
+                                    <strong>Outcome:</strong> 10x event throughput increase and &lt;5ms latency for
+                                    critical paths.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Kubernetes</span><span class="case-tag">Observability</span><span class="case-tag">Go</span>
+                                <span class="case-tag">Kubernetes Controllers</span><span
+                                    class="case-tag">Go</span><span class="case-tag">OpenTelemetry</span><span
+                                    class="case-tag">Event Streaming</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 4. Enterprise AI Governance -->
-                    <article id="case-archtis" class="case-study-card" data-tags="governance platform infrastructure">
+                    <!-- 4. Systems: K8s Governance Operator -->
+                    <article id="case-operator" class="case-study-card" data-tags="infrastructure governance security">
                         <figure class="case-image-container">
-                            <img src="assets/images/abac-dashboard.png"
-                                alt="ABAC security platform dashboard" class="case-image"
-                                loading="lazy" />
+                            <img src="assets/images/k8s-operator-diagram.svg"
+                                alt="Kubernetes Governance Operator Architecture" class="case-image"
+                                style="padding: 20px; background: #fff;" loading="lazy" />
                             <figcaption class="case-image-overlay">
-                                <span>Governance</span>
+                                <span>K8s Operator</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>archTIS — ABAC Security Platform</h3>
+                            <h3>K8s Governance Operator — Zero Trust Automation</h3>
                             <p class="case-description">
-                                Interim senior engineer developing Attribute-Based Access Control security platform with NIST 800-53 compliance requirements. Led architecture, QA processes, and secure connector development.
+                                <strong>Systems Engineer</strong>. Developed a custom <strong>Kubernetes
+                                    Operator</strong> (Go/Kubebuilder) to automate <strong>Day 2 Compliance</strong>.
+                                Enforces <strong>NIST-compliant</strong> workspace standards via declarative
+                                <strong>CRDs</strong>.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Challenge:</strong> Enable secure AI adoption while meeting strict compliance requirements for defense and government sectors.
+                                    <strong>Automation:</strong> Auto-provisions Namespaces with <strong>"Default Deny"
+                                        NetworkPolicies</strong> and <strong>RBAC RoleBindings</strong>.
                                 </li>
                                 <li>
-                                    <strong>Solution:</strong> ABAC policy enforcement engine, secure Azure EntraID integration, SharePoint connectors, and comprehensive audit logging.
+                                    <strong>Governance:</strong> Enforces tiered <strong>ResourceQuotas</strong>
+                                    (Bronze/Silver/Gold) to control costs and prevent "noisy neighbor" issues.
                                 </li>
                                 <li>
-                                    <strong>Outcome:</strong> Successful cross-company knowledge transfer during acquisition and deployment-ready security platform.
+                                    <strong>Tech:</strong> <strong>Kubebuilder</strong>, <strong>Controller
+                                        Runtime</strong>, <strong>Go</strong>.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Security</span><span class="case-tag">ABAC</span><span class="case-tag">NIST 800-53</span>
+                                <span class="case-tag">Kubebuilder</span><span class="case-tag">Governance</span><span
+                                    class="case-tag">CRDs</span><span class="case-tag">Zero Trust</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- 5. Developer Platform -->
-                    <article id="case-telekom" class="case-study-card" data-tags="platform infrastructure automation">
-                        <figure class="case-image-container">
-                            <img src="assets/images/telekom-mlops.png"
-                                alt="MLOps pipeline dashboard and monitoring" class="case-image"
-                                loading="lazy" />
-                            <figcaption class="case-image-overlay">
-                                <span>Developer Platform</span>
-                            </figcaption>
-                        </figure>
-                        <div class="case-content">
-                            <h3>Telekom Innovation Lab — MLOps Platform</h3>
-                            <p class="case-description">
-                                Python engineer developing microservices and ETL pipelines for 4G network optimization systems. Focused on DevSecOps, vulnerability management, and database migration for MLOps processes.
-                            </p>
-                            <ul class="case-highlights">
-                                <li>
-                                    <strong>Challenge:</strong> Standardize AI/ML development while maintaining security compliance and data integrity.
-                                </li>
-                                <li>
-                                    <strong>Solution:</strong> Vulnerability scanning integration, database consolidation (300+ GB), Kubernetes optimization, and &gt;90% test coverage.
-                                </li>
-                                <li>
-                                    <strong>Outcome:</strong> Successful go-live with compliance approval and doubled sprint velocity through process improvements.
-                                </li>
-                            </ul>
-                            <div class="case-tags">
-                                <span class="case-tag">MLOps</span><span class="case-tag">DevSecOps</span><span class="case-tag">Python</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 6. RAG Platform -->
+                    <!-- 5. RAG Platform -->
                     <article id="case-research" class="case-study-card" data-tags="ai platform research">
                         <figure class="case-image-container">
-                            <img src="assets/images/mimesis-research.png"
+                            <img src="assets/images/placeholder-internal.svg"
                                 alt="Research platform for developer interaction analytics" class="case-image"
                                 loading="lazy" />
                             <figcaption class="case-image-overlay">
@@ -292,21 +288,27 @@
                         <div class="case-content">
                             <h3>University Research — Developer Analytics</h3>
                             <p class="case-description">
-                                Academic research project building telemetry collection and analysis platform for developer workflow studies. Full-stack development from Eclipse plugin to web analytics dashboard.
+                                Academic research project building telemetry collection and analysis platform for
+                                developer workflow studies. Full-stack development from Eclipse plugin to web analytics
+                                dashboard.
                             </p>
                             <ul class="case-highlights">
                                 <li>
-                                    <strong>Challenge:</strong> Collect and analyze developer interaction data at scale for academic research on programming workflows.
+                                    <strong>Challenge:</strong> Collect and analyze developer interaction data at scale
+                                    for academic research on programming workflows.
                                 </li>
                                 <li>
-                                    <strong>Solution:</strong> Eclipse plugin telemetry, Java/Jakarta EE backend, Python analytics pipeline, and React visualization dashboard.
+                                    <strong>Solution:</strong> Eclipse plugin telemetry, Java/Jakarta EE backend, Python
+                                    analytics pipeline, and React visualization dashboard.
                                 </li>
                                 <li>
-                                    <strong>Outcome:</strong> Published research on developer navigation patterns and successful data collection from multiple study participants.
+                                    <strong>Outcome:</strong> Published research on developer navigation patterns and
+                                    successful data collection from multiple study participants.
                                 </li>
                             </ul>
                             <div class="case-tags">
-                                <span class="case-tag">Research</span><span class="case-tag">Java</span><span class="case-tag">Analytics</span>
+                                <span class="case-tag">Research</span><span class="case-tag">Java</span><span
+                                    class="case-tag">Analytics</span>
                             </div>
                         </div>
                     </article>
@@ -318,7 +320,8 @@
                 <div class="contact-content centered">
                     <h2>Build Your AI Platform — Fast and Responsible</h2>
                     <p class="hero-subtitle">
-                        Whether you need a declarative platform, AI-native applications, or cloud infrastructure — we deliver production-ready systems with clean handover.
+                        Whether you need a declarative platform, AI-native applications, or cloud infrastructure — we
+                        deliver production-ready systems with clean handover.
                     </p>
                     <div class="hero-actions">
                         <a href="index.html#contact" class="btn btn-primary btn-large">Start Platform Project</a>
@@ -365,7 +368,7 @@
                     </div>
 
                     <p class="copyright">
-                        &copy; 2026 Alexander Ertli. All rights reserved.
+                        &copy; 2025 Alexander Ertli. All rights reserved.
                     </p>
                 </div>
             </div>
@@ -494,35 +497,29 @@
                         "@type": "ListItem",
                         "position": 1,
                         "url": "#case-contenox",
-                        "name": "contenox — Open-Core GenAI Platform"
+                        "name": "contenox — AI Platform & RAG Architecture"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "url": "#case-techcareer",
-                        "name": "TechCareer Portal — AI Career Intelligence"
+                        "name": "TechCareer — SaaS Architecture"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "url": "#case-direktiv",
-                        "name": "Direktiv — Kubernetes Workflow Engine"
+                        "name": "Direktiv — Kubernetes-Native Engine"
                     },
                     {
                         "@type": "ListItem",
                         "position": 4,
-                        "url": "#case-archtis",
-                        "name": "archTIS — ABAC Security Platform"
+                        "url": "#case-operator",
+                        "name": "K8s Governance Operator — Zero Trust Automation"
                     },
                     {
                         "@type": "ListItem",
                         "position": 5,
-                        "url": "#case-telekom",
-                        "name": "Telekom Innovation Lab — MLOps Platform"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 6,
                         "url": "#case-research",
                         "name": "University Research — Developer Analytics"
                     }

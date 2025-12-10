@@ -1,0 +1,51 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="450" fill="#f8fafc"/>
+  
+  <!-- Operator Logic Box -->
+  <rect x="250" y="80" width="300" height="290" rx="10" fill="white" filter="url(#shadow)" stroke="#e2e8f0"/>
+  <text x="400" y="110" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle">K8s Governance Operator</text>
+  
+  <!-- Controller Loop -->
+  <circle cx="400" cy="180" r="40" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+  <path d="M385 180 L400 165 L415 180 M415 180 A 20 20 0 1 1 385 180" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="185" font-family="system-ui, sans-serif" font-size="10" fill="#0369a1" text-anchor="middle">Reconcile</text>
+  
+  <!-- Input: CRD -->
+  <rect x="50" y="160" width="120" height="80" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="110" y="190" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Tenant CRD</text>
+  <text x="110" y="210" font-family="system-ui, sans-serif" font-size="10" fill="#15803d" text-anchor="middle">Plan: "Gold"</text>
+  
+  <!-- Arrow Input -->
+  <path d="M170 200 L250 200" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4"/>
+  <polygon points="250,200 240,195 240,205" fill="#94a3b8"/>
+  
+  <!-- Outputs -->
+  <g transform="translate(450, 200)">
+     <!-- Policy 1 -->
+     <rect x="120" y="-80" width="160" height="60" rx="6" fill="#fff1f2" stroke="#e11d48"/>
+     <text x="200" y="-45" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#be123c" text-anchor="middle">NetworkPolicy</text>
+     <text x="200" y="-25" font-family="system-ui, sans-serif" font-size="10" fill="#be123c" text-anchor="middle">Zero-Trust: Deny All</text>
+     
+     <!-- Policy 2 -->
+     <rect x="120" y="0" width="160" height="60" rx="6" fill="#fff7ed" stroke="#ea580c"/>
+     <text x="200" y="35" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c2410c" text-anchor="middle">ResourceQuota</text>
+     <text x="200" y="55" font-family="system-ui, sans-serif" font-size="10" fill="#c2410c" text-anchor="middle">Limit: 100 CPU / 1TB</text>
+
+     <!-- Policy 3 -->
+     <rect x="120" y="80" width="160" height="60" rx="6" fill="#eff6ff" stroke="#2563eb"/>
+     <text x="200" y="115" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="middle">RBAC / RoleBinding</text>
+     <text x="200" y="135" font-family="system-ui, sans-serif" font-size="10" fill="#1d4ed8" text-anchor="middle">Team Access Only</text>
+  </g>
+  
+  <!-- Arrows Output -->
+  <path d="M440 180 L550 150" stroke="#64748b" stroke-width="2"/>
+  <path d="M440 180 L550 230" stroke="#64748b" stroke-width="2"/>
+  <path d="M440 180 L550 310" stroke="#64748b" stroke-width="2"/>
+
+</svg>
