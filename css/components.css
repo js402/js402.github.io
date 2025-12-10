@@ -771,3 +771,19 @@ img.lazy-loaded {
     left: 0;
     font-weight: bold;
 }
+
+.proof-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.proof-tag {
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}

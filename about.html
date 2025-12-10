@@ -21,7 +21,7 @@
     <meta property="og:description"
         content="Custom software engineering specializing in Go, building scalable systems and AI-native applications." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/og-about.png" />
+    <meta property="og:image" content="assets/images/og-main.png" />
 
     <link rel="icon" href="assets/images/logo.png" type="image/png" />
     <link rel="stylesheet" href="css/style-vars.css" />
@@ -38,14 +38,16 @@
                     <a class="brand-name" href="index.html" aria-label="Home">
                         Alexander Ertli
                     </a>
-                    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                        <span class="hamburger" aria-hidden="true"></span>
+                        <span class="hamburger" aria-hidden="true"></span>
                         <span class="hamburger" aria-hidden="true"></span>
                         <span class="sr-only">Menu</span>
                     </button>
                 </div>
                 <ul class="nav-links" id="nav-menu">
                     <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#packages">Packages</a></li>
+                    <li><a href="index.html#packages">Engagements</a></li>
                     <li><a href="index.html#approach">Approach</a></li>
                     <li><a href="index.html#proof">Proof</a></li>
                     <li><a href="index.html#faq">FAQ</a></li>
@@ -326,9 +328,9 @@
                             <h3>Core Languages & Runtimes</h3>
                             <ul class="expertise-list">
                                 <li><strong>Go (Golang)</strong> – Expert (Multi-threaded, Distributed)</li>
-                                <li><strong>TypeScript / Node.js</strong> – Advanced</li>
+                                <li><strong>Python</strong> – Expert (Backends, APIs, Data Pipelines, MLOps)</li>
+                                <li><strong>TypeScript / React</strong> – Proficient (Frontend, Next.js, Server Components)</li>
                                 <li><strong>Rust</strong> – Systems Programming</li>
-                                <li><strong>Python</strong> – MLOps & Scripting</li>
                             </ul>
                         </div>
 
@@ -398,7 +400,7 @@
                                 <a href="index.html#services">Services</a>
                             </li>
                             <li>
-                                <a href="index.html#packages">Packages</a>
+                                <a href="index.html#packages">Engagements</a>
                             </li>
                             <li><a href="portfolio.html">Portfolio</a></li>
                             <li>
@@ -450,47 +452,73 @@
         // Set active link consistently across pages
         (function () {
             const links = document.querySelectorAll(".nav-links a[href]");
-            const page = (
-                location.pathname.split("/").pop() || "index.html"
-            ).toLowerCase();
+            const page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+            const currentHash = location.hash.slice(1);
 
             links.forEach((a) => {
                 const href = a.getAttribute("href");
                 if (!href) return;
 
-                // exact page match (about.html, portfolio.html)
-                if (href.toLowerCase() === page) {
-                    a.setAttribute("aria-current", "page");
+                // Remove any existing aria-current
+                a.removeAttribute("aria-current");
+
+                // Split href into path and hash
+                const [hrefPath, hrefHash] = href.split("#");
+                const hrefPage = (hrefPath || "").toLowerCase();
+
+                // Check if we're on index.html (or root)
+                const isOnIndex = page === "" || page === "index.html";
+
+                // For index.html links with hashes, only mark active if hash matches
+                if (isOnIndex && href.includes("#")) {
+                    if (hrefHash && hrefHash === currentHash) {
+                        a.setAttribute("aria-current", "page");
+                    }
                     return;
                 }
 
-                // Index anchors (index.html#section) should be considered active when you're on index.html
-                const [path, hash] = href.split("#");
-                if (
-                    (page === "" || page === "index.html") &&
-                    path === "index.html" &&
-                    hash &&
-                    location.hash === "#" + hash
-                ) {
+                // For exact page matches (about.html, portfolio.html) without hash
+                if (!href.includes("#")) {
+                    if (hrefPage === page || (page === "" && hrefPage === "index.html")) {
+                        a.setAttribute("aria-current", "page");
+                    }
+                    return;
+                }
+
+                // For other pages with hashes, check both page and hash
+                if (hrefPage === page && hrefHash === currentHash && currentHash !== "") {
                     a.setAttribute("aria-current", "page");
                 }
             });
         })();
 
-        // Optional: smooth scroll for same-page anchors
-        document.querySelectorAll('a[href^="#"]').forEach((a) => {
-            a.addEventListener("click", (e) => {
-                const id = a.getAttribute("href");
-                const target = document.querySelector(id);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                    });
-                }
+        // Smooth scroll for anchor links
+        (function () {
+            document.querySelectorAll('a[href^="#"]').forEach((a) => {
+                a.addEventListener("click", (e) => {
+                    const href = a.getAttribute("href");
+                    if (href === "#" || !href) return;
+
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const headerOffset = 80; // Account for sticky header
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+
+                        // Update URL without triggering scroll
+                        if (history.pushState) {
+                            history.pushState(null, null, href);
+                        }
+                    }
+                });
             });
-        });
+        })();
     </script>
 
     <!-- Schema.org: Person -->
@@ -501,7 +529,7 @@
                 "name": "Alexander Ertli",
                 "jobTitle": "Software Engineer",
                 "email": "mailto:alexander@ertli.com",
-                "image": "https://ertli.com/images/profile.png",
+                "image": "https://ertli.com/assets/images/profile.png",
                 "url": "https://ertli.com/about.html",
                 "sameAs": [
                     "https://www.linkedin.com/in/ertli/",
