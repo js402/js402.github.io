@@ -67,47 +67,30 @@
                         loading="eager" />
                 </div>
                 <div class="hero-content">
-                    <h1>Platform Engineering & AI Systems</h1>
+                    <h1>Shipped Projects</h1>
                     <p class="hero-subtitle">
-                        Real deliveries across
-                        <strong>declarative platforms</strong>,
-                        <strong>AI-native applications</strong>,
-                        <strong>cloud infrastructure</strong>, and
-                        <strong>responsible AI</strong>.
+                        Backends, AI integrations, Kubernetes deployments, and full-stack products.
                     </p>
                     <div class="hero-actions">
-                        <a href="#portfolio-cases" class="btn btn-primary">View Case Studies</a>
+                        <a href="#portfolio-cases" class="btn btn-primary">View Projects</a>
                         <a href="index.html#contact" class="btn btn-secondary">Start a Project</a>
                     </div>
-                    <div class="filters" role="group" aria-label="Filter case studies">
-                        <button class="chip is-active" data-filter="all" aria-pressed="true">
-                            All
-                        </button>
-                        <button class="chip" data-filter="platform">
-                            Platforms
-                        </button>
-                        <button class="chip" data-filter="ai">
-                            AI Systems
-                        </button>
-                        <button class="chip" data-filter="infrastructure">
-                            Infrastructure
-                        </button>
-                        <button class="chip" data-filter="governance">
-                            Governance
-                        </button>
-                        <button class="chip" data-filter="automation">
-                            Automation
-                        </button>
+                    <div class="filters" role="group" aria-label="Filter projects">
+                        <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+                        <button class="chip" data-filter="platform">Products</button>
+                        <button class="chip" data-filter="ai">AI</button>
+                        <button class="chip" data-filter="infrastructure">DevOps</button>
+                        <button class="chip" data-filter="automation">Automation</button>
+                    </div>
                     </div>
                 </div>
             </section>
 
             <!-- CASES -->
             <section id="portfolio-cases" class="section" aria-labelledby="cases-heading">
-                <h2 id="cases-heading">Platform & System Delivery</h2>
+                <h2 id="cases-heading">Projects</h2>
                 <p class="section-lead">
-                    A mix of declarative platforms, AI-native applications, and cloud infrastructure. Each engagement
-                    ends with clean handover: code, documentation, and operational runbooks.
+                    Backends, AI features, Kubernetes setups, and full-stack products. Code, docs, and runbooks included.
                 </p>
 
                 <div class="portfolio-grid" id="portfolio-grid">
@@ -171,7 +154,7 @@
                         </figure>
                             <div class="case-content">
                                 <h3>Direktiv — Kubernetes‑Native Engine</h3>
-                                <p class="case-description">Feature owner for event bus & observability. Outcome: 10× event throughput and &lt;5ms latency on critical paths.</p>
+                                <p class="case-description">Event bus and observability improvements for Kubernetes-native workflow engine. Outcome: 10× event throughput and &lt;5ms latency on critical paths.</p>
                                 <ul class="case-highlights">
                                     <li>Controllers: Go, Knative, PostgreSQL</li>
                                     <li>Observability: OpenTelemetry, Fluent Bit, Prometheus</li>
@@ -185,42 +168,27 @@
                             </div>
                     </article>
 
-                    <!-- 4. Systems: K8s Governance Operator -->
-                    <article id="case-operator" class="case-study-card" data-tags="infrastructure governance security">
+                    <!-- 4. ERPNext + Custom AI Apps -->
+                    <article id="case-erpnext" class="case-study-card" data-tags="infrastructure platform ai">
                         <figure class="case-image-container">
-                            <img src="assets/images/k8s-operator-diagram.svg"
-                                alt="Kubernetes Governance Operator Architecture" class="case-image"
+                            <img src="assets/images/erpnext-dashboard.png"
+                                alt="ERPNext Dashboard" class="case-image"
                                 style="padding: 20px; background: #fff;" loading="lazy" />
                             <figcaption class="case-image-overlay">
-                                <span>K8s Operator</span>
+                                <span>ERP + AI</span>
                             </figcaption>
                         </figure>
                         <div class="case-content">
-                            <h3>K8s Governance Operator — Zero Trust Automation</h3>
+                            <h3>ERPNext on AWS — Terraform + Custom AI Apps</h3>
                             <p class="case-description">
-                                <strong>Systems Engineer</strong>. Developed a custom <strong>Kubernetes
-                                    Operator</strong> (Go/Kubebuilder) to automate <strong>Day 2 Compliance</strong>.
-                                Enforces <strong>NIST-compliant</strong> workspace standards via declarative
-                                <strong>CRDs</strong>.
+                                Production ERPNext deployment on AWS with Kubernetes. Custom Frappe apps for AI-powered document processing and workflow automation.
                             </p>
                             <ul class="case-highlights">
-                                <li>
-                                    <strong>Automation:</strong> Auto-provisions Namespaces with <strong>"Default Deny"
-                                        NetworkPolicies</strong> and <strong>RBAC RoleBindings</strong>.
-                                </li>
-                                <li>
-                                    <strong>Governance:</strong> Enforces tiered <strong>ResourceQuotas</strong>
-                                    (Bronze/Silver/Gold) to control costs and prevent "noisy neighbor" issues.
-                                </li>
-                                <li>
-                                    <strong>Tech:</strong> <strong>Kubebuilder</strong>, <strong>Controller
-                                        Runtime</strong>, <strong>Go</strong>.
-                                </li>
+                                <li>Infra: Terraform, EKS, RDS, S3, CloudFront</li>
+                                <li>Custom Apps: AI document extraction, automated approvals</li>
+                                <li>Tech: Python, Frappe Framework, OpenAI API</li>
                             </ul>
-                            <div class="case-tags">
-                                <span class="case-tag">Kubebuilder</span><span class="case-tag">Governance</span><span
-                                    class="case-tag">CRDs</span><span class="case-tag">Zero Trust</span>
-                            </div>
+                            <div class="case-tags">Terraform • AWS • Kubernetes • ERPNext • AI</div>
                         </div>
                     </article>
 
@@ -267,14 +235,12 @@
             <!-- CONTACT CTA -->
             <section class="section section-alt" id="contact-cta">
                 <div class="contact-content centered">
-                    <h2>Build Your AI Platform — Fast and Responsible</h2>
+                    <h2>Discuss a project?</h2>
                     <p class="hero-subtitle">
-                        Whether you need a declarative platform, AI-native applications, or cloud infrastructure — we
-                        deliver production-ready systems with clean handover.
+                        Backend, AI integration, Kubernetes, or full-stack — I deliver production code with documentation.
                     </p>
                     <div class="hero-actions">
-                        <a href="index.html#contact" class="btn btn-primary btn-large">Start Platform Project</a>
-                        <a href="index.html#contact" class="btn btn-secondary btn-large">Book Architecture Review</a>
+                        <a href="index.html#contact" class="btn btn-primary btn-large">Get in Touch</a>
                     </div>
                 </div>
             </section>
@@ -506,8 +472,8 @@
                     {
                         "@type": "ListItem",
                         "position": 4,
-                        "url": "#case-operator",
-                        "name": "K8s Governance Operator — Zero Trust Automation"
+                        "url": "#case-erpnext",
+                        "name": "ERPNext on AWS — Terraform + Custom AI Apps"
                     },
                     {
                         "@type": "ListItem",
