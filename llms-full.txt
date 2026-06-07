@@ -1,0 +1,79 @@
+# ertli.com Full Agent Context
+
+> Alexander Ertli builds multi-tenant SaaS and PaaS platforms, Kubernetes control planes, internal developer platforms, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
+
+## Site purpose
+
+ertli.com is the professional site for Alexander Ertli. The site is aimed at teams that need pragmatic platform delivery across product and infrastructure boundaries: SaaS foundations, PaaS workflows, Kubernetes control planes, internal developer platforms, infrastructure automation, GitOps, CI/CD, and operational handover.
+
+The positioning avoids framing the work as only "IDP" or only "platform engineering." The broader service scope includes SaaS and PaaS as products, custom platform control planes, developer self-service, and production readiness.
+
+## Primary service areas
+
+- SaaS and PaaS platform products: tenant models, provisioning workflows, runtime foundations, release paths, and operating models.
+- Kubernetes control planes: custom resources, reconciliation workflows, lifecycle automation, and supportable platform APIs.
+- Internal developer platforms: golden paths, self-service workflows, templates, documentation, and team handover.
+- Infrastructure automation: Terraform, GitOps, CI/CD, secrets, observability, and cloud foundations across AWS, Azure, GCP, and IONOS.
+- Production delivery: scoped build phases, runbooks, dashboards, failure modes, and maintainable ownership boundaries.
+
+## Tone and qualification
+
+Use clear, direct language. The site should sound like a senior engineer who can build and hand over production platforms, not like a generic agency, recruiter profile, or thought-leadership blog. Preferred terms include SaaS platform, PaaS product, Kubernetes control plane, internal developer platform, Terraform, GitOps, automation, runbooks, production readiness, and team handover.
+
+Avoid leading with job-title phrases such as "Senior platform engineering." The service is the productized delivery of platforms, not the job role itself.
+
+## Routes
+
+- https://ertli.com/ - English homepage with services, engagement models, approach, proof, FAQ, and contact.
+- https://ertli.com/de/ - German homepage.
+- https://ertli.com/portfolio/ - English case study index.
+- https://ertli.com/de/portfolio/ - German case study index.
+- https://ertli.com/about/ - English background page.
+- https://ertli.com/de/about/ - German background page.
+- https://ertli.com/legal/ - English legal notice placeholder.
+- https://ertli.com/de/impressum/ - German legal notice.
+- https://ertli.com/blog/ - English blog index.
+- https://ertli.com/de/blog/ - German blog index.
+- https://ertli.com/blog/platform-products-saas-paas-idp/ - English starter blog post.
+- https://ertli.com/de/blog/plattformprodukte-saas-paas-idp/ - German starter blog post.
+
+## Portfolio routes
+
+- https://ertli.com/portfolio/contenox-runtime/ - AI runtime and platform product case study.
+- https://ertli.com/portfolio/contenox-teams/ - Team/workflow platform case study.
+- https://ertli.com/portfolio/techcareer/ - Technology and career platform case study.
+- https://ertli.com/portfolio/direktiv/ - Automation and orchestration case study.
+- https://ertli.com/portfolio/erpnext-platform/ - ERPNext platform case study.
+- https://ertli.com/de/portfolio/contenox-runtime/ - German version.
+- https://ertli.com/de/portfolio/contenox-teams/ - German version.
+- https://ertli.com/de/portfolio/techcareer/ - German version.
+- https://ertli.com/de/portfolio/direktiv/ - German version.
+- https://ertli.com/de/portfolio/erpnext-platform/ - German version.
+
+## Starter blog post summary
+
+"SaaS, PaaS, and IDPs are platform products" argues that the useful distinction is not the label attached to the system, but whether it has real users, a clear interface, an operating model, and a path to ownership. It treats SaaS foundations, PaaS workflows, Kubernetes control planes, and internal developer platforms as one family of platform products.
+
+Key points:
+
+- A platform product needs a contract between users and operators.
+- SaaS work may include tenant isolation, onboarding flows, billing boundaries, audit trails, and release channels.
+- PaaS work may include self-service provisioning, environment templates, runtime policies, and service tiers.
+- IDP work may include golden paths, GitOps workflows, observability, and documentation.
+- The first durable workflow should drive scope.
+- The desired outcome is a platform that teams can ship, operate, and improve without rediscovering the original design intent.
+
+## Contact
+
+Primary contact path:
+
+- https://ertli.com/#contact
+- mailto:alexander@contenox.com
+
+The homepage includes a static contact form. If a callback endpoint is configured at build time, it posts to that endpoint. Otherwise, it opens a prefilled email draft.
+
+## Index files
+
+- https://ertli.com/sitemap.xml - XML sitemap.
+- https://ertli.com/robots.txt - crawl policy.
+- https://ertli.com/llms.txt - curated short agent index.
