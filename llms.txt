@@ -1,6 +1,6 @@
 # ertli.com
 
-> Alexander Ertli builds multi-tenant SaaS and PaaS platforms, Kubernetes control planes, internal developer platforms, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
+> Alexander Ertli designs cloud and application architecture for SaaS, ERPNext, AI/RAG products, managed-service foundations, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
 
 This is the curated agent-readable overview for ertli.com. Use the sitemap for the complete URL list and `llms-full.txt` for a fuller plain-text context.
 
@@ -17,7 +17,7 @@ This is the curated agent-readable overview for ertli.com. Use the sitemap for t
 
 ## Writing
 
-- [Blog](https://ertli.com/blog/): Short field notes on platform products and production delivery.
+- [Blog](https://ertli.com/blog/): Short field notes on cloud products and production delivery.
 - [SaaS, PaaS, and IDPs are platform products](https://ertli.com/blog/platform-products-saas-paas-idp/): Starter post on SaaS, PaaS, Kubernetes control planes, and internal developer platforms.
 - [German blog](https://ertli.com/de/blog/): German writing index.
 - [SaaS, PaaS und IDPs sind Plattformprodukte](https://ertli.com/de/blog/plattformprodukte-saas-paas-idp/): German version of the starter post.

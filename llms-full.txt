@@ -1,26 +1,26 @@
 # ertli.com Full Agent Context
 
-> Alexander Ertli builds multi-tenant SaaS and PaaS platforms, Kubernetes control planes, internal developer platforms, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
+> Alexander Ertli designs cloud and application architecture for SaaS, ERPNext, AI/RAG products, managed-service foundations, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
 
 ## Site purpose
 
-ertli.com is the professional site for Alexander Ertli. The site is aimed at teams that need pragmatic platform delivery across product and infrastructure boundaries: SaaS foundations, PaaS workflows, Kubernetes control planes, internal developer platforms, infrastructure automation, GitOps, CI/CD, and operational handover.
+ertli.com is the professional site for Alexander Ertli. The site is aimed at teams that need pragmatic cloud architecture across business application and infrastructure boundaries: SaaS foundations, PaaS workflows, ERPNext service operations, AI/RAG infrastructure, automation, GitOps, CI/CD, and operational handover.
 
-The positioning avoids framing the work as only "IDP" or only "platform engineering." The broader service scope includes SaaS and PaaS as products, custom platform control planes, developer self-service, and production readiness.
+The positioning focuses on Alexander as a cloud and application architect. The broader service scope includes SaaS and PaaS products, ERPNext operations, AI/RAG services, developer self-service, managed-service readiness, and production ownership.
 
 ## Primary service areas
 
-- SaaS and PaaS platform products: tenant models, provisioning workflows, runtime foundations, release paths, and operating models.
-- Kubernetes control planes: custom resources, reconciliation workflows, lifecycle automation, and supportable platform APIs.
-- Internal developer platforms: golden paths, self-service workflows, templates, documentation, and team handover.
-- Infrastructure automation: Terraform, GitOps, CI/CD, secrets, observability, and cloud foundations across AWS, Azure, GCP, and IONOS.
-- Production delivery: scoped build phases, runbooks, dashboards, failure modes, and maintainable ownership boundaries.
+- Cloud product architecture: tenant models, provisioning workflows, runtime foundations, release paths, and operating models.
+- ERPNext and business application service architecture: isolated tenants, onboarding flows, service operations, and day-2 automation.
+- AI/RAG service architecture: inference, document pipelines, MCP/agent access, tenancy, observability, security, and cost controls.
+- Infrastructure automation: Terraform, GitOps, CI/CD, secrets, observability, and cloud foundations across AWS, Azure, GCP, IONOS, and hybrid environments.
+- Operating model and handover: scoped delivery phases, runbooks, dashboards, support boundaries, and maintainable ownership.
 
 ## Tone and qualification
 
-Use clear, direct language. The site should sound like a senior engineer who can build and hand over production platforms, not like a generic agency, recruiter profile, or thought-leadership blog. Preferred terms include SaaS platform, PaaS product, Kubernetes control plane, internal developer platform, Terraform, GitOps, automation, runbooks, production readiness, and team handover.
+Use clear, direct language. The site should sound like a senior architect who can design, validate, and hand over production cloud services, not like a generic agency, recruiter profile, or thought-leadership blog. Preferred terms include cloud architecture, SaaS, PaaS, ERPNext, managed services, AI/RAG, Terraform, GitOps, automation, runbooks, production readiness, and team handover.
 
-Avoid leading with job-title phrases such as "Senior platform engineering." The service is the productized delivery of platforms, not the job role itself.
+Avoid leading with job-title phrases. The service is architecture and operating-model design for cloud products and managed-service foundations, not the job role itself.
 
 ## Routes
 
@@ -39,11 +39,11 @@ Avoid leading with job-title phrases such as "Senior platform engineering." The 
 
 ## Portfolio routes
 
-- https://ertli.com/portfolio/contenox-runtime/ - AI runtime and platform product case study.
-- https://ertli.com/portfolio/contenox-teams/ - Team/workflow platform case study.
-- https://ertli.com/portfolio/techcareer/ - Technology and career platform case study.
+- https://ertli.com/portfolio/contenox-runtime/ - AI runtime and product architecture case study.
+- https://ertli.com/portfolio/contenox-teams/ - Team/workflow product case study.
+- https://ertli.com/portfolio/techcareer/ - Technology and career product case study.
 - https://ertli.com/portfolio/direktiv/ - Automation and orchestration case study.
-- https://ertli.com/portfolio/erpnext-platform/ - ERPNext platform case study.
+- https://ertli.com/portfolio/erpnext-platform/ - ERPNext service automation case study.
 - https://ertli.com/de/portfolio/contenox-runtime/ - German version.
 - https://ertli.com/de/portfolio/contenox-teams/ - German version.
 - https://ertli.com/de/portfolio/techcareer/ - German version.
@@ -52,16 +52,16 @@ Avoid leading with job-title phrases such as "Senior platform engineering." The 
 
 ## Starter blog post summary
 
-"SaaS, PaaS, and IDPs are platform products" argues that the useful distinction is not the label attached to the system, but whether it has real users, a clear interface, an operating model, and a path to ownership. It treats SaaS foundations, PaaS workflows, Kubernetes control planes, and internal developer platforms as one family of platform products.
+"SaaS, PaaS, and IDPs are platform products" argues that the useful distinction is not the label attached to the system, but whether it has real users, a clear interface, an operating model, and a path to ownership. It treats SaaS foundations, PaaS workflows, Kubernetes control planes, and internal developer platforms as one family of product infrastructure.
 
 Key points:
 
-- A platform product needs a contract between users and operators.
+- A cloud product needs a contract between users and operators.
 - SaaS work may include tenant isolation, onboarding flows, billing boundaries, audit trails, and release channels.
 - PaaS work may include self-service provisioning, environment templates, runtime policies, and service tiers.
 - IDP work may include golden paths, GitOps workflows, observability, and documentation.
 - The first durable workflow should drive scope.
-- The desired outcome is a platform that teams can ship, operate, and improve without rediscovering the original design intent.
+- The desired outcome is a service that teams can ship, operate, and improve without rediscovering the original design intent.
 
 ## Contact
 
