@@ -1,7 +1,7 @@
 .markdown-page {
     max-width: 900px;
     margin: 0 auto;
-    padding: var(--space-3xl) var(--space-xl);
+    padding: clamp(var(--space-2xl), 6vh, var(--space-3xl)) var(--space-xl);
 }
 
 .markdown-page > * {
@@ -49,6 +49,10 @@
     line-height: var(--line-height-relaxed);
 }
 
+.markdown-page p {
+    color: var(--color-text);
+}
+
 .markdown-page ul,
 .markdown-page ol {
     padding-left: var(--space-xl);
@@ -61,6 +65,14 @@
 .markdown-page a {
     color: var(--color-primary);
     font-weight: var(--font-weight-semibold);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
+    text-underline-offset: 0.18em;
+}
+
+.markdown-page a:hover {
+    text-decoration-color: currentColor;
 }
 
 .markdown-page strong {
@@ -103,7 +115,7 @@
 
 .home-markdown > h1:first-child + p + ul li:first-child {
     background: var(--color-primary);
-    color: white;
+    color: var(--color-primary-contrast);
 }
 
 .home-markdown > h1:first-child + p + ul li:nth-child(2) {
@@ -132,6 +144,19 @@
 
 .portfolio-detail {
     max-width: 960px;
+}
+
+.blog-post {
+    max-width: 880px;
+}
+
+.blog-post h2 {
+    margin-top: var(--space-2xl);
+}
+
+.blog-post h2:first-of-type {
+    border-top: 0;
+    padding-top: 0;
 }
 
 .portfolio-detail .breadcrumb {
