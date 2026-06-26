@@ -12,15 +12,22 @@ This is the curated agent-readable overview for ertli.com. Use the sitemap for t
 - [German portfolio](https://ertli.com/de/portfolio/): German case study index.
 - [About](https://ertli.com/about/): Background and working style.
 - [German about](https://ertli.com/de/about/): German background page.
-- [Legal notice](https://ertli.com/legal/): English legal notice placeholder.
+- [Legal notice](https://ertli.com/legal/): English legal notice.
 - [Impressum](https://ertli.com/de/impressum/): German legal notice.
+
+## Portfolio
+
+- [Open-Source AI Agent Runtime](https://ertli.com/portfolio/ai-agent-runtime/): Local-first AI agent runtime that compiles to a single Go binary and configures behaviors via versioned YAML configuration files instead of proprietary code.
+- [MCP Server & Document SaaS](https://ertli.com/portfolio/ai-document-saas/): Multi-tenant SaaS platform built on an open-source AI agent runtime, adding document storage, vector search (RAG), and Model Context Protocol access.
+- [TechCareer - SaaS Architecture](https://ertli.com/portfolio/techcareer/): Full-stack B2C SaaS product featuring automated CV parsing and AI-driven content generation.
+- [Direktiv — Kubernetes-Native Engine](https://ertli.com/portfolio/direktiv/): Event bus optimizations and observability updates for a Kubernetes-native serverless workflow engine.
+- [Multi-Tenant ERPNext Platform — Operator & Control Panel](https://ertli.com/portfolio/erpnext-platform/): Kubernetes-native provisioning platform and control plane to deploy and operate isolated ERPNext instances for B2B tenants.
 
 ## Writing
 
 - [Blog](https://ertli.com/blog/): Short field notes on cloud products and production delivery.
-- [SaaS, PaaS, and IDPs are platform products](https://ertli.com/blog/platform-products-saas-paas-idp/): Starter post on SaaS, PaaS, Kubernetes control planes, and internal developer platforms.
 - [German blog](https://ertli.com/de/blog/): German writing index.
-- [SaaS, PaaS und IDPs sind Plattformprodukte](https://ertli.com/de/blog/plattformprodukte-saas-paas-idp/): German version of the starter post.
+- [SaaS, PaaS, and IDPs are platform products](https://ertli.com/blog/platform-products-saas-paas-idp/): A short note on treating SaaS platforms, PaaS layers, Kubernetes control planes, and internal developer platforms as products that need clear users, interfaces, operations, and ownership.
 
 ## Machine-readable indexes
 

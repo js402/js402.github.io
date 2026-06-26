@@ -30,47 +30,82 @@ Avoid leading with job-title phrases. The service is architecture and operating-
 - https://ertli.com/de/portfolio/ - German case study index.
 - https://ertli.com/about/ - English background page.
 - https://ertli.com/de/about/ - German background page.
-- https://ertli.com/legal/ - English legal notice placeholder.
+- https://ertli.com/legal/ - English legal notice.
 - https://ertli.com/de/impressum/ - German legal notice.
 - https://ertli.com/blog/ - English blog index.
 - https://ertli.com/de/blog/ - German blog index.
-- https://ertli.com/blog/platform-products-saas-paas-idp/ - English starter blog post.
-- https://ertli.com/de/blog/plattformprodukte-saas-paas-idp/ - German starter blog post.
+- https://ertli.com/blog/platform-products-saas-paas-idp/ - A short note on treating SaaS platforms, PaaS layers, Kubernetes control planes, and internal developer platforms as products that need clear users, interfaces, operations, and ownership.
+- https://ertli.com/de/blog/plattformprodukte-saas-paas-idp/ - German version.
 
-## Portfolio routes
+## Portfolio case studies
 
-- https://ertli.com/portfolio/contenox-runtime/ - AI runtime and product architecture case study.
-- https://ertli.com/portfolio/contenox-teams/ - Team/workflow product case study.
-- https://ertli.com/portfolio/techcareer/ - Technology and career product case study.
-- https://ertli.com/portfolio/direktiv/ - Automation and orchestration case study.
-- https://ertli.com/portfolio/erpnext-platform/ - ERPNext service automation case study.
-- https://ertli.com/de/portfolio/contenox-runtime/ - German version.
-- https://ertli.com/de/portfolio/contenox-teams/ - German version.
-- https://ertli.com/de/portfolio/techcareer/ - German version.
-- https://ertli.com/de/portfolio/direktiv/ - German version.
-- https://ertli.com/de/portfolio/erpnext-platform/ - German version.
+### Open-Source AI Agent Runtime
 
-## Starter blog post summary
+- URL: https://ertli.com/portfolio/ai-agent-runtime/
+- German: https://ertli.com/de/portfolio/ai-agent-runtime/
+- Tags: AI, Agents, Go, MCP, Open Source
+- TL;DR: Local-first AI agent runtime that compiles to a single Go binary and configures behaviors via versioned YAML configuration files instead of proprietary code.
+- Problem: Deploying and scaling AI agents usually requires complex Python/Node runtimes, vendor-locked API gateways, and heavyweight infrastructure, leading to high latency and deployment overhead.
+- Implementation: Architected a modular Go engine with policy-as-config execution chains. Integrated direct LLM client interfaces (llama.cpp, OpenAI, Anthropic) and Model Context Protocol (MCP/ACP) handlers natively in-process.
+- Stack: Go, MCP/ACP specs, llama.cpp API, SQLite, PostgreSQL.
+- Outcome: Shipped 26+ open-source releases under Apache-2.0, enabling sub-100ms local tool execution and reducing runtime footprint to a single 30MB binary.
 
-"SaaS, PaaS, and IDPs are platform products" argues that the useful distinction is not the label attached to the system, but whether it has real users, a clear interface, an operating model, and a path to ownership. It treats SaaS foundations, PaaS workflows, Kubernetes control planes, and internal developer platforms as one family of product infrastructure.
+### MCP Server & Document SaaS
 
-Key points:
+- URL: https://ertli.com/portfolio/ai-document-saas/
+- German: https://ertli.com/de/portfolio/ai-document-saas/
+- Tags: SaaS, Multi-tenant, RAG, MCP, Next.js
+- TL;DR: Multi-tenant SaaS platform built on an open-source AI agent runtime, adding document storage, vector search (RAG), and Model Context Protocol access.
+- Problem: Teams need a centralized, secure repository to index internal documents and query them from diverse local or cloud-based AI agents without rebuilding RAG pipelines for each agent.
+- Implementation: Designed a multi-tenant RAG service with document parsing and embeddings. Built the SaaS management layer, including RBAC, member invitation flows, audit logs, and Stripe billing integration.
+- Stack: Go (RAG + MCP), Next.js, Postgres (pgvector), Stripe, GCP, Terraform, k3s.
+- Outcome: Delivered a production-ready SaaS control plane that indexes document collections and exposes them via MCP to external agents with sub-200ms vector search latency.
 
-- A cloud product needs a contract between users and operators.
-- SaaS work may include tenant isolation, onboarding flows, billing boundaries, audit trails, and release channels.
-- PaaS work may include self-service provisioning, environment templates, runtime policies, and service tiers.
-- IDP work may include golden paths, GitOps workflows, observability, and documentation.
-- The first durable workflow should drive scope.
-- The desired outcome is a service that teams can ship, operate, and improve without rediscovering the original design intent.
+### TechCareer - SaaS Architecture
+
+- URL: https://ertli.com/portfolio/techcareer/
+- German: https://ertli.com/de/portfolio/techcareer/
+- Tags: SaaS, Next.js, Stripe, Supabase
+- TL;DR: Full-stack B2C SaaS product featuring automated CV parsing and AI-driven content generation.
+- Problem: Building a high-performance consumer application that requires secure PDF handling, fast AI text generation, user onboarding, and subscription payments without infrastructure bloat.
+- Implementation: Built the web application with Next.js Server Components and React. Designed database schemas and authentication policies in Supabase, and integrated Stripe billing cycles and PDF parsing utilities in serverless functions.
+- Stack: Next.js, React, Supabase (Postgres), Stripe, TailwindCSS.
+- Outcome: Shipped a production-ready web application with subscription payments, reducing typical development cycle to less than 3 months.
+
+### Direktiv — Kubernetes-Native Engine
+
+- URL: https://ertli.com/portfolio/direktiv/
+- German: https://ertli.com/de/portfolio/direktiv/
+- Tags: Kubernetes, Go, Observability, Event Streaming
+- TL;DR: Event bus optimizations and observability updates for a Kubernetes-native serverless workflow engine.
+- Problem: The workflow engine experienced latency spikes and event drops under high concurrent load, with insufficient runtime visibility for debugging active workflows.
+- Implementation: Re-architected the internal event routing, decoupled long-running database queries, and implemented a structured slog logging system in Go. Built open-source observability pipelines using OpenTelemetry, Fluent Bit, and Prometheus.
+- Stack: Go, Kubernetes, Knative, PostgreSQL, OpenTelemetry, Prometheus, Grafana.
+- Outcome: Increased event processing throughput by 10x and reduced workflow execution latency on critical routing paths to under 5ms.
+
+### Multi-Tenant ERPNext Platform — Operator & Control Panel
+
+- URL: https://ertli.com/portfolio/erpnext-platform/
+- German: https://ertli.com/de/portfolio/erpnext-platform/
+- Tags: IONOS, Terraform, Kubernetes, ERPNext, Platform
+- TL;DR: Kubernetes-native provisioning platform and control plane to deploy and operate isolated ERPNext instances for B2B tenants.
+- Problem: Provisioning and maintaining ERPNext instances for multiple customers required manual server configurations, leading to inconsistent configurations, slow updates, and high operational overhead.
+- Implementation: Developed a custom Kubernetes operator in Go to manage the lifecycle of ERPNext containers, databases, and assets. Built a web-based administration dashboard for day-2 operations (database migrations, backups, resource scaling) and automated provisioning with Terraform and Ansible.
+- Stack: Go, Python, Kubernetes (operator-sdk), Terraform, Ansible, Jenkins, IONOS Cloud.
+- Outcome: Automated tenant provisioning from several hours to under 5 minutes, allowing a single operator to manage a fleet of 50+ isolated ERPNext instances.
+
+## Blog post summaries
+
+### SaaS, PaaS, and IDPs are platform products
+
+- URL: https://ertli.com/blog/platform-products-saas-paas-idp/
+- Tags: SaaS, PaaS, Kubernetes, GitOps, IDP
+- Summary: A short note on treating SaaS platforms, PaaS layers, Kubernetes control planes, and internal developer platforms as products that need clear users, interfaces, operations, and ownership.
 
 ## Contact
 
-Primary contact path:
-
 - https://ertli.com/#contact
 - mailto:alexander@contenox.com
-
-The homepage includes a static contact form. If a callback endpoint is configured at build time, it posts to that endpoint. Otherwise, it opens a prefilled email draft.
 
 ## Index files
 
