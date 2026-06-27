@@ -55,6 +55,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ertli.com/cv/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ertli.com/de/cv/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ertli.com/legal/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

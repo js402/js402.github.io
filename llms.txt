@@ -1,6 +1,6 @@
 # ertli.com
 
-> Alexander Ertli designs cloud and application architecture for SaaS, ERPNext, AI/RAG products, managed-service foundations, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
+> Alexander Ertli is the founder and maintainer of Contenox and designs cloud and application architecture for SaaS, ERPNext, AI/RAG products, managed-service foundations, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
 
 This is the curated agent-readable overview for ertli.com. Use the sitemap for the complete URL list and `llms-full.txt` for a fuller plain-text context.
 
@@ -10,8 +10,10 @@ This is the curated agent-readable overview for ertli.com. Use the sitemap for t
 - [German home](https://ertli.com/de/): German version of the service positioning.
 - [Portfolio](https://ertli.com/portfolio/): Case studies for SaaS/PaaS products, AI runtimes, automation, and infrastructure.
 - [German portfolio](https://ertli.com/de/portfolio/): German case study index.
-- [About](https://ertli.com/about/): Background and working style.
-- [German about](https://ertli.com/de/about/): German background page.
+- [About](https://ertli.com/about/): Personal statement on Contenox, local AI for engineers, explicit workflow boundaries, and avoiding professional AI lock-in.
+- [German about](https://ertli.com/de/about/): German statement on Contenox and local AI for engineers.
+- [CV](https://ertli.com/cv/): Professional background, experience, education, and contact details.
+- [German CV](https://ertli.com/de/cv/): German professional background page.
 - [Legal notice](https://ertli.com/legal/): English legal notice.
 - [Impressum](https://ertli.com/de/impressum/): German legal notice.
 

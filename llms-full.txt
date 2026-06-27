@@ -1,12 +1,14 @@
 # ertli.com Full Agent Context
 
-> Alexander Ertli designs cloud and application architecture for SaaS, ERPNext, AI/RAG products, managed-service foundations, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
+> Alexander Ertli is the founder and maintainer of Contenox and designs cloud and application architecture for SaaS, ERPNext, AI/RAG products, managed-service foundations, Terraform/GitOps automation, and production operating models. Remote-first from Hamburg, Germany.
 
 ## Site purpose
 
-ertli.com is the professional site for Alexander Ertli. The site is aimed at teams that need pragmatic cloud architecture across business application and infrastructure boundaries: SaaS foundations, PaaS workflows, ERPNext service operations, AI/RAG infrastructure, automation, GitOps, CI/CD, and operational handover.
+ertli.com is the professional site for Alexander Ertli, founder and maintainer of Contenox. The About page explains why he started Contenox: to keep professional AI work under local control instead of locking it into a few large platforms. The broader site is aimed at teams that need pragmatic cloud architecture across business application and infrastructure boundaries: SaaS foundations, PaaS workflows, ERPNext service operations, AI/RAG infrastructure, automation, GitOps, CI/CD, and operational handover.
 
-The positioning focuses on Alexander as a cloud and application architect. The broader service scope includes SaaS and PaaS products, ERPNext operations, AI/RAG services, developer self-service, managed-service readiness, and production ownership.
+The current Contenox positioning is local AI for engineers: explicit workflow boundaries, reviewable chains, local execution where possible, and runtime work around modeld, OpenVINO, and llama.cpp. In November 2025, Contenox narrowed from a broader LLM proxy and workflow engine for autonomous AI toward this local-first engineering workflow focus.
+
+The professional service positioning still focuses on Alexander as a cloud and application architect. The broader service scope includes SaaS and PaaS products, ERPNext operations, AI/RAG services, developer self-service, managed-service readiness, and production ownership.
 
 ## Primary service areas
 
@@ -28,8 +30,10 @@ Avoid leading with job-title phrases. The service is architecture and operating-
 - https://ertli.com/de/ - German homepage.
 - https://ertli.com/portfolio/ - English case study index.
 - https://ertli.com/de/portfolio/ - German case study index.
-- https://ertli.com/about/ - English background page.
-- https://ertli.com/de/about/ - German background page.
+- https://ertli.com/about/ - English personal statement on Contenox, local AI for engineers, explicit workflow boundaries, and avoiding professional AI lock-in.
+- https://ertli.com/de/about/ - German personal statement on Contenox and local AI for engineers.
+- https://ertli.com/cv/ - English CV with professional background, experience, education, and contact details.
+- https://ertli.com/de/cv/ - German CV page.
 - https://ertli.com/legal/ - English legal notice.
 - https://ertli.com/de/impressum/ - German legal notice.
 - https://ertli.com/blog/ - English blog index.
